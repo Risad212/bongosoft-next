@@ -1,0 +1,104 @@
+.background{
+    background: #2A323E;
+    color: #fff;
+    padding: 5px 0;
+}
+.topTextLeft{
+    padding-top: 3px;
+}
+.textWhite{
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+.textWhite:hover{
+    color: #fff;
+}
+.textWhite:nth-child(2){
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+}
+.textWhite svg{
+    padding-right: 5px;
+}
+
+.wraperTopRight{
+    display: flex;
+    justify-content: end;
+}
+.topListStyle{
+    padding-right: 30px;
+    padding-top: 2px;
+}
+.socialIcon{
+    margin: 0;
+    display: block;
+    padding: 0;
+    float: right;
+}
+.socialIcon li{
+    display: inline-block;
+}
+.socialIcon li a{
+    border: 2px dotted #fff;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    line-height: 24px;
+    transition: all 0.7s ease-in;
+    background: transparent;
+    display: block;
+    margin-left: 10px;
+}
+.socialIcon li a svg{
+    color: #ffffff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+.socialIcon li a:hover{
+    transform: rotate(360deg);
+    display: block;
+}
+.socialIcon li .facebook:hover{
+    background: #4267B2;
+    border: 2px solid #4267B2;
+}
+.socialIcon li .twitter:hover{
+    background: #1DA1F2;
+    border: 2px solid #1DA1F2;
+}
+.socialIcon li .youtube:hover{
+    background: #FF0000;
+    border: 2px solid #FF0000;
+}
+.socialIcon li .linkedin:hover{
+    background: #0077b5;
+    border: 2px solid #0077b5;
+}
+.socialIcon li .pintarest:hover{
+    background: #E60023;
+    border: 2px solid #E60023;
+}
+
+
+@media (max-width: 767px) {
+    .topListStyle{
+        padding-right: 0px;
+    }
+    .textWhite:nth-child(2){
+        padding-left: 5px;
+        border: none;
+    }
+    .wraperTopLeft{
+        padding-bottom: 9px;
+    }
+    .wraperTopRight{
+        justify-content: center;
+    }
+}
