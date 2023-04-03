@@ -5,3 +5,69 @@
 .logo{
     padding: 15px 0 8px;
 }
+.navWrapper nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuWrapper{
+    display: flex;
+}
+.menuWrapper .list{
+  display: flex;
+}
+.menuWrapper .list li{
+    margin: 0 5px;
+    padding: 18px 0;
+    line-height: 16px;
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.menuWrapper .list li a{
+    border-radius: 3px;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    font-size: 15px;
+    transition: color .3s ease-in-out;
+}
+.menuWrapper ul li a:hover{
+    color: #1da255;
+}
+.active{
+    background: #1da255;
+    color: #fff !important;
+}
+.searchBtn {
+    display: flex;
+    align-items: center;
+}
+.searchBtn svg{
+    height: 22px;
+    width: 22px;
+}
+.searchBtn svg path{
+    fill: #1da255;
+}
+.dropdown{
+    position: relative;
+}
+.dlSubmenu{
+    position: absolute;
+    width: 250px;
+    background: #1da255;
+    top: 62px;
+}
+.dlSubmenu::before{
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 0 8px 8px;
+    content: "";
+    display: inline;
+    left: 15px;
+    position: absolute;
+    background: #1da255;
+    transition: all 750ms linear;
+}
