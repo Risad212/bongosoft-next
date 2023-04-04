@@ -26,7 +26,7 @@
 
 .wraperTopRight{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .topListStyle{
     padding-right: 30px;

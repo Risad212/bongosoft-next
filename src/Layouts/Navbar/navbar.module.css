@@ -54,6 +54,7 @@
 .dropdown{
     position: relative;
 }
+
 .dlSubmenu{
     position: absolute;
     width: 250px;
@@ -68,6 +69,16 @@
     display: inline;
     left: 15px;
     position: absolute;
-    background: #1da255;
+    top: -8px;
+    border-bottom-color: #1da255;
     transition: all 750ms linear;
 }
+.dlSubmenu li{
+    padding: 16px 15px 15px;
+}
+.dlSubmenu li a{
+    color: #fff !important;
+    
+    font-size: 13px;
+}
+
