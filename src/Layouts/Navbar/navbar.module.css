@@ -54,31 +54,62 @@
 .dropdown{
     position: relative;
 }
-
-.dlSubmenu{
+.dropdown .dlSubmenu{
     position: absolute;
     width: 250px;
     background: #1da255;
     top: 62px;
+    padding: 0;
+    transition: all 750ms linear;
 }
-.dlSubmenu::before{
+.dropdown > .dlSubmenu::before{
     border-color: rgba(0, 0, 0, 0);
     border-style: solid;
     border-width: 0 8px 8px;
     content: "";
-    display: inline;
     left: 15px;
     position: absolute;
     top: -8px;
     border-bottom-color: #1da255;
-    transition: all 750ms linear;
 }
-.dlSubmenu li{
+.dropdown .dlSubmenu li{
     padding: 16px 15px 15px;
+    position: relative;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.5);
+    width: 100%;
 }
-.dlSubmenu li a{
-    color: #fff !important;
-    
+.dropdown .dlSubmenu li a{
+    color: #fff;
     font-size: 13px;
+    padding: 0px;
+}
+.dropdown .dlSubmenu li a:hover{
+    color: #fff;
+}
+#secondary{
+    left: 235px;
+    top: 0;
 }
 
+.dlSubmenu{
+    visibility: hidden;
+}
+.dropdown:hover > .dlSubmenu{
+    visibility: visible;
+}
+
+.firsDrop:hover .dlSubmenu{
+    visibility: visible;
+}
+.secondDrop:hover .dlSubmenu{
+    visibility: visible;
+}
+.thirtDrop:hover .dlSubmenu{
+    visibility: visible;
+}
+.fourDrop:hover .dlSubmenu{
+    visibility: visible;
+}
+.fifthDrop:hover .dlSubmenu{
+    visibility: visible;
+}
