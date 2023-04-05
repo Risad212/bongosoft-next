@@ -15,8 +15,8 @@ const Topbar = () => {
                         <div className="col-sm-12 col-md-6">
                             <div className={topbar.wraperTopLeft}>
                                 <div className={topbar.topTextLeft}>
-                                    {/* <Link href="/" className={topbar.textWhite}><FontAwesomeIcon icon={faPhone} /> +8801911-115231 </Link>
-                                    <Link href="/" className={topbar.textWhite}><FontAwesomeIcon icon={faEnvelope} /> info@bongosoftbd.com </Link> */}
+                                    <Link href="/" className={topbar.textWhite}><FontAwesomeIcon icon={faPhone} /> +8801911-115231 </Link>
+                                    <Link href="/" className={topbar.textWhite}><FontAwesomeIcon icon={faEnvelope} /> info@bongosoftbd.com </Link>
                                 </div>
                             </div>
                         </div>
