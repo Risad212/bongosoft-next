@@ -53,6 +53,7 @@ const FooterList = () => {
                                 <div class={footerlink.footer_btn}>
                                     <button id="contact-btn" class={footerlink.btn_1} name="footerButton" type="submit">
                                         <FontAwesomeIcon icon={faPaperPlane} className={footerlink.send}/>
+                                        <FontAwesomeIcon icon={faPaperPlane} className={footerlink.send2}/>
                                         <span>Send </span>
                                     </button>
                                 </div>
