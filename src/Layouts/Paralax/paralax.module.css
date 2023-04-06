@@ -62,16 +62,20 @@
     content: '';
     border-radius: 50%;
     display: block;
-    width: 300px;
+    width: 318px;
     height: 300px;
     line-height: 20em;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -152px;
     text-align: center;
-    -webkit-transition: -webkit-box-shadow 0.5s ease-out;
-    transition: -webkit-box-shadow 0.5s ease-out;
-    -o-transition: box-shadow 0.5s ease-out;
     transition: box-shadow 0.5s ease-out;
-    transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
     z-index: -1;
+}
+#btn:hover {
+    border: 2px solid transparent;
+    color: #000 !important;
+}
+#btn:hover::before {
+     box-shadow: inset 0 0 0 10em #fff;
+    -webkit-box-shadow: inset 0 0 0 10em #fff;
 }
