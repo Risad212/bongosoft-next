@@ -1,0 +1,98 @@
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    margin-top: -140px;
+    width: 100%;
+    margin-bottom: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.footer_widget{
+    color: #fff;
+    float: left;
+    padding: 10px 0 20px 10px;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.widgettitle{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #188747;
+    position: relative;
+    padding-bottom: 10px;
+}
+.widgettitle::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #000;
+    content: '';
+}
+.footer_widget p{
+    color: #6f7a82;
+    line-height: 24px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    text-align: justify;
+}
+.footerWidget .blog_small{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.blog_small_left{
+    width: 35%;
+    float: left;
+}
+.blog_small_right{
+    width: 65%;
+    float: left;
+}
+.blog_small_right h5{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: 400;
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+    color: #6f7a82;
+    line-height: 24px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.blog_small_right h5:hover{
+    color: #188747;
+}
+.info_contact{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.info_contact li{
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    padding: 0;
+    line-height: 28px;
+    list-style: none;
+    color: #6f7a82;
+}
+.info_contact li svg{
+    width: 15px;
+    padding-right: 5px;
+}
+
+.map{
+    padding-top: 33px;
+    margin-left: -30px;
+    padding-right: 10px;
+}

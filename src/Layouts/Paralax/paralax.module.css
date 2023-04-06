@@ -1,0 +1,77 @@
+.main .paralax{
+    background-image: url('../../Media/footer-talk-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    background-position: 50% -1063px;
+}
+.main .overlay{
+    background-color: rgba(0,0,0,0.8);
+    padding: 90px 0 230px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .parallaxText{
+    color: #fff;
+}
+.main .parallaxText h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.main .parallaxText p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ddd;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.main .btnQuote{
+    position: relative;
+    text-align: center;
+}
+.main .btnQuote #btn{
+    color: #fff;
+    font-size: 17px;
+    line-height: 46px;
+    height: 52px;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 9;
+    text-transform: capitalize;
+}
+#btn::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 300px;
+    height: 300px;
+    line-height: 20em;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    -webkit-transition: -webkit-box-shadow 0.5s ease-out;
+    transition: -webkit-box-shadow 0.5s ease-out;
+    -o-transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+    z-index: -1;
+}
