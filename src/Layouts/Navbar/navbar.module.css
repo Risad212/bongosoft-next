@@ -143,6 +143,7 @@
     }
 }
 
+
 /* =========== Mobile Responsive Navbar ====================*/
 @media only screen and (max-width: 767px){
     .menuIcon{
@@ -154,15 +155,16 @@
         top: 138px;
         width: 100%;
         left: 0;
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         z-index: 99;
-        opacity: 1;
-        transition: opacity .1s ease-in;
+        transition: opacity .1s ease-in, visibility 0s ease-in .2s;
         animation: keyUp 1s ease-in-out;
      }
     .menuWrapper .list{
        flex-direction: column;
-       padding: 0;
+       padding: 0 !important;
     }
     .menuWrapper .list li{
         margin: 0;
@@ -188,11 +190,16 @@
     
     @keyframes keyUp {
         0%{
-          top: 500px; 
+          top: 200px; 
         }
         100%{
-            top: 208px; 
+            top: 138px; 
         }
+    }
+    .showMenu{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .1s ease-in;
     }
 }
 

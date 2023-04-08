@@ -95,10 +95,13 @@
         padding-left: 5px;
         border: none;
     }
-    .wraperTopLeft{
-        margin-bottom: 9px;
-    }
+   
     .wraperTopRight{
         justify-content: center;
+    }
+}
+@media only screen and (min-width: 768px){
+    .wraperTopLeft{
+        margin-bottom: 9px;
     }
 }

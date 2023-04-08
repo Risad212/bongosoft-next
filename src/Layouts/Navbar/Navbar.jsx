@@ -15,7 +15,7 @@ const Navbar = () => {
     setShowMenu(!showMenu)
    }
 
-
+ 
 
    return (
       <>
@@ -26,7 +26,7 @@ const Navbar = () => {
                   <div className={navbar.logo}>
                      <a href="#"><Image src={Logo} alt="" /></a>
                   </div>
-                  <div className={navbar.menuWrapper} >
+                  <div className={`${navbar.menuWrapper} ${showMenu? navbar.showMenu: ''}`}>
                      <ul className={navbar.list}>
                         <li><a href="#" className={navbar.active}>Home</a></li>
                         <li><a href="#">About</a></li>
