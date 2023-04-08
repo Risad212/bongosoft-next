@@ -61,6 +61,7 @@
     top: 62px;
     padding: 0;
     transition: all 750ms linear;
+    z-index: 99;
 }
 .dropdown > .dlSubmenu::before{
     border-color: rgba(0, 0, 0, 0);
@@ -69,7 +70,7 @@
     content: "";
     left: 15px;
     position: absolute;
-    top: -8px;
+    top: -7px;
     border-bottom-color: #1da255;
 }
 .dropdown .dlSubmenu li{
@@ -97,7 +98,6 @@
 .dropdown:hover > .dlSubmenu{
     visibility: visible;
 }
-
 .firsDrop:hover .dlSubmenu{
     visibility: visible;
 }
@@ -114,6 +114,13 @@
     visibility: visible;
 }
 
+.menuIcon{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+
 @media only screen and (min-width: 1000px) and (max-width: 1170px){
     .menuWrapper .list li a{
         padding: 8px 12px 8px;
@@ -129,8 +136,60 @@
         font-size: 12px;
     }
 }
+
 @media only screen and (min-width:960px) and (max-width:1240px){
     .container{
         max-width: 900px !important;
     }
 }
+
+/* ===============================*/
+@media only screen and (max-width: 767px){
+    .menuIcon{
+        display: block;
+    }
+    .menuWrapper{
+        position: absolute;
+        background: #1da255;
+        top: 138px;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        z-index: 99;
+        opacity: 0;
+        transition: opacity .1s ease-in;
+        animation: keyUp 1s ease-in-out;
+     }
+    .menuWrapper .list{
+       flex-direction: column;
+       padding: 0;
+    }
+    .menuWrapper .list li{
+        margin: 0;
+    }
+    .menuWrapper .list li a{
+        color: #fff;
+    }
+    .active{
+        background: none;
+    }
+    .searchBtn{
+        padding: 0 20px;
+    }
+    .searchBtn svg path{
+        fill: #fff;
+    }
+    .dlSubmenu{
+        display: none;
+    }
+    
+    @keyframes keyUp {
+        0%{
+          top: 500px; 
+        }
+        100%{
+            top: 208px; 
+        }
+    }
+}
+

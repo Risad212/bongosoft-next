@@ -14,57 +14,5 @@ ul{
 
 
 
-/* CSS Document */
 
-
-/*----*****---- << Responsive >> ----*****----*/
-
-
-
-
-	/*----*****---- << Desktop >> ----*****----*/
-
-    /* Note: Design for a width of 768px, Gutter: 30px, Unit: 32px */
-
-    @media only screen and (min-width:960px) and (max-width:1240px) {
-
-		.container { width:900px; }
-
-		#primary { width:660px; }
-		#secondary { width: 220px; }
-		.boxed .wrapper, .boxed #header-wrapper { width:940px; }
-		.wrapper, #header-wrapper { width:100%; }
-		img, .aligncenter { height:auto; max-width: 100%; }
-
-		th { padding:12px 5px; font-size:12px; text-transform:none; }
-		td { padding:10px 5px; font-size:12px; }
-
-		.preview-section .column { width: 100%; }
-
-		/*----*****---- << Header >> ----*****----*/
-
-		#bbar-wrapper .column.alignright { margin: 0; }
-
-		#logo, #header.header2 #logo, #header.header3 #logo { margin: 22px 0 0; width: 26%; }
-		#header.header3 #logo { margin: 27px 0 0; }
-		#header.header4 #logo { margin: 39px 0 0; }
-		.main-menuwrapper ul > li:last-child ul { left: auto; right: 0; }
-		.main-menuwrapper ul > li:last-child > ul:before, #header.header2 .main-menuwrapper > ul > li:last-child > ul:before { left: auto; right: 15px; }
-
-		#header.header2 .main-menuwrapper ul > li.hasSubmenu > a { padding: 11px 24px 12px 14px; }
-
-		#header.header5 #main-menu ul.menu > li > .megamenu-child-container > ul.sub-menu { width: 900px; }
-		#header.header5 #logo { margin: 22px 0 0 !important; width: 20% !important; }
-		#header.header5 #main-menu > ul > li > a { font-size: 13px; padding: 10px 18px; }
-
-		#header.header5 #main-menu ul li.menu-item-simple-parent > a:after, #header.header5 #main-menu ul li.menu-item-simple-parent > a:before, #header.header5 #main-menu ul li.menu-item-megamenu-parent > a:after, #header.header5 #main-menu ul li.menu-item-megamenu-parent > a:before { top: 17px; }
-
-		.main-menuwrapper ul li ul, #header.header2 .main-menuwrapper ul li ul { }
-		.main-menuwrapper ul li ul ul.dl-submenu, #header.header2 .main-menuwrapper ul li ul ul.dl-submenu, #header.header3 .main-menuwrapper ul li ul ul.dl-submenu, #header.header4 .main-menuwrapper ul li ul ul.dl-submenu { left: auto; right: 200px; }
-
-		#main-menu ul li.menu-item-simple-parent ul { top: 62px; }
-		.megamenu-child-container { top: 72px; }
-
-		.hasImage-bg .megamenu-child-container { background-image: none; }
-
-	}
+   

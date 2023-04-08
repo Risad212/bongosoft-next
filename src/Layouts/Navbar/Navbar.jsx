@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import navbar from './navbar.module.css';
 import Logo from '../../Media/logo.png'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = () => {
+   const [navIcon,setNavIcon] = useState(false)
+   const [showMenu, setShowMenu] = useState('')
+
+   const toggleNav = () => {
+    setNavIcon(!navIcon)
+   }
+
+
+
    return (
       <>
          <div className={navbar.navWrapper}>
@@ -84,11 +93,10 @@ const Navbar = () => {
                         <li><a href="#">our work</a></li>
                         <li><a href="#">blog</a></li>
                         <li><a href="#">contact</a></li>
+                        <li><div className={navbar.searchBtn}><FontAwesomeIcon icon={faSearch} /></div></li>
                      </ul>
-                     <div className={navbar.searchBtn}>
-                        <FontAwesomeIcon icon={faSearch} />
-                     </div>
                   </div>
+                  <FontAwesomeIcon icon={navIcon? faXmark: faBars} className={navbar.menuIcon} onClick={(e) => toggleNav()}/>
                </nav>
             </div>
          </div>
