@@ -8,10 +8,11 @@ import { faBars, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
    const [navIcon,setNavIcon] = useState(false)
-   const [showMenu, setShowMenu] = useState('')
+   const [showMenu, setShowMenu] = useState(false)
 
    const toggleNav = () => {
     setNavIcon(!navIcon)
+    setShowMenu(!showMenu)
    }
 
 
@@ -25,7 +26,7 @@ const Navbar = () => {
                   <div className={navbar.logo}>
                      <a href="#"><Image src={Logo} alt="" /></a>
                   </div>
-                  <div className={navbar.menuWrapper}>
+                  <div className={navbar.menuWrapper} >
                      <ul className={navbar.list}>
                         <li><a href="#" className={navbar.active}>Home</a></li>
                         <li><a href="#">About</a></li>
