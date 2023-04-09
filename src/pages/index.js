@@ -1,3 +1,4 @@
+import Slider from '../Layouts/Slider/Slider'
 import Head from 'next/head'
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet"></link>
         {/*---- Ubuntu Googel font ----*/}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"></link>
       </Head>
+      <Slider />
     </>
   )
 }

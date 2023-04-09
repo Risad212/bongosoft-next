@@ -13,6 +13,22 @@ ul{
 }
 
 
-
-
-   
+/*------- swiper style -----*/
+.swiper-button-prev:after{
+    color: #f6f3f3;
+}
+.swiper-button-next:after{
+    color: #f4ebeb;
+}
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after{
+    color: #1da255;
+}
+.swiper-pagination-bullet{
+    background: transparent !important;
+    border: 2px solid #777;
+    padding: 4px;
+}
+.swiper-pagination-bullet-active{
+    background: #1da255 !important;
+}
