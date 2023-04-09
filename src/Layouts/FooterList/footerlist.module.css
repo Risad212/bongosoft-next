@@ -1,24 +1,28 @@
-.list_footer_menu{
+.list_footer_menu {
     padding: 0;
 }
-.footer_links h4{
+
+.footer_links h4 {
     font-size: 20px;
     color: #536470;
     margin-bottom: 15px;
     font-weight: 700;
 }
-.list_footer_menu li a{
+
+.list_footer_menu li a {
     color: #5e707d;
     line-height: 32px;
     position: relative;
     font-weight: 400;
     font-family: 'Ubuntu', sans-serif;
 }
-.input_container{
+
+.input_container {
     position: relative;
     margin: 10px 30px 0 0px;
 }
-.input_container input{
+
+.input_container input {
     outline: none;
     font-family: sans-serif;
     outline: none;
@@ -33,6 +37,7 @@
     border: none;
     font-weight: 400;
 }
+
 .input_container .bar {
     position: absolute;
     left: 0;
@@ -42,6 +47,7 @@
     height: 1px;
     background: #6f7a82;
 }
+
 .input_container .bar::before {
     content: "";
     position: absolute;
@@ -50,10 +56,12 @@
     height: 2px;
     transition: 0.2s ease;
 }
-.input_container input:focus::before{
+
+.input_container input:focus::before {
     width: 100%;
 }
-.input_container label{
+
+.input_container label {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,16 +71,20 @@
     line-height: 32px;
     transition: 0.2s ease
 }
-.input_container input:focus ~ label {
-  color: #1da255;
-  -webkit-transform: translate(-12%, -50%) scale(0.75);
-  transform: translate(-12%, -50%) scale(0.75);
-  margin-bottom: 0px;
+
+.input_container input:focus~label {
+    color: #1da255;
+    -webkit-transform: translate(-12%, -50%) scale(0.75);
+    transform: translate(-12%, -50%) scale(0.75);
+    margin-bottom: 0px;
 }
-.input_container input:focus ~ .bar:before, .input_container input:focus ~ .bar:after {
+
+.input_container input:focus~.bar:before,
+.input_container input:focus~.bar:after {
     width: 100%;
 }
-.btn_1{
+
+.btn_1 {
     position: relative;
     padding: 0px 10px;
     cursor: pointer;
@@ -81,51 +93,62 @@
     border: 0;
     border-bottom: 3px solid #188747;
 }
-.footer_btn{
+
+.footer_btn {
     text-align: left;
     margin-top: 15px;
 }
-.send{
+
+.send {
     position: absolute;
     top: 10px;
     left: 5px;
     color: #fff;
     transition: all 0.5s ease;
 }
-.send,.send2{
+
+.send,
+.send2 {
     width: 15px;
 }
-.send2{
+
+.send2 {
     position: absolute;
     top: 80px;
     left: 5px;
     color: #fff;
     transition: all 0.5s ease;
 }
-.btn_1:hover{
+
+.btn_1:hover {
     background: #000;
     transition: all 0.5s ease;
     color: #fff;
 }
-.btn_1:hover .send{
+
+.btn_1:hover .send {
     top: -50px;
     transition: all 0.5s ease;
 }
-.btn_1:hover .send2{
-  top: 10px;
-  transition: all 0.5s ease;
-  animation: sending 1s linear 1s forwards;
+
+.btn_1:hover .send2 {
+    top: 10px;
+    transition: all 0.5s ease;
+    animation: sending 1s linear 1s forwards;
 }
+
 /* CSS3 animation keyframes */
-@keyframes sending{
-    0%{
-      transform: translateY(0);
+@keyframes sending {
+    0% {
+        transform: translateY(0);
     }
-    100%{
-      transform: translate(40px, -60px);
+
+    100% {
+        transform: translate(40px, -60px);
     }
-  }
-.btn_1 span{
+}
+
+.btn_1 span {
     text-transform: capitalize;
     text-align: center;
     color: #fff;
@@ -139,10 +162,12 @@
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1px;
 }
-.newsletter_box{
+
+.newsletter_box {
     margin-bottom: 15px;
 }
-.txt_box{
+
+.txt_box {
     font-family: sans-serif;
     outline: none;
     width: calc(100% - 133px);
@@ -156,14 +181,15 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    background: #fff!important;
+    background: #fff !important;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
-.subscribe_btn{
+
+.subscribe_btn {
     height: 44px;
     width: 133px;
     border: none;
@@ -177,6 +203,7 @@
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .newsletter_box p {
     font-size: 13px;
     margin-top: 8px;
@@ -184,4 +211,37 @@
     display: block;
     padding-top: 8px;
     line-height: 30px;
+}
+
+.social a {
+    background: url(../../Media/social.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0px 2px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.social a:hover{
+    transform: rotate(360deg);
+}
+.social a.facebook{
+    background-position: -35px 0px;
+}
+.social a.twitter {
+    background-position: -70px 0px;
+}
+.social a.pinstar {
+    background-position: 0px 0px;
+}
+.social a.youtube {
+    background-position: -105px 0px;
+}
+.social a.linkedin {
+    background-position: -140px 0px;
 }

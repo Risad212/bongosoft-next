@@ -60,7 +60,7 @@ const FooterList = () => {
                             </form>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInDown" data-wow-duration=".4s" data-wow-delay="1.6s" style={{visibility: "visible;"}}>
+                    <div class="col-sm-12 col-md-6 col-lg-4"style={{visibility: "visible;"}}>
                         <h4>Newsletter</h4>
                         <div class={`${footerlink.newsletter_box} ${footerlink.clearfix}`}>
                             <form action="php/subscribe.php" method="post" class="validate">
@@ -70,12 +70,12 @@ const FooterList = () => {
                             </form>
                         </div>
                         <h4>Find us on</h4>
-                        <div class="social">
-                            <a class="facebook" href="https://www.facebook.com/bongosoftbd/" target="_blank"></a>
-                            <a class="twitter" href="https://twitter.com/bongosoft" target="_blank"></a>
-                            <a class="pinstar" href="https://www.pinterest.com/bongosoftbd/" target="_blank"></a>
-                            <a class="youtube" href="https://www.youtube.com/channel/UCJRcAEdbCQif_HZH1IecY9g" target="_blank"></a>
-                            <a class="linkedin" href="https://www.linkedin.com/company/14545033/" target="_blank"></a>
+                        <div class={footerlink.social}>
+                            <a class={footerlink.facebook} href="https://www.facebook.com/bongosoftbd/" target="_blank"></a>
+                            <a class={footerlink.twitter} href="https://twitter.com/bongosoft" target="_blank"></a>
+                            <a class={footerlink.pinstar} href="https://www.pinterest.com/bongosoftbd/" target="_blank"></a>
+                            <a class={footerlink.youtube} href="https://www.youtube.com/channel/UCJRcAEdbCQif_HZH1IecY9g" target="_blank"></a>
+                            <a class={footerlink.linkedin} href="https://www.linkedin.com/company/14545033/" target="_blank"></a>
                         </div>
                     </div>
                 </div>

@@ -9,8 +9,7 @@ import { faEnvelope, faEnvelopesBulk, faLocation, faLocationDot, faPhone } from 
 const MainFooter = () => {
     return (
         <>
-           <div className="container">
-            <div className={`${mainfooter.wrapper}`}>
+         <div className={`${mainfooter.wrapper} container`}>
                 <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-3">
                         <div className={mainfooter.footer_widget}>
@@ -69,7 +68,6 @@ const MainFooter = () => {
                     </div>
 
                 </div>
-            </div>
             </div>
         </>
     );
