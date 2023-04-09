@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import navbar from './navbar.module.css';
 import Logo from '../../Media/logo.png'
 import Image from 'next/image';
@@ -9,17 +9,31 @@ import { faBars, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
    const [navIcon,setNavIcon] = useState(false)
    const [showMenu, setShowMenu] = useState(false)
+   const [scrolled, setScrolled] = useState(false);
 
    const toggleNav = () => {
     setNavIcon(!navIcon)
     setShowMenu(!showMenu)
    }
+   
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 5) {
+            setScrolled(true);
+        }
+        else {
+            setScrolled(false);
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    },[])
 
- 
 
+    
    return (
       <>
-         <div className={navbar.navWrapper}>
+         <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0,}: {}}>
             <div className="container">
                <nav>
                   {/*----- LOGO ------*/}
