@@ -1,6 +1,7 @@
 import OurWork from '@/Layouts/outowork/OurWork'
 import Slider from '../Layouts/Slider/Slider'
 import Head from 'next/head'
+import About from '@/Layouts/about/About'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Slider />
       <OurWork />
+      <About />
     </>
   )
 }

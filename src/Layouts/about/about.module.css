@@ -1,0 +1,59 @@
+.wrapper{
+    padding-bottom: 50px;
+}
+.about_content_2{
+    margin-top: 10px;
+}
+.about_content_2 h3{
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+.about_details p{
+    color: #000000;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+.about_section_ul {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 15px !important;
+    text-align: justify;
+}
+.about_section_ul li {
+    list-style: none;
+    line-height: 26px;
+}
+.about_section_ul strong {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.about_content_2 .btn_start_project {
+    color: #fff;
+    position: relative;
+    display: block;
+    background: #1da255;
+    width: 262px;
+    min-height: 44px;
+    font-size: 20px;
+    letter-spacing: 0.50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+.req_link{
+    display: block;
+}
+.req_link_hover{
+    display: none;
+}
+.about_content_2 .btn_start_project:hover .req_link{
+    display: none;
+}
+.about_content_2 .btn_start_project:hover .req_link_hover{
+    display: block;
+}
