@@ -3,6 +3,7 @@ import Slider from '../Layouts/Slider/Slider'
 import Head from 'next/head'
 import About from '@/Layouts/about/About'
 import Counter from '@/Layouts/counter/Counter'
+import Service from '@/Layouts/service/Service'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <OurWork />
       <About />
       <Counter />
+      <Service />
     </>
   )
 }
