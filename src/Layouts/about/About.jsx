@@ -1,5 +1,7 @@
 import React from 'react';
 import about from './about.module.css';
+import aboutImg from '../../Media/about.png'
+import Image from 'next/image';
 
 const About = () => {
     return (
@@ -24,13 +26,13 @@ const About = () => {
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-lg-5">
-                            <div class="about_image new_image_new">
-                                <div class="des-res">
-                                    <img src="images/custom/about/about-section.png" alt="website development services India" title="website development company India" />
-                                    <div class="bubbling-dev-icons-vert4 dev2-an"></div>
-                                    <div class="bubbling-dev-icons-vert3 dev1-an"></div>
-                                    <div class="bubbling-dev-icons-vert-seo dev1-seo"></div>
-                                    <div class="bubbling-dev-icons-vert-graphic dev1-graphic"></div>
+                            <div class={`${about.about_image} new_image_new`}>
+                                <div class={about.des_res}>
+                                    <Image src={aboutImg} title="website development company India" />
+                                    <div class={`${about.bubbling_dev_icons_vert4} ${about.dev2_an}`}></div>
+                                    <div class={`${about.bubbling_dev_icons_vert3} ${about.dev1_an}`}></div>
+                                    <div class={`${about.bubbling_dev_icons_vert_seo} ${about.dev1_seo}`}></div>
+                                    <div class={`${about.bubbling_dev_icons_vert_graphic} ${about.dev1_graphic}`}></div>
                                 </div>
                             </div>
                         </div>
