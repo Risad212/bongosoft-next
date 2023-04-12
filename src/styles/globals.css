@@ -37,3 +37,39 @@ ul{
 .swiper-pagination-bullet-active{
     background: #1da255 !important;
 }
+
+/*---------- title style ----------*/
+.box{
+    display: flex;
+    width: 15%;
+    height: 8px;
+    margin: 0 auto;
+}
+.box-sm{
+    height: 8px;
+    margin: 0;
+    flex-grow: 1;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;      
+}
+.red {
+    background-color: #ff5852;
+  }
+  .orange {
+    background-color: #ff9000;
+  }
+  .yellow {
+    background-color: #ffd300;
+  }
+  .green {
+    background-color: #3dcd49;
+  }
+  .blue {
+    background-color: #0089d7;
+  }
+  .purple {
+    background-color: #9e44c4;
+  }
+  .box-sm:hover {
+    flex-grow: 12;
+}
