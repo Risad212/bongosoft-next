@@ -1,6 +1,7 @@
 import React from 'react';
 import review from './testimonial.module.css'
-
+import DrNeem from '../../Media/dr-neem.jpg'
+import Image from 'next/image';
 
 const testimonial = () => {
     return (
@@ -18,11 +19,39 @@ const testimonial = () => {
                             <div className="box-sm purple"></div>
                         </div>
                     </div>
-                    <div class="row clients-sub">
-                        <div class="clients-member">
+                    <div class={`row ${review.clients_sub}`}>
+                        <div class={review.clients_member}>
                             <a href="https://www.drneem.com/" target="_blank">
-                                <div class="clients-photo">
-                                    <img class="img-fluid" src="images/custom/clients/dr-neem.jpg" alt="logo" />
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class={review.clients_member}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class={review.clients_member}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class={review.clients_member}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class={review.clients_member}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
                                 </div>
                             </a>
                         </div>
