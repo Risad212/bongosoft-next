@@ -2,6 +2,18 @@ import React from 'react';
 import review from './testimonial.module.css'
 import DrNeem from '../../Media/dr-neem.jpg'
 import Image from 'next/image';
+// ================ Owl slider ====================
+var $ = require("jquery");
+if (typeof window !== "undefined") {
+    window.$ = window.jQuery = require("jquery");
+}
+
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic"
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+    ssr: false,
+});
 
 const testimonial = () => {
     return (
@@ -20,41 +32,21 @@ const testimonial = () => {
                         </div>
                     </div>
                     <div class={`row ${review.clients_sub}`}>
-                        <div class={review.clients_member}>
+                    <OwlCarousel className='owl-theme' 
+                      loop={true}
+                      items={4}
+                      margin={8} 
+                      autoplay={true}
+                      nav={true}
+                      >
+                    <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
                                     <Image className="img-fluid" src={DrNeem} alt="logo" />
                                 </div>
                             </a>
                         </div>
-                        <div class={review.clients_member}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class={review.clients_member}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class={review.clients_member}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class={review.clients_member}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
+                    </OwlCarousel>
                     </div>
                 </div>
             </section>

@@ -28,4 +28,7 @@
     position: relative;
     width: 260px;
     margin: 0 auto;
-  }
+}
+.clients_member:hover{
+    border: 1px solid #1da255;
+}
