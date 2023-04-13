@@ -1,21 +1,38 @@
 import React from 'react';
 import review from './testimonial.module.css'
 import DrNeem from '../../Media/dr-neem.jpg'
+import women from '../../Media/women.jpg'
 import Image from 'next/image';
 // ================ Owl slider ====================
-var $ = require("jquery");
-if (typeof window !== "undefined") {
-    window.$ = window.jQuery = require("jquery");
-}
-
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import dynamic from "next/dynamic"
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-    ssr: false,
-});
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const testimonial = () => {
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "green" }}
+            onClick={onClick}
+          />
+        );
+      }
+
+    const settings = {
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        prevArrow: <SamplePrevArrow />,
+    };
+
+
     return (
         <>
             <section id="clients" class={review.clients_section}>
@@ -32,22 +49,59 @@ const testimonial = () => {
                         </div>
                     </div>
                     <div class={`row ${review.clients_sub}`}>
-                    <OwlCarousel className='owl-theme' 
-                      loop={true}
-                      items={4}
-                      margin={8} 
-                      autoplay={true}
-                      nav={true}
-                      >
-                    <div className={`${review.clients_member} item`}>
+                    <Slider {...settings}>
+                        <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
                                     <Image className="img-fluid" src={DrNeem} alt="logo" />
                                 </div>
                             </a>
                         </div>
-                    </OwlCarousel>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={women} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                    </Slider>
                     </div>
+                    
                 </div>
             </section>
         </>
