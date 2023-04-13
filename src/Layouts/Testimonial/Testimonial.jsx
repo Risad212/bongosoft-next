@@ -22,6 +22,17 @@ const testimonial = () => {
         );
       }
 
+      function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "green", fontSize: "50px" }}
+            onClick={onClick}
+          />
+        );
+      }
+
     const settings = {
         infinite: true,
         slidesToShow: 4,
@@ -30,8 +41,8 @@ const testimonial = () => {
         speed: 2000,
         autoplaySpeed: 2000,
         prevArrow: <SamplePrevArrow />,
+        nextArrow: <SampleNextArrow />
     };
-
 
     return (
         <>
