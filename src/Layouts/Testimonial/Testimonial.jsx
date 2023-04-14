@@ -4,19 +4,16 @@ import DrNeem from '../../Media/dr-neem.jpg'
 import women from '../../Media/women.jpg'
 import Image from 'next/image';
 // ================ Owl slider ====================
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const testimonial = () => {
     function SamplePrevArrow(props) {
-        const { className, style, onClick } = props;
+        const { className,onClick } = props;
         return (
           <div
             className={className}
-            style={{ ...style, display: "block", background: "green" }}
             onClick={onClick}
           />
         );
@@ -27,7 +24,6 @@ const testimonial = () => {
         return (
           <div
             className={className}
-            style={{ ...style, display: "block", background: "green", fontSize: "50px" }}
             onClick={onClick}
           />
         );

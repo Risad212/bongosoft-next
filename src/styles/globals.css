@@ -73,3 +73,56 @@ ul{
   .box-sm:hover {
     flex-grow: 12;
 }
+
+/*----- slick slider -----------*/
+.slick-next {
+  right: -34px;
+  opacity: 0;
+  background: green;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: 0.3s;
+}
+.slick-prev {
+  left: -34px;
+  opacity: 0;
+  background: green;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: 0.3s;
+}
+.slick-next::before{
+  font-size: 22px;
+  position: absolute;
+  line-height: .75em;
+  top: 40%;
+  left: 22%;
+}
+.slick-prev::before{
+  font-size: 22px;
+  position: absolute;
+  line-height: .75em;
+  top: 40%;
+  left: 22%;
+}
+#clients .row:hover .slick-next{
+  opacity: 1;
+}
+#clients .row:hover .slick-prev{
+  opacity: 1;
+} 
+
+.slick-next:hover{
+ border-radius: 50px;
+ background: green;
+}
+.slick-prev:hover{
+  border-radius: 50px;
+  background: green;
+ }
+
+ .slick-prev:hover{
+  background: green;
+ }
