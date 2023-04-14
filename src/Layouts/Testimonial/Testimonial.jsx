@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // ================ Owl slider ====================
 import Slider from "react-slick";
 import review from './testimonial.module.css'
@@ -14,27 +14,51 @@ import agaminews from '../../Media/agami-news.jpg'
 import carier from '../../Media/carier-logo.jpg'
 import alokito from '../../Media/alokito-news.jpg'
 import polash from '../../Media/polas.jpg'
+import aaa from '../../Media/aaa.png'
+import chicken from '../../Media/chicken.jpg'
+import gonews from '../../Media/gonews.jpg'
+import nbl from '../../Media/nbl.jpg'
+import jagoron from '../../Media/jagoron.jpg'
+import hilton from '../../Media/hilton.jpg';
 
 const testimonial = () => {
+    const [slider, setSlider] = useState([
+        { img: jagoron, link: 'https://www.drneem.com/' },
+        { img: women,link: 'https://www.drneem.com/' },
+        { img: TnNews,link: 'https://www.drneem.com/' },
+        { img: Mega, link: 'https://www.drneem.com/' },
+        { img: DrNeem, link: 'https://www.drneem.com/' },
+        { img: powereng, link: 'https://www.drneem.com/' },
+        { img: offerdgs, link: 'https://www.drneem.com/' },
+        { img: agaminews, link: 'https://www.drneem.com/' },
+        { img: carier, link: 'https://www.drneem.com/' },
+        { img: alokito, link: 'https://www.drneem.com/' },
+        { img: polash, link: 'https://www.drneem.com/' },
+        { img: aaa, link: 'https://www.drneem.com/' },
+        { img: chicken, link: 'https://www.drneem.com/' },
+        { img: gonews, link: 'https://www.drneem.com/' },
+        { img: nbl, link: 'https://www.drneem.com/' },
+        { img: hilton, link: 'https://www.drneem.com/' },
+    ])
     function SamplePrevArrow(props) {
-        const { className,onClick } = props;
+        const { className, onClick } = props;
         return (
-          <div
-            className={className}
-            onClick={onClick}
-          />
+            <div
+                className={className}
+                onClick={onClick}
+            />
         );
-      }
+    }
 
-      function SampleNextArrow(props) {
+    function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            onClick={onClick}
-          />
+            <div
+                className={className}
+                onClick={onClick}
+            />
         );
-      }
+    }
 
     const settings = {
         infinite: true,
@@ -46,6 +70,9 @@ const testimonial = () => {
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />
     };
+
+
+ 
 
     return (
         <>
@@ -63,78 +90,23 @@ const testimonial = () => {
                         </div>
                     </div>
                     <div class={`row ${review.clients_sub}`}>
-                    <Slider {...settings}>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={women} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={TnNews} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={Mega} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={powereng} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={offerdgs} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={agaminews} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={carier} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={alokito} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className={`${review.clients_member} item`}>
-                            <a href="https://www.drneem.com/" target="_blank">
-                                <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={polash} alt="logo" />
-                                </div>
-                            </a>
-                        </div>
-                    </Slider>
+                        <Slider {...settings}>
+                            {
+                                slider.map((elem) => {
+                                    return (
+                                        <>
+                                            <div className={`${review.clients_member} item`}>
+                                                <a href={elem.link} target="_blank">
+                                                    <div class={review.clients_photo}>
+                                                        <Image className="img-fluid" src={elem.img} alt="logo" />
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
+                        </Slider>
                     </div>
                 </div>
             </section>
@@ -143,3 +115,5 @@ const testimonial = () => {
 };
 
 export default testimonial;
+
+
