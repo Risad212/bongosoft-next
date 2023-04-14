@@ -1,12 +1,19 @@
 import React from 'react';
-import review from './testimonial.module.css'
-import DrNeem from '../../Media/dr-neem.jpg'
-import women from '../../Media/women.jpg'
-import Image from 'next/image';
 // ================ Owl slider ====================
 import Slider from "react-slick";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import review from './testimonial.module.css'
+//=========== client image import =============
+import Image from 'next/image';
+import DrNeem from '../../Media/dr-neem.jpg'
+import women from '../../Media/women.jpg'
+import TnNews from '../../Media/tn.jpg'
+import Mega from '../../Media/mega.jpg'
+import powereng from '../../Media/powereng.jpg'
+import offerdgs from '../../Media/offerdgs.png'
+import agaminews from '../../Media/agami-news.jpg'
+import carier from '../../Media/carier-logo.jpg'
+import alokito from '../../Media/alokito-news.jpg'
+import polash from '../../Media/polas.jpg'
 
 const testimonial = () => {
     function SamplePrevArrow(props) {
@@ -34,7 +41,7 @@ const testimonial = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
+        speed: 1000,
         autoplaySpeed: 2000,
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow />
@@ -74,41 +81,61 @@ const testimonial = () => {
                         <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                    <Image className="img-fluid" src={TnNews} alt="logo" />
                                 </div>
                             </a>
                         </div>
                         <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                    <Image className="img-fluid" src={Mega} alt="logo" />
                                 </div>
                             </a>
                         </div>
                         <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                    <Image className="img-fluid" src={powereng} alt="logo" />
                                 </div>
                             </a>
                         </div>
                         <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                    <Image className="img-fluid" src={offerdgs} alt="logo" />
                                 </div>
                             </a>
                         </div>
                         <div className={`${review.clients_member} item`}>
                             <a href="https://www.drneem.com/" target="_blank">
                                 <div class={review.clients_photo}>
-                                    <Image className="img-fluid" src={DrNeem} alt="logo" />
+                                    <Image className="img-fluid" src={agaminews} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={carier} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={alokito} alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+                        <div className={`${review.clients_member} item`}>
+                            <a href="https://www.drneem.com/" target="_blank">
+                                <div class={review.clients_photo}>
+                                    <Image className="img-fluid" src={polash} alt="logo" />
                                 </div>
                             </a>
                         </div>
                     </Slider>
                     </div>
-                    
                 </div>
             </section>
         </>
