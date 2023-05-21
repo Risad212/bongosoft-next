@@ -82,6 +82,12 @@
 .service_item:hover ul{
   transform: scale(1);
 }
+.service_item img{
+  transition: all .5s;
+}
+.service_item:hover img{
+   transform: scale(0);
+}
 .service_item ul li{
   color: #fff;
   line-height: 24px;
@@ -181,6 +187,31 @@
 .web_development{
   background: url(../../Media/marketing-bg-1.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
+.graphic{
+  background: #ff5852;
+}
+.seo{
+  background: #4eccff;
+}
+/*------ domain -------*/
+.domain{
+  background: #06ccbc;
+}
+.domain:hover img {
+ transform: scale(1);
+}
+.service_item.domain .service_content {
+  top: calc(50% + 0px);
+}
+/*------ domain -------*/
+.support{
+  background: url(../../Media/emerging-bg-1.jpg) no-repeat;
+  background-size: cover;
+}
+.support:hover img {
+  transform: scale(1);
+ }
+ .service_item.support .service_content {
+   top: calc(50% + 0px);
+ }

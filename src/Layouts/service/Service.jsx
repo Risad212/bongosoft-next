@@ -7,8 +7,11 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 // ========= Image import =======================
 import softoware from '../../Media/software.png';
 import webDesign from '../../Media/design.png';
-import webdev from '../../Media/marketing-bg-1.jpg'
-
+import webdev from '../../Media/development.png';
+import graphic from '../../Media/graphic-design.png';
+import seo from '../../Media/seo-service.png';
+import domain from '../../Media/domain.png';
+import support from '../../Media/suppport.png';
 
 const Service = () => {
     console.log(softoware);
@@ -52,8 +55,8 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                       <Image src={webDesign} alt="Web Design" />
-                                     </div>
+                                        <Image src={webDesign} alt="Web Design" />
+                                    </div>
                                     <h3>Web Design</h3>
                                     <ul class={service.service_sub_title}>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> PSD To HTML </li>
@@ -67,24 +70,90 @@ const Service = () => {
                                 </div>
                             </div>
                         </div>
-                         {/*----- service item --------*/}
-                         <div class={`${service.service_item} ${service.web_development}`}>
+                        {/*----- service item --------*/}
+                        <div class={`${service.service_item} ${service.web_development}`}>
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                       <Image src={webdev} alt="Web Development" />
-                                     </div>
+                                        <Image src={webdev} alt="Web Development" />
+                                    </div>
                                     <h3>Web Development</h3>
                                     <ul class={service.service_sub_title}>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> News Portal Development </li>
-                                        <li> <FontAwesomeIcon icon={faArrowRightLong} /> Custom CMS Development</li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Custom CMS Development</li>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> Educational Ins. Website </li>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> E-Commerce Development </li>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> NGO Website Development </li>
                                         <li><FontAwesomeIcon icon={faArrowRightLong} /> WordPress Development </li>
                                     </ul>
-                                    <a class={`btn ${service.btn_service}`} href="web-design.php">Details</a>
+                                    <a class={`btn ${service.btn_service}`} href="#">Details</a>
                                 </div>
+                            </div>
+                        </div>
+                        {/*----- service item --------*/}
+                        <div class={`${service.service_item} ${service.graphic}`}>
+                            <div class={service.service_details}>
+                                <div class={service.service_content}>
+                                    <div>
+                                        <Image src={graphic} alt="Web Development" />
+                                    </div>
+                                    <h3>Graphic Design</h3>
+                                    <ul class={service.service_sub_title}>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Logo Design </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Flyer & Brochure Design </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Corporate Branding </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> PSD Template Design </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Web & Social Media Ad. </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Prient Media Design </li>
+                                    </ul>
+                                    <a class={`btn ${service.btn_service}`} href="#">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        {/*----- service item --------*/}
+                        <div class={`${service.service_item} ${service.seo}`}>
+                            <div class={service.service_details}>
+                                <div class={service.service_content}>
+                                    <div>
+                                        <Image src={seo} alt="Web Development" />
+                                    </div>
+                                    <h3>Digital Marketing</h3>
+                                    <ul class={service.service_sub_title}>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} />  Social Media Ad. Campaign </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Onsite SEO Service </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Website Ranking Service </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> PSD Template Design </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Web & Social Media Ad. </li>
+                                        <li><FontAwesomeIcon icon={faArrowRightLong} /> Prient Media Design </li>
+                                    </ul>
+                                    <a class={`btn ${service.btn_service}`} href="#">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        {/*----- service item --------*/}
+                        <div class={`${service.service_item} ${service.domain}`}>
+                            <div class={service.service_details}>
+                                <a href="#">
+                                    <div class={service.service_content}>
+                                        <div class="icon">
+                                           <Image class="web_domain" src={domain} alt="Domain &amp; Hosting" />
+                                         </div>
+                                        <h3>Domain &amp; Hosting</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {/*----- service item --------*/}
+                        <div class={`${service.service_item} ${service.support}`}>
+                            <div class={service.service_details}>
+                                <a href="#">
+                                    <div class={service.service_content}>
+                                        <div class="icon">
+                                           <Image class="web_domain" src={support} alt="Domain &amp; Hosting" />
+                                         </div>
+                                        <h3>Support</h3>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
