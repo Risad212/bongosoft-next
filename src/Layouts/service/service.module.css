@@ -64,7 +64,7 @@
 .service_item h3{
   font-size: 20px;
   color: #fff;
-  margin-top: 0;
+  margin-top: 5px;
 }
 .service_item .service_details {
   position: absolute;
@@ -106,7 +106,7 @@
   top: calc(40%);
 }
 /*----- service icon -----*/
-.icon{
+.service_sub_title li svg{
   width: 15px;
 }
 .service_item .btn_service {
@@ -163,14 +163,24 @@
 .service_item:hover .btn_service{
   transform: scale(1);
 }
-
-.service_item.software {
-  background: #3dcd49;
-}
-
 .service_item .service_details {
   position: absolute;
   overflow: hidden;
   height: 100%;
   width: 100%;
+}
+/*---- service background list ---------*/
+.software {
+  background: #3dcd49;
+}
+.web_design{
+  background: url(../../Media/mobile-bg.jpg) no-repeat;
+  background-size: cover;
+  grid-row: span 2;
+}
+.web_development{
+  background: url(../../Media/marketing-bg-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
