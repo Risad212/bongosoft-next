@@ -124,11 +124,11 @@ const Portfolio = () => {
                                             <AnimatePresence>
                                                 <motion.div
                                                     layout
-                                                    initial={{ opacity: 0}}
-                                                    animate={{ opacity: 1}}
+                                                    initial={{ opacity: 0 }}
+                                                    animate={{ opacity: 1 }}
                                                     // exit={{ opacity: 0}}
-                                                    transition={{ duration: .5}}
-                                                    key={elem.key} 
+                                                    transition={{ duration: .5 }}
+                                                    key={elem.key}
                                                     className={portfolio.single_gallery_item}>
                                                     <a data-target="#works_details" data-toggle="modal" href="#">
                                                         <Image className="img-fluid" src={elem.img} alt={elem?.altTag} />
@@ -152,6 +152,12 @@ const Portfolio = () => {
                             })
                         }
                     </ul>
+                </div>
+                {/*----- button row ------*/}
+                <div class="row">
+                    <div class="text-center m-auto">
+                        <a class={`btn ${portfolio.btn_date_picker}`} href="#">View All</a>
+                    </div>
                 </div>
             </div>
         </div>
