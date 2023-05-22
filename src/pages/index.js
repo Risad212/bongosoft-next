@@ -5,6 +5,7 @@ import About from '@/Layouts/about/About'
 import Counter from '@/Layouts/counter/Counter'
 import Service from '@/Layouts/service/Service'
 import Testimonial from '@/Layouts/Testimonial/Testimonial'
+import Portfolio from '@/Layouts/portfolio/Portfolio'
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <About />
       <Counter />
       <Service />
+      <Portfolio />
       <Testimonial />
     </>
   )
