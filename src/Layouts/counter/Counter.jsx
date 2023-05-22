@@ -5,11 +5,10 @@ import Happy from '../../Media/happy.png'
 import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
-import { useCountUp } from 'react-use-count-up';
+
 
 
 const Counter = () => {
-    const value = useCountUp({ start: 0, end: 142, duration: 5000 });
     return (
         <>
             <section id="counter" className={counter.counter_section}>
@@ -19,7 +18,7 @@ const Counter = () => {
                             <div className="row">
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
-                                    <span>{value}</span>
+                                    <span>191</span>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}></div>
                                         <div className={counter.counter_img}><Image src={Happy} alt="img"/></div>

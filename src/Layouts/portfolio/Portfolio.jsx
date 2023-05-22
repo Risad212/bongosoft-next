@@ -10,6 +10,8 @@ import smm from '../../Media/smm-2.jpg';
 import software2 from '../../Media/software-2.jpg';
 import gonews from '../../Media/gonews (1).jpg';
 import megastar from '../../Media/megastar.jpg';
+/*--- import all images End ----*/
+import { AnimatePresence, motion } from "framer-motion"
 
 const Portfolio = () => {
     const storge = [
@@ -73,16 +75,16 @@ const Portfolio = () => {
     ]
     const [filter, setFilter] = useState(storge)
 
-   const filterData = (key) => {
-      const getData = storge.filter((elem) => {
-          return elem.key === key;
-      })
-      if(key === 'all'){
-        setFilter(storge)
-      }else{
-        setFilter(getData)
-      }
-   }
+    const filterData = (key) => {
+        const getData = storge.filter((elem) => {
+            return elem.key === key;
+        })
+        if (key === 'all') {
+            setFilter(storge)
+        } else {
+            setFilter(getData)
+        }
+    }
     return (
         <div className={portfolio.portfolio}>
             <div className="container">
@@ -113,34 +115,38 @@ const Portfolio = () => {
                 </div>
                 {/*-------- Filter Data -----*/}
                 <div className={portfolio.portfolio_item_wrapper}>
-                    <ul className={portfolio.grid_filter}>
-                        {
-                            filter.map((elem) => {
-                                return (
-                                    <>
-                                     <li>
-                                            <div className={portfolio.single_gallery_item}>
-                                                <a data-target="#works_details" data-toggle="modal" href="#">
-                                                    <Image className="img-fluid" src={elem.img} alt={elem?.altTag} />
-                                                    {/* -- Single gallery Item hover caption -- */}
-                                                    <div className={portfolio.hover_overlay}>
-                                                        <div className={portfolio.table}>
-                                                            <div className={portfolio.table_cell}>
-                                                                <div className={portfolio.gallery_info}>
-                                                                    <h5>{elem.title}</h5>
-                                                                    <p>{elem.disc}</p>
+                    <AnimatePresence>
+                        <motion.div animated={{opacity: 1}} initial={{opacity: 0}}>
+                            <ul className={portfolio.grid_filter}>
+                                {
+                                    filter.map((elem) => {
+                                        return (
+                                            <>
+                                                <li>
+                                                    <div className={portfolio.single_gallery_item}>
+                                                        <a data-target="#works_details" data-toggle="modal" href="#">
+                                                            <Image className="img-fluid" src={elem.img} alt={elem?.altTag} />
+                                                            {/* -- Single gallery Item hover caption -- */}
+                                                            <div className={portfolio.hover_overlay}>
+                                                                <div className={portfolio.table}>
+                                                                    <div className={portfolio.table_cell}>
+                                                                        <div className={portfolio.gallery_info}>
+                                                                            <h5>{elem.title}</h5>
+                                                                            <p>{elem.disc}</p>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </>
-                                )
-                            })
-                        }
-                    </ul>
+                                                </li>
+                                            </>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </div>
         </div>
