@@ -2,10 +2,10 @@
     display: inline-block;
     margin-top: 60px;
 }
-.headingTitle{
+.heading_title{
     padding-bottom: 40px;
 }
-.headingTitle h2{
+.heading_title h2{
     position: relative;
     display: inline-block;
     margin-bottom: 0;
@@ -111,4 +111,10 @@
     line-height: 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+    .heading_title h2{
+        font-size: 35px;
+     }
 }

@@ -253,4 +253,7 @@
       padding-top: 30px;
       padding-bottom: 30px;
   }
+  .heading_title h2{
+    font-size: 35px;
+ }
 }

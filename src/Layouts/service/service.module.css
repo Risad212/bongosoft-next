@@ -4,6 +4,16 @@
 .heading_title{
     padding-bottom: 40px;
 }
+.heading_title h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
 .box {
     display: flex;
     width: 15%;
@@ -230,4 +240,11 @@
     grid-template-rows: repeat(7, 1fr);
     grid-template-columns: repeat(1, 1fr);
 }
+.web_design{
+   grid-row: span 1;
 }
+.heading_title h2{
+   font-size: 35px;
+}
+}
+

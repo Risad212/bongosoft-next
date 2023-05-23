@@ -9,7 +9,7 @@ const OurWork = () => {
         <>
             <div className="container">
                 <div className={ourwork.containerAbout}>
-                    <div className={`${ourwork.headingTitle} text-center`}>
+                    <div className={`${ourwork.heading_title} text-center`}>
                         <h2> How We Work ? </h2>
                         <div className={ourwork.box}>
                             <div className={`${ourwork.boxSm} ${ourwork.red}`}></div>

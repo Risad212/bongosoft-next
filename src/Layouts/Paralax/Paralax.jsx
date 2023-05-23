@@ -6,6 +6,7 @@ const Paralax = () => {
         <>
             <div className={paralax.main}>
                 <div className={paralax.overlay}>
+                    <div className="container">
                     <div className={paralax.parallaxText}>
                         <h3>Let's talk about what we can build together</h3>
                         <p>Whatever may be your requirement - be it a simple website design, a complex software or application development, <br />
@@ -14,6 +15,7 @@ const Paralax = () => {
                         <div className={`${paralax.btnQuote} m-auto col-md-5`}>
                             <a href="contact.php" className="btn-contact-us" id={paralax.btn}>Contact us now for a free quote!</a>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
