@@ -14,11 +14,11 @@ const Counter = () => {
             <section id="counter" className={counter.counter_section}>
                 <div className="overlay">
                     <div className="container">
-                        <div className="counter-wrapper">
+                        <div className={counter.counter_wrapper}>
                             <div className="row">
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
-                                    <span>191</span>
+                                    <span className="counter">191</span>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}></div>
                                         <div className={counter.counter_img}><Image src={Happy} alt="img"/></div>
