@@ -230,3 +230,27 @@
 .btn_date_picker:hover{
   border: 1px solid #188747;
 }
+
+/*----------- portfolio -------------*/
+@media screen and (max-width: 1241px) {
+  .grid_filter{
+    grid-template-columns: repeat(3,1fr);
+   }
+}
+@media screen and (max-width: 992px){
+  .grid_filter{
+    grid-template-columns: repeat(2,1fr);
+   }
+}
+@media screen and (max-width: 768px){
+  .grid_filter{
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+
+@media only screen and (max-width: 767px){
+  .portfolio {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+}

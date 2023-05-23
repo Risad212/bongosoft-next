@@ -24,8 +24,8 @@ import hilton from '../../Media/hilton.jpg';
 const testimonial = () => {
     const [slider, setSlider] = useState([
         { img: jagoron, link: 'https://www.drneem.com/' },
-        { img: women,link: 'https://www.drneem.com/' },
-        { img: TnNews,link: 'https://www.drneem.com/' },
+        { img: women, link: 'https://www.drneem.com/' },
+        { img: TnNews, link: 'https://www.drneem.com/' },
         { img: Mega, link: 'https://www.drneem.com/' },
         { img: DrNeem, link: 'https://www.drneem.com/' },
         { img: powereng, link: 'https://www.drneem.com/' },
@@ -68,18 +68,42 @@ const testimonial = () => {
         speed: 1000,
         autoplaySpeed: 2000,
         prevArrow: <SamplePrevArrow />,
-        nextArrow: <SampleNextArrow />
+        nextArrow: <SampleNextArrow />,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+          ]
     };
 
 
- 
+
 
     return (
         <>
             <section id="clients" class={review.clients_section}>
                 <div class="container">
                     <div class={`${review.heading_title} client-title text-center`}>
-                        <h2> Our Valuable Clients </h2>
+                        <h2>Our Valuable Clients</h2>
                         <div className="box">
                             <div className="box-sm red"></div>
                             <div className="box-sm orange"></div>
