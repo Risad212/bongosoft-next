@@ -71,22 +71,15 @@ const testimonial = () => {
         nextArrow: <SampleNextArrow />,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 992,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
               }
             },
             {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-              }
-            },
-            {
-                breakpoint: 500,
+                breakpoint: 480,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1
@@ -122,7 +115,7 @@ const testimonial = () => {
                                             <div className={`${review.clients_member} item`}>
                                                 <a href={elem.link} target="_blank">
                                                     <div class={review.clients_photo}>
-                                                        <Image className="img-fluid" src={elem.img} alt="logo" />
+                                                        <Image className="img-fluid w-100" src={elem.img} alt="logo" />
                                                     </div>
                                                 </a>
                                             </div>
