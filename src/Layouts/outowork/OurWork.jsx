@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ourwork from './ourwork.module.css';
 import res from '../../Media/res.png'
 import dev from '../../Media/dev.png'
 import imp from '../../Media/imp.png'
 import Image from 'next/image';
+/*---------- Aos -------------*/
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const OurWork = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <>
             <div className="container">
                 <div className={ourwork.containerAbout}>
                     <div className={`${ourwork.heading_title} text-center`}>
-                        <h2> How We Work ? </h2>
-                        <div className={ourwork.box}>
+                         <div 
+                            data-aos="fade-down" 
+                            data-aos-once="false"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                          >
+                            <h2> How We Work ? </h2>
+                         </div>
+                        <div className={ourwork.box}
+                            data-aos="fade-left" 
+                            data-aos-once="false"
+                            data-aos-delay="1200"
+                            data-aos-duration="1000"
+                          >
                             <div className={`${ourwork.boxSm} ${ourwork.red}`}></div>
                             <div className={`${ourwork.boxSm} ${ourwork.orange}`}></div>
                             <div className={`${ourwork.boxSm} ${ourwork.yellow}`}></div>
@@ -21,7 +40,12 @@ const OurWork = () => {
                         </div>
                     </div>
                     <div className={`row ${ourwork.sub_about}`}>
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-4 text-center"
+                             data-aos="fade-right" 
+                             data-aos-once="false"
+                             data-aos-delay="1200"
+                             data-aos-duration="500"
+                          >
                             <div className={`${ourwork.block} mb-5`}>
                                 <div className={ourwork.block_border}>
                                     <div className={ourwork.icon_box}>
@@ -34,7 +58,12 @@ const OurWork = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-4 text-center"
+                             data-aos="fade-up" 
+                             data-aos-once="false"
+                             data-aos-delay="900"
+                             data-aos-duration="500"
+                          >
                             <div className={`${ourwork.block} mb-5`}>
                                 <div className={ourwork.block_border}>
                                     <div className={ourwork.icon_box}>
@@ -47,7 +76,12 @@ const OurWork = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-4 text-center"
+                            data-aos="fade-left" 
+                            data-aos-once="false"
+                            data-aos-delay="1300"
+                            data-aos-duration="500"
+                          >
                             <div className={`${ourwork.block} mb-5`}>
                                 <div className={ourwork.block_border}>
                                     <div className={ourwork.icon_box}>
