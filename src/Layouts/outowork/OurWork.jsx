@@ -19,7 +19,7 @@ const OurWork = () => {
                     <div className={`${ourwork.heading_title} text-center`}>
                          <div 
                             data-aos="fade-down" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="500"
                             data-aos-duration="1000"
                           >
@@ -27,7 +27,7 @@ const OurWork = () => {
                          </div>
                         <div className={ourwork.box}
                             data-aos="fade-left" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="1200"
                             data-aos-duration="1000"
                           >
@@ -42,7 +42,7 @@ const OurWork = () => {
                     <div className={`row ${ourwork.sub_about}`}>
                         <div className="col-md-4 text-center"
                              data-aos="fade-right" 
-                             data-aos-once="false"
+                             data-aos-once="true"
                              data-aos-delay="1200"
                              data-aos-duration="500"
                           >
@@ -60,7 +60,7 @@ const OurWork = () => {
                         </div>
                         <div className="col-md-4 text-center"
                              data-aos="fade-up" 
-                             data-aos-once="false"
+                             data-aos-once="true"
                              data-aos-delay="900"
                              data-aos-duration="500"
                           >
@@ -78,7 +78,7 @@ const OurWork = () => {
                         </div>
                         <div className="col-md-4 text-center"
                             data-aos="fade-left" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="1300"
                             data-aos-duration="500"
                           >

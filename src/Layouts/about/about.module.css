@@ -1,15 +1,18 @@
-.wrapper{
+.wrapper {
     padding-bottom: 50px;
 }
-.about_content_2{
+
+.about_content_2 {
     margin-top: 10px;
 }
-.about_content_2 h3{
+
+.about_content_2 h3 {
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
 }
-.about_details p{
+
+.about_details p {
     color: #000000;
     font-size: 15px;
     line-height: 26px;
@@ -18,6 +21,7 @@
     font-family: 'Ubuntu', sans-serif;
     text-align: justify;
 }
+
 .about_section_ul {
     font-size: 15px;
     color: #000000;
@@ -26,13 +30,16 @@
     padding-bottom: 15px !important;
     text-align: justify;
 }
+
 .about_section_ul li {
     list-style: none;
     line-height: 26px;
 }
+
 .about_section_ul strong {
     font-family: 'Nunito Sans', sans-serif;
 }
+
 .about_content_2 .btn_start_project {
     color: #fff;
     position: relative;
@@ -44,20 +51,40 @@
     letter-spacing: 0.50px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    animation-name: swing-new;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    transform-origin: top center;
 }
-.req_link{
+
+.req_link {
     display: block;
 }
-.req_link_hover{
+
+.req_link_hover {
     display: none;
 }
-.about_content_2 .btn_start_project:hover .req_link{
+
+.about_content_2 .btn_start_project:hover .req_link {
     display: none;
 }
-.about_content_2 .btn_start_project:hover .req_link_hover{
+
+.about_content_2 .btn_start_project:hover .req_link_hover {
     display: block;
 }
-.des_res{
+
+.des_res {
     margin: 0 auto;
     position: relative;
     padding: 0 25px;
@@ -75,7 +102,7 @@
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 7s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear(1,0,0,1);
+    -webkit-animation-timing-function: linear(1, 0, 0, 1);
     -moz-animation-duration: 10s;
     -moz-animation-delay: 7s;
     -moz-animation-iteration-count: infinite;
@@ -85,13 +112,15 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     background-image: url(../../Media/software-slider.png);
-    background-position: 0,0;
+    background-position: 0, 0;
 }
-.dev2_an{
+
+.dev2_an {
     position: absolute;
     right: 28%;
     top: 1%;
 }
+
 .bubbling_dev_icons_vert3 {
     -webkit-animation-name: bubblinger-inverse;
     -moz-animation-name: bubblinger-inverse;
@@ -104,22 +133,24 @@
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 5s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     -moz-animation-duration: 10s;
     -moz-animation-delay: 5s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: cubic-bezier(1,0,0,1);
+    -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     animation-duration: 10s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
     background-image: url(../../Media/green-circle-icons-min.png);
-  }
+}
+
 .dev1_an {
     position: absolute;
     right: 9%;
     top: 31%;
 }
+
 .bubbling_dev_icons_vert_seo {
     -webkit-animation-name: bubblinger-inverse;
     -moz-animation-name: bubblinger-inverse;
@@ -132,18 +163,19 @@
     -webkit-animation-duration: 12s;
     -webkit-animation-delay: 4s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     -moz-animation-duration: 12s;
     -moz-animation-delay: 4s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: cubic-bezier(1,0,0,1);
+    -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     animation-duration: 12s;
     animation-delay: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
     background-image: url(../../Media/seo.png);
-  }
-  .dev1_seo{
+}
+
+.dev1_seo {
     position: absolute;
     right: 16%;
     top: 64%;
@@ -161,53 +193,132 @@
     -webkit-animation-duration: 12s;
     -webkit-animation-delay: 7s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     -moz-animation-duration: 12s;
     -moz-animation-delay: 7s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: cubic-bezier(1,0,0,1);
+    -moz-animation-timing-function: cubic-bezier(1, 0, 0, 1);
     animation-duration: 12s;
     animation-delay: 7s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
     background-image: url(../../Media/graphic.png);
-  }
-  .dev1_graphic {
+}
+
+.dev1_graphic {
     position: absolute;
     right: 53%;
     bottom: 1%;
-  }
+}
+
 @keyframes bubblinger-inverse {
     0% {
         background-position: 0 0
     }
+
     16.6% {
         background-position: 100px 0
     }
+
     33% {
         background-position: 100px 0
     }
+
     49% {
         background-position: 200px 0
     }
+
     65% {
         background-position: 200px 0
     }
+
     81% {
         background-position: 300px 0
     }
+
     100% {
         background-position: 300px 0
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .about_image{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about_image {
         display: none;
     }
 }
-@media only screen and (max-width: 767px){
-    .about_image{
+
+@media only screen and (max-width: 767px) {
+    .about_image {
         display: none;
+    }
+}
+
+/*------- button animation -----------*/
+@keyframes swing-new {
+    0% {
+        transform: rotate3d(0, 0, 1, 3deg);
+    }
+
+    1% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    2% {
+        transform: rotate3d(0, 0, 1, -3deg);
+    }
+
+    3% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    4% {
+        transform: rotate3d(0, 0, 1, 3deg);
+    }
+
+    5% {
+        transform: rotate3d(0, 0, 1, -3deg);
+    }
+
+    6% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    7% {
+        transform: rotate3d(0, 0, 1, 3deg);
+    }
+
+    8% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    9% {
+        transform: rotate3d(0, 0, 1, -3deg);
+    }
+
+    10% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    11% {
+        transform: rotate3d(0, 0, 1, 3deg);
+    }
+
+    12% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    13% {
+        transform: rotate3d(0, 0, 1, -3deg);
+    }
+
+    14% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    15%,
+    90% {}
+
+    to {
+        transform: rotate3d(0, 0, 1, 0deg);
     }
 }

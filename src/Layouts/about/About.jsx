@@ -10,7 +10,12 @@ const About = () => {
                 <div className="container">
                     <div class="row new-about">
                         <div class="col-md-12 col-sm-12 col-lg-7">
-                            <div class={about.about_content_2}>
+                            <div class={about.about_content_2} 
+                                data-aos="fade-right" 
+                                data-aos-once="true"
+                                data-aos-delay="300"
+                                data-aos-duration="800"
+                              >
                                 <h3>Why Choose us?</h3>
                                 <div class={`${about.about_details}`}>
                                     <p>We are creative, innovators, and designers who are vastly experienced in Website Design &amp; Development, SEO, Graphics Design, Content Marketing, and Social Media Marketing. If you are looking for any service that can satisfy you, then you are in the right place. These are some reason, why you love to work with us. </p>
@@ -26,7 +31,12 @@ const About = () => {
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12 col-lg-5">
-                            <div class={`${about.about_image} new_image_new`}>
+                            <div class={`${about.about_image} new_image_new`}
+                                data-aos="fade-left" 
+                                data-aos-once="true"
+                                data-aos-delay="300"
+                                data-aos-duration="800" 
+                            >
                                 <div class={about.des_res}>
                                     <Image src={aboutImg} title="website development company India" />
                                     <div class={`${about.bubbling_dev_icons_vert4} ${about.dev2_an}`}></div>

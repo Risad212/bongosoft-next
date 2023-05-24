@@ -20,8 +20,18 @@ const Service = () => {
             <section className={service.service_2}>
                 <div className="container">
                     <div className={`${service.heading_title} text-center`}>
-                        <h2> Our Services </h2>
-                        <div className={service.box}>
+                        <h2
+                           data-aos="fade-down" 
+                           data-aos-once="false"
+                           data-aos-delay="500"
+                           data-aos-duration="1000"
+                         > Our Services </h2>
+                        <div className={service.box}
+                           data-aos="fade-left" 
+                           data-aos-once="false"
+                           data-aos-delay="800"
+                           data-aos-duration="1000"
+                          >
                             <div class={`${service.box_sm} ${service.red}`}></div>
                             <div class={`${service.box_sm} ${service.orange}`}></div>
                             <div class={`${service.box_sm} ${service.yellow}`}></div>
@@ -31,7 +41,12 @@ const Service = () => {
                         </div>
                     </div>
                     <div className={service.service_grid}>
-                        <div class={`${service.service_item} ${service.software}`}>
+                        <div class={`${service.service_item} ${service.software}`}
+                             data-aos="fade-right" 
+                             data-aos-once="false"
+                             data-aos-delay="1000"
+                             data-aos-duration="1200"
+                          >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>

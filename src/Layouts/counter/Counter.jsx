@@ -20,32 +20,68 @@ const Counter = () => {
                                     <h3>Happy Clients</h3>
                                     <span className="counter">191</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}></div>
-                                        <div className={counter.counter_img}><Image src={Happy} alt="img"/></div>
+                                        <div className={counter.counter_circle}
+                                           data-aos="fade-down" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                         ></div>
+                                        <div className={counter.counter_img}
+                                           data-aos="fade-up" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                           data-aos-delay="200"
+                                         ><Image src={Happy} alt="img"/></div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Complete Projects</h3>
                                     <span className="counter">350</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}></div>
-                                        <div className={counter.counter_img}><Image src={Complete} alt="img" /></div>
+                                        <div className={counter.counter_circle}
+                                            data-aos="fade-down" 
+                                            data-aos-once="false"
+                                            data-aos-duration="1000"
+                                         ></div>
+                                        <div className={counter.counter_img}
+                                           data-aos="fade-up" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                           data-aos-delay="400"
+                                         ><Image src={Complete} alt="img" /></div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Cup Of Coffee</h3>
                                     <span className="counter">650</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}></div>
-                                        <div className={counter.counter_img}><Image src={Tea} /></div>
+                                        <div className={counter.counter_circle}
+                                            data-aos="fade-down" 
+                                            data-aos-once="false"
+                                            data-aos-duration="1000"
+                                         ></div>
+                                        <div className={counter.counter_img}
+                                           data-aos="fade-up" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                           data-aos-delay="600"
+                                         ><Image src={Tea} /></div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Free Resource</h3>
                                     <span className="counter">6</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}></div>
-                                        <div className={counter.counter_img}><Image src={Free} alt="img" /></div>
+                                        <div className={counter.counter_circle}
+                                           data-aos="fade-down" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                         ></div>
+                                        <div className={counter.counter_img}
+                                           data-aos="fade-up" 
+                                           data-aos-once="false"
+                                           data-aos-duration="1000"
+                                           data-aos-delay="800"
+                                         ><Image src={Free} alt="img" /></div>
                                     </div>
                                 </div>
                             </div>
