@@ -6,7 +6,7 @@ import Happy from '../../Media/happy.png'
 import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
-import CountUp from 'react-countup';
+
 
 
 const Counter = () => {
@@ -19,7 +19,8 @@ const Counter = () => {
                             <div className="row">
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
-                                    <CountUp  start={0} end={100} delay={0} />
+                                    <span>191</span>
+                                    <div class="counter">1,123,456 downloads</div>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 
