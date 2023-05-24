@@ -8,7 +8,12 @@ const FooterList = () => {
         <>
             <div class="container">
                 <div class={`${footerlink.footer_links} row`}>
-                    <div class={`col-sm-12 col-md-6 col-lg-2`} style={{visibility: "visible;"}}>
+                    <div class={`col-sm-12 col-md-6 col-lg-2`} 
+                         data-aos="fade-down" 
+                         data-aos-once="false"
+                         data-aos-delay="800"
+                         data-aos-duration="500"
+                     >
                         <h4>Navigation</h4>
                         <ul class={footerlink.list_footer_menu}>
                             <li><a href="index.php">Home</a></li>
@@ -19,7 +24,12 @@ const FooterList = () => {
                             <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 links-02 wow fadeInDown" data-wow-duration=".4s" data-wow-delay=".8s" style={{visibility: "visible;"}}>
+                    <div class="col-sm-12 col-md-6 col-lg-3 links-02"
+                        data-aos="fade-down" 
+                        data-aos-once="false"
+                        data-aos-delay="1000"
+                        data-aos-duration="500"
+                      >
                         <h4>Services</h4>
                         <ul class={footerlink.list_footer_menu}>
                             <li><a href="software-development.php">Software Development</a></li>
@@ -31,7 +41,12 @@ const FooterList = () => {
                             <li><a href="contact.php">Support</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3" data-wow-duration=".4s" data-wow-delay="1.2s" style={{visibility: "visible;"}}>
+                    <div class="col-sm-12 col-md-6 col-lg-3"
+                       data-aos="fade-down" 
+                       data-aos-once="false"
+                       data-aos-delay="1200"
+                       data-aos-duration="500"
+                     >
                         <h4>Contact Us</h4>
                         <div class="footer-widget-footer">
                             <form method="post" action="php/send-contact.php">
@@ -60,7 +75,12 @@ const FooterList = () => {
                             </form>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4"style={{visibility: "visible;"}}>
+                    <div class="col-sm-12 col-md-6 col-lg-4"
+                       data-aos="fade-down" 
+                       data-aos-once="false"
+                       data-aos-delay="1400"
+                       data-aos-duration="500"
+                     >
                         <h4>Newsletter</h4>
                         <div class={`${footerlink.newsletter_box} ${footerlink.clearfix}`}>
                             <form action="php/subscribe.php" method="post" class="validate">

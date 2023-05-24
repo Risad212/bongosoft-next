@@ -89,8 +89,18 @@ const Portfolio = () => {
         <div className={portfolio.portfolio}>
             <div className="container">
                 <div class={`${portfolio.heading_title} client-title text-center`}>
-                    <h2>Portfolio</h2>
-                    <div className="box">
+                    <h2
+                     data-aos="fade-down" 
+                     data-aos-once="false"
+                     data-aos-delay="500"
+                     data-aos-duration="1000"
+                     >Portfolio</h2>
+                    <div className="box"
+                      data-aos="fade-left" 
+                      data-aos-once="false"
+                      data-aos-delay="800"
+                      data-aos-duration="1000"
+                     >
                         <div className="box-sm red"></div>
                         <div className="box-sm orange"></div>
                         <div className="box-sm yellow "></div>
@@ -102,7 +112,12 @@ const Portfolio = () => {
                 {/*----- filter ------*/}
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className={`${portfolio.portfolio_filter} clearfix`}>
+                        <div className={`${portfolio.portfolio_filter} clearfix`}
+                           data-aos="fade-right" 
+                           data-aos-once="false"
+                           data-aos-delay="1000"
+                           data-aos-duration="800"
+                          >
                             <ul class="text-center">
                                 <li><a href="javascript:void(0)" onClick={() => filterData('all')}>All</a></li>
                                 <li><a href="javascript:void(0)" onClick={() => filterData('design and development')}>Design &amp; Development</a></li>
@@ -120,13 +135,17 @@ const Portfolio = () => {
                             filter.map((elem) => {
                                 return (
                                     <>
-                                        <li>
+                                        <li
+                                          data-aos="fade-down" 
+                                          data-aos-once="false"
+                                          data-aos-delay="800"
+                                          data-aos-duration="1000"
+                                         >
                                             <AnimatePresence>
                                                 <motion.div
                                                     layout
-                                                    initial={{ opacity: 0 }}
-                                                    animate={{ opacity: 1 }}
-                                                    // exit={{ opacity: 0}}
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
                                                     transition={{ duration: .5 }}
                                                     key={elem.key}
                                                     className={portfolio.single_gallery_item}>
@@ -155,7 +174,12 @@ const Portfolio = () => {
                 </div>
                 {/*----- button row ------*/}
                 <div class="row">
-                    <div class="text-center m-auto">
+                    <div class="text-center m-auto"
+                       data-aos="fade-left" 
+                       data-aos-once="false"
+                       data-aos-delay="800"
+                       data-aos-duration="1000"
+                     >
                         <a class={`btn ${portfolio.btn_date_picker}`} href="#">View All</a>
                     </div>
                 </div>
