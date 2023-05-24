@@ -6,6 +6,7 @@ import Counter from '@/Layouts/counter/Counter'
 import Service from '@/Layouts/service/Service'
 import Testimonial from '@/Layouts/Testimonial/Testimonial'
 import Portfolio from '@/Layouts/portfolio/Portfolio'
+import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <Service />
       <Portfolio />
       <Testimonial />
+      <ScrollTopButton />
     </>
   )
 }

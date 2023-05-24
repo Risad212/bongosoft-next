@@ -1,0 +1,26 @@
+.btn {
+    background: #1da255  none repeat scroll 0 0;
+    border: 1px solid #1da255;
+    bottom: 90px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    line-height: 35px;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+    transition: all .9s ease-in;
+}
+.btn svg{
+    width: 19px;
+}
+.btn svg path{
+    stroke-width: 10;
+}
+.btn:hover{
+    background: #ffffffff;
+    color: #000000;
+}

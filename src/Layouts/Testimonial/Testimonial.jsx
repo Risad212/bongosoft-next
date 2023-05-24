@@ -93,9 +93,9 @@ const testimonial = () => {
 
     return (
         <>
-            <section id="clients" class={review.clients_section}>
-                <div class="container">
-                    <div class={`${review.heading_title} client-title text-center`}>
+            <section id="clients" className={review.clients_section}>
+                <div className="container">
+                    <div className={`${review.heading_title} client-title text-center`}>
                         <h2
                           data-aos="fade-down" 
                           data-aos-once="true"
@@ -116,10 +116,10 @@ const testimonial = () => {
                             <div className="box-sm purple"></div>
                         </div>
                     </div>
-                    <div class={`row ${review.clients_sub}`}>
+                    <div className={`row ${review.clients_sub}`}>
                         <Slider {...settings}>
                             {
-                                slider.map((elem) => {
+                                slider.map((elem,id) => {
                                     return (
                                         <>
                                             <div className={`${review.clients_member} item`} 
@@ -127,9 +127,10 @@ const testimonial = () => {
                                                data-aos-once="true"
                                                data-aos-delay="700"
                                                data-aos-duration="1000"
+                                               key={elem.id}
                                               >
                                                 <a href={elem.link} target="_blank">
-                                                    <div class={review.clients_photo}>
+                                                    <div className={review.clients_photo}>
                                                         <Image className="img-fluid w-100" src={elem.img} alt="logo" />
                                                     </div>
                                                 </a>

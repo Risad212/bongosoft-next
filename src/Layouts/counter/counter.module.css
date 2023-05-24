@@ -36,6 +36,7 @@
 }
 .counter_effects {
     position: relative;
+    transform: all .5s ease-in;
     margin-top: 90px;
 }
 .counter_circle{
@@ -74,6 +75,7 @@
     border: 1px solid #fbfbfb;
     background: transparent;
     position: relative;
+   
     top: 0;
     -moz-transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;

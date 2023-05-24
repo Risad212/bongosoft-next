@@ -14,7 +14,6 @@ import domain from '../../Media/domain.png';
 import support from '../../Media/suppport.png';
 
 const Service = () => {
-    console.log(softoware);
     return (
         <>
             <section className={service.service_2}>
