@@ -9,7 +9,7 @@ const Paralax = () => {
                     <div className="container">
                         <div className={paralax.parallaxText} 
                            data-aos="fade-down" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="100"
                            data-aos-duration="800"
                           >

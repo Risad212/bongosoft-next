@@ -22,13 +22,13 @@ const Service = () => {
                     <div className={`${service.heading_title} text-center`}>
                         <h2
                            data-aos="fade-down" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="500"
                            data-aos-duration="1000"
                          > Our Services </h2>
                         <div className={service.box}
                            data-aos="fade-left" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="800"
                            data-aos-duration="1000"
                           >
@@ -43,7 +43,7 @@ const Service = () => {
                     <div className={service.service_grid}>
                         <div class={`${service.service_item} ${service.software}`}
                              data-aos="fade-right" 
-                             data-aos-once="false"
+                             data-aos-once="true"
                              data-aos-delay="1400"
                              data-aos-duration="500"
                           >
@@ -68,7 +68,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.web_design}`}
                            data-aos="fade-zoom-in" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="800"
                            data-aos-duration="1000"
                           >
@@ -93,7 +93,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.web_development}`}
                             data-aos="fade-down" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="1200"
                             data-aos-duration="500"
                           >
@@ -118,7 +118,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.graphic}`}
                             data-aos="fade-left" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="1600"
                             data-aos-duration="500"
                          >
@@ -143,7 +143,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.seo}`}
                            data-aos="fade-right" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="1500"
                            data-aos-duration="500"
                          >
@@ -168,7 +168,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.domain}`}
                              data-aos="fade-up" 
-                             data-aos-once="false"
+                             data-aos-once="true"
                              data-aos-delay="1200"
                              data-aos-duration="500"
                           >
@@ -186,7 +186,7 @@ const Service = () => {
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.support}`}
                             data-aos="fade-left" 
-                            data-aos-once="false"
+                            data-aos-once="true"
                             data-aos-delay="1700"
                             data-aos-duration="500"
                           >

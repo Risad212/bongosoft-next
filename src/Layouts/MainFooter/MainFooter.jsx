@@ -13,8 +13,8 @@ const MainFooter = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-3"
                        data-aos="fade-right" 
-                       data-aos-once="false"
-                       data-aos-delay="900"
+                       data-aos-once="true"
+                       data-aos-delay="1100"
                        data-aos-duration="400"
                      >
                         <div className={mainfooter.footer_widget}>
@@ -24,8 +24,8 @@ const MainFooter = () => {
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-3"
                        data-aos="fade-right" 
-                       data-aos-once="false"
-                       data-aos-delay="1100"
+                       data-aos-once="true"
+                       data-aos-delay="1300"
                        data-aos-duration="400"
                      >
                         <div className={`${mainfooter.footerWidget} ${mainfooter.recent_post}`}>
@@ -55,9 +55,9 @@ const MainFooter = () => {
 
                     <div className="col-sm-12 col-md-6 col-lg-3" 
                          data-aos="fade-left" 
-                         data-aos-once="false"
-                         data-aos-delay="1400"
-                         data-aos-duration="400"
+                         data-aos-once="true"
+                         data-aos-delay="900"
+                         data-aos-duration="500"
                      >
                         <div className={mainfooter.footer_widget}>
                             <h3 className={mainfooter.widgettitle}>Bongosoft Ltd.</h3>
@@ -70,15 +70,14 @@ const MainFooter = () => {
                                 </li>
                                 <li><FontAwesomeIcon icon={faPhone}/> +8801911-115231</li>
                                 <li><FontAwesomeIcon icon={faPhone}/> +8801707-115231</li>
-                                <li><FontAwesomeIcon icon={faEnvelope}/>
-                                    info@bongosoftbd.com</li>
+                                <li><FontAwesomeIcon icon={faEnvelope}/>info@bongosoftbd.com</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="col-sm-12 col-md-6 col-lg-3"
                          data-aos="fade-left" 
-                         data-aos-once="false"
+                         data-aos-once="true"
                          data-aos-delay="1600"
                          data-aos-duration="400"
                      >

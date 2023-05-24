@@ -175,8 +175,8 @@ const Portfolio = () => {
                 {/*----- button row ------*/}
                 <div class="row">
                     <div class="text-center m-auto"
-                       data-aos="fade-left" 
-                       data-aos-once="false"
+                       data-aos="fade-up" 
+                       data-aos-once="true"
                        data-aos-delay="800"
                        data-aos-duration="1000"
                      >

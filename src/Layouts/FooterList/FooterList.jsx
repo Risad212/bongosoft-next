@@ -10,7 +10,7 @@ const FooterList = () => {
                 <div class={`${footerlink.footer_links} row`}>
                     <div class={`col-sm-12 col-md-6 col-lg-2`} 
                          data-aos="fade-down" 
-                         data-aos-once="false"
+                         data-aos-once="true"
                          data-aos-delay="800"
                          data-aos-duration="500"
                      >
@@ -26,7 +26,7 @@ const FooterList = () => {
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 links-02"
                         data-aos="fade-down" 
-                        data-aos-once="false"
+                        data-aos-once="true"
                         data-aos-delay="1000"
                         data-aos-duration="500"
                       >
@@ -43,7 +43,7 @@ const FooterList = () => {
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3"
                        data-aos="fade-down" 
-                       data-aos-once="false"
+                       data-aos-once="true"
                        data-aos-delay="1200"
                        data-aos-duration="500"
                      >
@@ -77,7 +77,7 @@ const FooterList = () => {
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4"
                        data-aos="fade-down" 
-                       data-aos-once="false"
+                       data-aos-once="true"
                        data-aos-delay="1400"
                        data-aos-duration="500"
                      >
