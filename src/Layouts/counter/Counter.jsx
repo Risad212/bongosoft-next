@@ -20,7 +20,6 @@ const Counter = () => {
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
                                     <span>191</span>
-                                    <div class="counter">1,123,456 downloads</div>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 
