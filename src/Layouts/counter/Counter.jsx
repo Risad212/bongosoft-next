@@ -1,11 +1,12 @@
 import React from 'react';
 import counter from './counter.module.css';
 import Image from 'next/image';
+/*---- images import ---------*/
 import Happy from '../../Media/happy.png'
 import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
-
+import CountUp from 'react-countup';
 
 
 const Counter = () => {
@@ -18,7 +19,7 @@ const Counter = () => {
                             <div className="row">
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
-                                    <span className="counter">191</span>
+                                    <CountUp  start={0} end={100} delay={0} />
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 
@@ -35,7 +36,7 @@ const Counter = () => {
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Complete Projects</h3>
-                                    <span className="counter">350</span>
+                                    <span>350</span>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                             data-aos="fade-down" 
@@ -52,7 +53,7 @@ const Counter = () => {
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Cup Of Coffee</h3>
-                                    <span className="counter">650</span>
+                                    <span>650</span>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                             data-aos="fade-down" 
@@ -69,7 +70,7 @@ const Counter = () => {
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Free Resource</h3>
-                                    <span className="counter">6</span>
+                                    <span>6</span>
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 

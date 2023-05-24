@@ -29,11 +29,10 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll)
     },[])
 
-
     
    return (
       <>
-         <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0,}: {}}>
+         <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0, transition: 'position 1s ease-in'}: {}}>
             <div className="container">
                <nav>
                   {/*----- LOGO ------*/}
