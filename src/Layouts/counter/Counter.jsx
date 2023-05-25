@@ -23,12 +23,12 @@ const Counter = () => {
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                          ></div>
                                         <div className={counter.counter_img}
                                            data-aos="fade-up" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                            data-aos-delay="200"
                                          ><Image src={Happy} alt="img"/></div>
@@ -40,12 +40,12 @@ const Counter = () => {
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                             data-aos="fade-down" 
-                                            data-aos-once="false"
+                                            data-aos-once="true"
                                             data-aos-duration="1000"
                                          ></div>
                                         <div className={counter.counter_img}
                                            data-aos="fade-up" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                            data-aos-delay="400"
                                          ><Image src={Complete} alt="img" /></div>
@@ -57,12 +57,12 @@ const Counter = () => {
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                             data-aos="fade-down" 
-                                            data-aos-once="false"
+                                            data-aos-once="true"
                                             data-aos-duration="1000"
                                          ></div>
                                         <div className={counter.counter_img}
                                            data-aos="fade-up" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                            data-aos-delay="600"
                                          ><Image src={Tea} /></div>
@@ -74,12 +74,12 @@ const Counter = () => {
                                     <div className={counter.counter_effects}>
                                         <div className={counter.counter_circle}
                                            data-aos="fade-down" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                          ></div>
                                         <div className={counter.counter_img}
                                            data-aos="fade-up" 
-                                           data-aos-once="false"
+                                           data-aos-once="true"
                                            data-aos-duration="1000"
                                            data-aos-delay="800"
                                          ><Image src={Free} alt="img" /></div>

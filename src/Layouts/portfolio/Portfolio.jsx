@@ -91,13 +91,13 @@ const Portfolio = () => {
                 <div class={`${portfolio.heading_title} client-title text-center`}>
                     <h2
                      data-aos="fade-down" 
-                     data-aos-once="false"
+                     data-aos-once="true"
                      data-aos-delay="500"
                      data-aos-duration="1000"
                      >Portfolio</h2>
                     <div className="box"
                       data-aos="fade-left" 
-                      data-aos-once="false"
+                      data-aos-once="true"
                       data-aos-delay="800"
                       data-aos-duration="1000"
                      >
@@ -114,7 +114,7 @@ const Portfolio = () => {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className={`${portfolio.portfolio_filter} clearfix`}
                            data-aos="fade-right" 
-                           data-aos-once="false"
+                           data-aos-once="true"
                            data-aos-delay="1000"
                            data-aos-duration="800"
                           >
@@ -137,7 +137,7 @@ const Portfolio = () => {
                                     <>
                                         <li
                                           data-aos="fade-down" 
-                                          data-aos-once="false"
+                                          data-aos-once="true"
                                           data-aos-delay="800"
                                           data-aos-duration="1000"
                                          >
@@ -175,7 +175,7 @@ const Portfolio = () => {
                 {/*----- button row ------*/}
                 <div class="row">
                     <div class="text-center m-auto"
-                       data-aos="fade-up" 
+                       data-aos="fade-left" 
                        data-aos-once="true"
                        data-aos-delay="800"
                        data-aos-duration="1000"
