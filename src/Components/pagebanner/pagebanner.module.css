@@ -24,7 +24,9 @@
     font-size: 18px;
     font-weight: 700;
     color: #1da255;
-    display: inline-block
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .breadcrumb_list li a {
     color: #fff;
@@ -32,6 +34,7 @@
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
+   
 }
 .breadcrumb_list li:hover a {
     color: #1da255;

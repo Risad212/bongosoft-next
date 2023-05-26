@@ -14,11 +14,13 @@ ul{
     margin: 0 !important;
 }
 
+
+/* @media only screen and (min-width:960px) and (max-width:1240px) {
+
+  .container { width:900px !important; }
+} */
 /*---------- bootstrap container modify ------*/
-.container{
-    width: 1140px !important;
-    max-width: 100%;
-}
+
 
 /*------- swiper style -----*/
 .swiper-button-prev:after{

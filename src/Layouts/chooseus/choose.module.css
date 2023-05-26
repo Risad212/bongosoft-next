@@ -4,6 +4,7 @@
     background: #FFF;
     width: 100%;
     padding: 50px 0 70px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .container::before{
@@ -58,4 +59,37 @@
     position: absolute;
     left: 0;
     top: 0;
+}
+
+/*-------- about content style -------*/
+.about_content{
+    padding: 40px;
+}
+.about_content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 27px;
+}
+.about_content h2 span.tc_1 {
+    color: #6564db;
+}
+.about_content h2 span.tc_2 {
+    color: #19cfa3;
+}
+.about_content p {
+    margin-bottom: 46px;
+}
+.icon {
+    width: 44px;
+    float: left;
+    margin-top: 5px;
+}
+.content_two {
+    overflow: hidden;
+}
+.content_two h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
