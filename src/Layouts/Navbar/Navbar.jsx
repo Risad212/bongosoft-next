@@ -3,7 +3,7 @@ import navbar from './navbar.module.css';
 import Logo from '../../Media/logo.png'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMagnifyingGlass, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = () => {
@@ -107,7 +107,7 @@ const Navbar = () => {
                         <li><a href="#">our work</a></li>
                         <li><a href="#">blog</a></li>
                         <li><a href="#">contact</a></li>
-                        <li><div className={navbar.searchBtn}><FontAwesomeIcon icon={faSearch} /></div></li>
+                        <li><div className={navbar.searchBtn}><FontAwesomeIcon icon={faMagnifyingGlass} /></div></li>
                      </ul>
                   </div>
                   <FontAwesomeIcon icon={navIcon? faXmark: faBars} className={navbar.menuIcon} onClick={(e) => toggleNav()}/>

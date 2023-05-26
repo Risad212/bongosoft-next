@@ -1,0 +1,48 @@
+.banner{
+    padding: 100px 0 100px;
+    background-size: cover;
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url('../../Media/breadcrumb-about.jpg');
+    text-align: center;
+}
+.banner h2{
+    color: #fff;
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.breadcrumb_list li{
+    margin-right: 20px;
+    position: relative;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1da255;
+    display: inline-block
+}
+.breadcrumb_list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.breadcrumb_list li:hover a {
+    color: #1da255;
+}
+.breadcrumb_list li:first-child{
+    padding-left: 15px;
+}
+
+.breadcrumb_list li:first-child::before {
+    bottom: -1px;
+    content: "/";
+    position: absolute;
+    right: -14px;
+}

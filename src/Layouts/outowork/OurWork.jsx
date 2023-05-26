@@ -4,14 +4,8 @@ import res from '../../Media/res.png'
 import dev from '../../Media/dev.png'
 import imp from '../../Media/imp.png'
 import Image from 'next/image';
-/*---------- Aos -------------*/
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const OurWork = () => {
-    useEffect(() => {
-        AOS.init();
-    }, [])
     return (
         <>
             <div className="container">

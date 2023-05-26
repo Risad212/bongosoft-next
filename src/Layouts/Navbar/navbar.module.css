@@ -40,6 +40,7 @@
     padding: 11px 20px;
     font-size: 15px;
     transition: color .3s ease-in-out;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .menuWrapper ul li a:hover{
     color: #1da255;
@@ -91,6 +92,7 @@
     color: #fff;
     font-size: 13px;
     padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .dropdown .dlSubmenu li a:hover{
     color: #fff;
