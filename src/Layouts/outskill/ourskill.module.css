@@ -1,0 +1,89 @@
+.our_skill_2 {
+    padding: 70px 0 60px;
+    background-color: #f5f5f5;
+ }
+ .chart_left_2 h2 {
+   font-size: 20px;
+   text-transform: capitalize;
+   margin-bottom: 0;
+   padding-bottom: 5px;
+   color: #3dcd49;
+   color: #ff5852;
+ }
+ .chart_left_2 h3 {
+   font-size: 40px;
+   line-height: 38px;
+   text-transform: capitalize;
+   font-weight: 700;
+ }
+ .chart_left_2 p {
+   font-size: 16px;
+ }
+ .box_chart{
+     width: 33%;
+     float: left;
+     text-align: center;
+   }
+   .chart {
+     position: relative;
+     width: 120px;
+     height: 110px;
+     margin: 0 auto;
+     text-align: center;
+     font-size:30px;
+     line-height: 125px;
+   }
+   .box_chart canvas {
+     position: absolute;
+     top:0;
+     left:0;
+   }
+ .box_chart p {
+   font-size: 18px;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 700;
+   margin-top: 15px;
+ }
+ 
+ .btn_date_picker_btn {
+   position: relative;
+   z-index: 10;
+   overflow: hidden;
+   transition-duration: 0.50s;
+   background: #1da255;
+   color: white;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   padding: 12px 40px;
+   text-transform: capitalize;
+ }
+ .btn_date_picker_btn::before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: #fff;
+     -webkit-transform: scaleX(0);
+     transform: scaleX(0);
+     -webkit-transform-origin: 50%;
+     transform-origin: 50%;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+     -webkit-transition-duration: .3s;
+     transition-duration: .3s;
+     -webkit-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
+ }
+ .btn_date_picker_btn:hover {
+    border: 1px solid #1da255;
+     color: #1da255;
+ }
+ .btn_date_picker_btn:active::before, .btn-date-picker-btn:focus::before, .btn-date-picker-btn:hover::before {
+     transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+ }
+ 
