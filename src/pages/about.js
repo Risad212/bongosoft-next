@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import Chooseus from '@/Layouts/chooseus/Chooseus';
 import Ourskills from '@/Layouts/outskill/Ourskills';
 import Testimonial from '@/Layouts/Testimonial/Testimonial';
+import Client from '@/Layouts/Client/Client';
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
       <PageBanner txt="about us"/>
       <Chooseus />
       <Ourskills />
+       <Client />
       <Testimonial />
     </>
   )
