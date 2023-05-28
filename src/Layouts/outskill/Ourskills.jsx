@@ -1,6 +1,6 @@
 import React from 'react';
 import skill from './ourskill.module.css';
-import { CircularProgressbar,buildStyles  } from 'react-circular-progressbar';
+import { CircularProgressbar} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Ourskills = () => {
@@ -20,27 +20,27 @@ const Ourskills = () => {
                         <div className="col-md-12 col-lg-7">
                             <div className={skill.chart_right_2}>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart} data-percent="90">90%<canvas height="120" width="120"></canvas></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${90}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>Web Design</p>
                                 </div>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart} data-percent="95">95%<canvas height="120" width="120"></canvas></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${95}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>Web Development</p>
                                 </div>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${60}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${80}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>Software Development</p>
                                 </div>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart} data-percent="85">85%<canvas height="120" width="120"></canvas></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${85}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>Graphic Design</p>
                                 </div>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart} data-percent="73">73%<canvas height="120" width="120"></canvas></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${73}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>App Development</p>
                                 </div>
                                 <div className={skill.box_chart}>
-                                    <div className={skill.chart} data-percent="93">93%<canvas height="120" width="120"></canvas></div>
+                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${93}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
                                     <p>SEO &amp; SMM</p>
                                 </div>
                             </div>
