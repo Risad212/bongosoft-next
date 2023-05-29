@@ -55,29 +55,29 @@ const Client = () => {
                 </div>
                 <div className="row">
                 <Slider {...settings}>
-                    <div class={`testimonial ${client.testimonial_style} col-lg-3 col-md-6`}>
+                <div class={`testimonial ${client.testimonial_style}`}>
                         <div class={client.single_testimonial}>
                             <div class={client.testimonial_author}>
                                 <div class={client.image}>
                                     <Image src={client1} alt="Simanta Prodhan" />
                                 </div>
                                 <div class={`${client.outhor_info} ${client.simanta_review}`}>
-                                    <h4>Simanta Prodhan</h4>
-                                    <p>Editor and Publisher NarayanganjToday </p>
+                                   <h4>Simanta Prodhan</h4>
+                                   <p>Editor and Publisher NarayanganjToday </p>
                                 </div>
                             </div>
                             <div class={client.testimonial_dec}>
-                                <p>I am satisfied with their sincerity and service as a client. I hope, they will become popular in the country, their service and sincerity. Good Luck</p>
+                            <p>I am satisfied with their sincerity and service as a client. I hope, they will become popular in the country, their service and sincerity. Good Luck</p>
                             </div>
                         </div>
                     </div>
-                    <div class={`testimonial ${client.testimonial_style} col-lg-3 col-md-6`}>
+                    <div class={`testimonial ${client.testimonial_style}`}>
                         <div class={client.single_testimonial}>
                             <div class={client.testimonial_author}>
                                 <div class={client.image}>
                                     <Image src={client2} alt="Simanta Prodhan" />
                                 </div>
-                                <div class={`${client.outhor_info} ${client.simanta_review}`}>
+                                <div class={`${client.outhor_info}`}>
                                    <h4>Zakuline Fernandez </h4>
                                     <p>CEO</p>
                                 </div>

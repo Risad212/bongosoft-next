@@ -98,13 +98,13 @@ const testimonial = () => {
                     <div className={`${review.heading_title} client-title text-center`}>
                         <h2
                           data-aos="fade-down" 
-                          data-aos-once="true"
+                          data-aos-once="false"
                           data-aos-delay="500"
                           data-aos-duration="1000"
                          >Our Valuable Clients</h2>
                         <div className="box"
                            data-aos="fade-left" 
-                           data-aos-once="true"
+                           data-aos-once="false"
                            data-aos-delay="800"
                            data-aos-duration="1000"
                          >
