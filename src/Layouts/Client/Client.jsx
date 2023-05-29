@@ -4,9 +4,29 @@ import Image from 'next/image';
 /*----- import client images ------*/
 import client1 from '../../Media/simanta-prodhan.jpg';
 import client2 from '../../Media/outher-01.jpg';
-
+import Slider from "react-slick";
 
 const Client = () => {
+
+    const settings = {
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+          ]
+    };
+
     return (
         <div className={client.container}>
             <div className="container">
@@ -34,6 +54,7 @@ const Client = () => {
                     </div>
                 </div>
                 <div className="row">
+                <Slider {...settings}>
                     <div class={`testimonial ${client.testimonial_style} col-lg-3 col-md-6`}>
                         <div class={client.single_testimonial}>
                             <div class={client.testimonial_author}>
@@ -66,6 +87,7 @@ const Client = () => {
                             </div>
                         </div>
                     </div>
+                    </Slider>
                 </div>
             </div>
         </div>

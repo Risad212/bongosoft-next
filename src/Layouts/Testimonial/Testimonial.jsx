@@ -124,7 +124,7 @@ const testimonial = () => {
                                         <>
                                             <div className={`${review.clients_member} item`} 
                                                data-aos="fade-left" 
-                                               data-aos-once="true"
+                                               data-aos-once="false"
                                                data-aos-delay="700"
                                                data-aos-duration="1000"
                                                key={elem.id}
