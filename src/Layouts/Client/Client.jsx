@@ -4,27 +4,20 @@ import Image from 'next/image';
 /*----- import client images ------*/
 import client1 from '../../Media/simanta-prodhan.jpg';
 import client2 from '../../Media/outher-01.jpg';
-import Slider from "react-slick";
+import Slider from 'react-slick';
+
 
 const Client = () => {
 
     const settings = {
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-              }
-            },
-          ]
+        dots: true,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear"
     };
 
     return (
@@ -54,40 +47,40 @@ const Client = () => {
                     </div>
                 </div>
                 <div className="row">
-                <Slider {...settings}>
-                <div class={`testimonial ${client.testimonial_style}`}>
-                        <div class={client.single_testimonial}>
-                            <div class={client.testimonial_author}>
-                                <div class={client.image}>
-                                    <Image src={client1} alt="Simanta Prodhan" />
+                    <Slider {...settings}>
+                        <div class={`testimonial ${client.testimonial_style}`}>
+                            <div class={client.single_testimonial}>
+                                <div class={client.testimonial_author}>
+                                    <div class={client.image}>
+                                        <Image src={client1} alt="Simanta Prodhan" />
+                                    </div>
+                                    <div class={`${client.outhor_info} ${client.simanta_review}`}>
+                                        <h4>Simanta Prodhan</h4>
+                                        <p>Editor and Publisher NarayanganjToday </p>
+                                    </div>
                                 </div>
-                                <div class={`${client.outhor_info} ${client.simanta_review}`}>
-                                   <h4>Simanta Prodhan</h4>
-                                   <p>Editor and Publisher NarayanganjToday </p>
+                                <div class={client.testimonial_dec}>
+                                    <p>I am satisfied with their sincerity and service as a client. I hope, they will become popular in the country, their service and sincerity. Good Luck</p>
                                 </div>
-                            </div>
-                            <div class={client.testimonial_dec}>
-                            <p>I am satisfied with their sincerity and service as a client. I hope, they will become popular in the country, their service and sincerity. Good Luck</p>
                             </div>
                         </div>
-                    </div>
-                    <div class={`testimonial ${client.testimonial_style}`}>
-                        <div class={client.single_testimonial}>
-                            <div class={client.testimonial_author}>
-                                <div class={client.image}>
-                                    <Image src={client2} alt="Simanta Prodhan" />
+                        <div class={`testimonial ${client.testimonial_style}`}>
+                            <div class={client.single_testimonial}>
+                                <div class={client.testimonial_author}>
+                                    <div class={client.image}>
+                                        <Image src={client2} alt="Simanta Prodhan" />
+                                    </div>
+                                    <div class={`${client.outhor_info}`}>
+                                        <h4>Zakuline Fernandez </h4>
+                                        <p>CEO</p>
+                                    </div>
                                 </div>
-                                <div class={`${client.outhor_info}`}>
-                                   <h4>Zakuline Fernandez </h4>
-                                    <p>CEO</p>
+                                <div class={client.testimonial_dec}>
+                                    <p>Sawny is one of the most popular real estate company all around USA. You can find your dream property or the build erty with us. We always provide importance</p>
                                 </div>
-                            </div>
-                            <div class={client.testimonial_dec}>
-                                <p>Sawny is one of the most popular real estate company all around USA. You can find your dream property or the build erty with us. We always provide importance</p>
                             </div>
                         </div>
-                    </div>
-                 </Slider>
+                    </Slider>
                 </div>
             </div>
         </div>
