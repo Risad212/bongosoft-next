@@ -1,0 +1,8 @@
+.page_text_service{
+    padding: 30px 0;
+}
+.page_text_service p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
