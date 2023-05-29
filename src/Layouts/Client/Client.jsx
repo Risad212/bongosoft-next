@@ -87,7 +87,7 @@ const Client = () => {
                             </div>
                         </div>
                     </div>
-                    </Slider>
+                 </Slider>
                 </div>
             </div>
         </div>
