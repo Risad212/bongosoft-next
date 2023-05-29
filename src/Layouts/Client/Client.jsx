@@ -6,18 +6,16 @@ import client1 from '../../Media/simanta-prodhan.jpg';
 import client2 from '../../Media/outher-01.jpg';
 import Slider from 'react-slick';
 
-
 const Client = () => {
-
     const settings = {
         dots: true,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear"
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
     };
 
     return (
@@ -68,10 +66,10 @@ const Client = () => {
                             <div class={client.single_testimonial}>
                                 <div class={client.testimonial_author}>
                                     <div class={client.image}>
-                                        <Image src={client2} alt="Simanta Prodhan" />
+                                        <Image src={client2} alt="Zakuline Fernandez" />
                                     </div>
                                     <div class={`${client.outhor_info}`}>
-                                        <h4>Zakuline Fernandez </h4>
+                                        <h4>Zakuline Fernandez</h4>
                                         <p>CEO</p>
                                     </div>
                                 </div>

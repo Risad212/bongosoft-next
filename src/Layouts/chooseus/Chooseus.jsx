@@ -15,7 +15,12 @@ const Chooseus = () => {
         <div className={chooseus.container}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5">
+                    <div className="col-lg-5" 
+                       data-aos="fade-right" 
+                       data-aos-once="true"
+                       data-aos-duration="800"
+                       data-aos-delay="500"
+                      >
                         <div class={chooseus.choose_properties}>
                             <span class={chooseus.discount_stryker_2}>Bongosoft Ltd.</span>
                             <div class={chooseus.choose_provide}>
@@ -34,7 +39,12 @@ const Chooseus = () => {
                             </div>
                         </div>
                     </div>
-                    <div class={`${chooseus.about_content} col-lg-7`}>
+                    <div class={`${chooseus.about_content} col-lg-7`}
+                          data-aos="fade-left" 
+                          data-aos-once="true"
+                          data-aos-duration="800"
+                          data-aos-delay="800"
+                      >
                             <h2>Why you <span class={chooseus.tc_1}>choose</span> us? <br /><span class={chooseus.tc_2}>because</span> we provide best <span class={chooseus.tc_1}>quality...</span></h2>
                             <p>We believe that creating customer-centric experiences. We’re innovators, creators, and designers who pride ourselves on also being trailblazers.</p>
                             <div class="row row-25">
