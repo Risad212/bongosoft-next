@@ -1,4 +1,7 @@
 import { useEffect } from 'react'
+/*---------- Aos -------------*/
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import OurWork from '@/Layouts/outowork/OurWork'
 import Slider from '../Layouts/Slider/Slider'
 import Head from 'next/head'
@@ -8,9 +11,8 @@ import Service from '@/Layouts/service/Service'
 import Testimonial from '@/Layouts/Testimonial/Testimonial'
 import Portfolio from '@/Layouts/portfolio/Portfolio'
 import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton'
-/*---------- Aos -------------*/
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+/*----- import data -------*/
+import {portfolioHomePage} from '../DataStorge/Datastorge';
 
 
 export default function Home() {
@@ -34,7 +36,7 @@ export default function Home() {
       <About />
       <Counter />
       <Service />
-      <Portfolio />
+      <Portfolio data={portfolioHomePage} title="portfolio" btntxt="view all"/>
       <Testimonial />
       <ScrollTopButton />
     </>

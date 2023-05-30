@@ -1,86 +1,17 @@
 import React, { useState } from 'react';
 import portfolio from './portfolio.module.css';
 import Image from 'next/image';
-/*--- import all images ----*/
-import jagoron from '../../Media/dailyjagaran.com.jpg';
-import graphic2 from '../../Media/graphic-2.jpg';
-import coupdoc2 from '../../Media/coupdoc-2.jpg';
-import pharmacy from '../../Media/pharmacy.jpg';
-import smm from '../../Media/smm-2.jpg';
-import software2 from '../../Media/software-2.jpg';
-import gonews from '../../Media/gonews (1).jpg';
-import megastar from '../../Media/megastar.jpg';
-/*--- import all images End ----*/
 import { AnimatePresence, motion } from "framer-motion"
 
-const Portfolio = () => {
-    const storge = [
-        {
-            key: 'design and development',
-            img: jagoron,
-            altTag: 'Dailyjagaran',
-            title: 'Design & Development',
-            disc: 'Making News Portal For Dailyjagaran',
-        },
-        {
-            key: 'graphic design',
-            img: graphic2,
-            altTag: 'Logo for IBserver',
-            title: 'Graphic Design',
-            disc: 'Logo for IBserver',
-        },
-        {
-            key: 'seo',
-            img: coupdoc2,
-            altTag: 'SEO & SMM',
-            title: 'SEO & SMM',
-            disc: 'Digital Marketing For CoupDoc',
-        },
-        {
-            key: 'softoware development',
-            img: pharmacy,
-            altTag: 'Pharmacy Management System',
-            title: 'Software Development',
-            disc: 'Pharmacy Management System',
-        },
-        {
-            key: 'seo',
-            img: smm,
-            altTag: 'Facebook Marketing For GoGmat',
-            title: 'SEO & SMM',
-            disc: 'Facebook Marketing For GoGmat',
-        },
-        {
-            key: 'softoware development',
-            img: software2,
-            altTag: 'Point Of Sales Software',
-            title: 'Software Development',
-            disc: 'Point Of Sales Software',
-        },
-        {
-            key: 'design and development',
-            img: gonews,
-            altTag: '"Gonews24',
-            title: 'Design & Development',
-            disc: 'Making News Portal For Gonews24',
-        },
-        {
-            key: 'design and development',
-            img: megastar,
-            altTag: '',
-            title: 'Design & Development',
-            disc: 'Making Website for MegaStar Bangladesh Ltd.',
-        },
-
-    ]
-    const [filter, setFilter] = useState(storge)
-
+const Portfolio = (props) => {
+    const {data,title,btntxt} = props;
+    const [filter, setFilter] = useState(data)
     const filterData = (key) => {
-        const getData = storge.filter((elem) => {
+        const getData = data.filter((elem) => {
             return elem.key === key;
         })
         if (key === 'all') {
-            setFilter(storge)
+            setFilter(data)
         } else {
             setFilter(getData)
         }
@@ -94,7 +25,7 @@ const Portfolio = () => {
                      data-aos-once="true"
                      data-aos-delay="500"
                      data-aos-duration="1000"
-                     >Portfolio</h2>
+                     >{title}</h2>
                     <div className="box"
                       data-aos="fade-left" 
                       data-aos-once="true"
@@ -180,7 +111,7 @@ const Portfolio = () => {
                        data-aos-delay="800"
                        data-aos-duration="1000"
                      >
-                        <a class={`btn ${portfolio.btn_date_picker}`} href="#">View All</a>
+                        <a class={`btn ${portfolio.btn_date_picker}`} href="#">{btntxt}</a>
                     </div>
                 </div>
             </div>
