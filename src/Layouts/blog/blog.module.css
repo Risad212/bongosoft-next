@@ -187,3 +187,13 @@
 .primary_btn:hover .btn_text {
     color: #fff;
 }
+
+/*----- pagination button style ------*/
+.pagination li{
+    border: 1px solid #7d7979;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.pagination li a{
+    color: #000;
+}
