@@ -8,6 +8,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
+    transition: all 0.4s ease-in-out 0s;
 }
 .counter_column h3 {
     font-size: 24px;
@@ -31,13 +32,13 @@
     font-family: 'Nunito Sans', sans-serif;
     transform: scale(1.0);
   }
+  .counter_effects {
+    position: relative;
+    transform: all 5s ease-in;
+    margin-top: 90px;
+}
 .counter_column:hover span{
     transform: scale(1.2);
-}
-.counter_effects {
-    position: relative;
-    transform: all .5s ease-in;
-    margin-top: 90px;
 }
 .counter_circle{
     position: absolute;
@@ -50,8 +51,9 @@
     display: block;
     box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+    transform: all .5s ease-in;
 }
-.counter_circle:before {
+.counter_circle::before {
     content: "";
     width: 2px;
     height: 50px;
@@ -75,7 +77,6 @@
     border: 1px solid #fbfbfb;
     background: transparent;
     position: relative;
-   
     top: 0;
     -moz-transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;

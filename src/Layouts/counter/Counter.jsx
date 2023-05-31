@@ -65,7 +65,8 @@ const Counter = () => {
                                            data-aos-once="true"
                                            data-aos-duration="1000"
                                            data-aos-delay="600"
-                                         ><Image src={Tea} /></div>
+                                         ><Image src={Tea} />
+                                         </div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
