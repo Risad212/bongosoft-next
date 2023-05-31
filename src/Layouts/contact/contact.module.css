@@ -126,3 +126,19 @@
 .btn_send:hover{
     color: #fff;
 }
+/*------ location title -------*/
+.location_wrapper{
+    padding: 20px 0;
+    text-align: center;
+}
+.wrapper_text_location h2 {
+    color: #6f7a82;
+    opacity: .20;
+    font-size: 100px;
+    font-weight: 700;
+    margin: auto;
+}
+/*------ google map -----------*/
+.map {
+    height: 450px;
+}
