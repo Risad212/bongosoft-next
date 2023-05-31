@@ -49,6 +49,9 @@
     background: #1da255;
     color: #fff !important;
 }
+.noneActive{
+   color: #000;
+}
 .searchBtn {
     display: flex;
     align-items: center;

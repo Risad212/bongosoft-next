@@ -18,19 +18,44 @@ const Contact = () => {
                                 <div class={contact.contact_form}>
                                     <form id="#" action="#">
                                         <div class="row">
-                                            <div class="form-group col-6">
+                                            <div class="form-group col-6"
+                                               data-aos="fade-left" 
+                                               data-aos-once="true"
+                                               data-aos-duration="500"
+                                               data-aos-delay="500"
+                                             >
                                                 <input placeholder="Your Name" class={`${contact.form_control}`} />
                                             </div>
-                                            <div class="form-group col-6">
+                                            <div class="form-group col-6"
+                                              data-aos="fade-left" 
+                                              data-aos-once="true"
+                                              data-aos-duration="500"
+                                              data-aos-delay="700"
+                                             >
                                                 <input placeholder="Your Email" class={`${contact.form_control}`} />
                                             </div>
-                                            <div class="form-group col-12">
+                                            <div class="form-group col-12"
+                                               data-aos="fade-left" 
+                                               data-aos-once="true"
+                                               data-aos-duration="500"
+                                               data-aos-delay="900"
+                                             >
                                                 <input placeholder="Subject" class={`${contact.form_control}`} />
                                             </div>
-                                            <div class="form-group col-12">
+                                            <div class="form-group col-12"
+                                              data-aos="fade-left" 
+                                              data-aos-once="true"
+                                              data-aos-duration="800"
+                                              data-aos-delay="1200"
+                                             >
                                                 <textarea rows="6" placeholder="Message" class={`${contact.form_control}`} name="Message"></textarea>
                                             </div>
-                                            <div class="form-group col-12 text-center">
+                                            <div class="form-group col-12 text-center"
+                                               data-aos="fade-left" 
+                                               data-aos-once="true"
+                                               data-aos-duration="800"
+                                               data-aos-delay="1500"
+                                             >
                                                 <button class={`btn ${contact.btn_send} `} type="submit">Send</button>
                                             </div>
                                         </div>
@@ -42,7 +67,11 @@ const Contact = () => {
                 </div>
             </section>
             {/*---- location title ------*/}
-            <section class={contact.location_wrapper}>
+            <section class={contact.location_wrapper}  
+               data-aos="fade-left" 
+               data-aos-once="true"
+               data-aos-duration="800"
+               data-aos-delay="500">
                 <div class="container">
                     <div class={contact.wrapper_text_location}>
                         <h2 class="text-center">Locations</h2>

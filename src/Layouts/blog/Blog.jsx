@@ -19,7 +19,12 @@ const Blog = () => {
             <div className={blog.all_post}>
                 <div className="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                          data-aos="fade-right" 
+                          data-aos-once="true"
+                          data-aos-duration="500"
+                          data-aos-delay="800"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={chrome} alt="Top 10 Productivity Extensions for Chrome Web Browser" /></figure>
                                 <div class={blog.content_box}>
@@ -32,7 +37,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                           data-aos="fade-left" 
+                           data-aos-once="true"
+                           data-aos-duration="500"
+                           data-aos-delay="1100"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall2} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -45,7 +55,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                          data-aos="fade-right" 
+                          data-aos-once="true"
+                          data-aos-duration="500"
+                          data-aos-delay="800"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall3} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -58,7 +73,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                            data-aos="fade-left" 
+                            data-aos-once="true"
+                            data-aos-duration="500"
+                            data-aos-delay="1100"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall4} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -71,7 +91,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                            data-aos="fade-right" 
+                            data-aos-once="true"
+                            data-aos-duration="500"
+                            data-aos-delay="800"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall5} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -84,7 +109,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                           data-aos="fade-left" 
+                           data-aos-once="true"
+                           data-aos-duration="500"
+                           data-aos-delay="1100"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall6} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -97,7 +127,12 @@ const Blog = () => {
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"
+                            data-aos="fade-right" 
+                            data-aos-once="true"
+                            data-aos-duration="500"
+                            data-aos-delay="800"
+                         >
                             <article class={blog.single_post_item}>
                                 <figure class={blog.image}><Image class="img-fluid" src={blogsmall1} alt="Post Image" /></figure>
                                 <div class={blog.content_box}>
@@ -111,7 +146,12 @@ const Blog = () => {
                             </article>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" 
+                       data-aos="fade-up" 
+                       data-aos-once="true"
+                       data-aos-duration="800"
+                       data-aos-delay="500"
+                     >
                         <div className={`text-center`}>
                             <nav aria-label="Page navigation example">
                                 <ul class={`pagination ${blog.pagination}`}>

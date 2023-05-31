@@ -7,7 +7,12 @@ const Ourservice = () => {
             <div class={`${Service.service} ${Service.service_1}`}>
                 <div class="container">
                     <div class="row">
-                        <div class={`${Service.ui_ux_design} col-md-6`}>
+                        <div class={`${Service.ui_ux_design} col-md-6`}
+                           data-aos="fade-right" 
+                           data-aos-once="true"
+                           data-aos-delay="800"
+                           data-aos-duration="500"
+                         >
                             <h3>Web Design</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our Web Design Services</h4>
@@ -36,7 +41,12 @@ const Ourservice = () => {
                 <div class="container">
                     <div class="row">
                         <div className="col-md-6"></div>
-                        <div className={`${Service.ui_ux_design} col-md-6`}>
+                        <div className={`${Service.ui_ux_design} col-md-6`}
+                           data-aos="fade-left" 
+                           data-aos-once="true"
+                           data-aos-delay="800"
+                           data-aos-duration="500"
+                         >
                             <h3>Web Development</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our Web Development Services</h4>
@@ -64,7 +74,12 @@ const Ourservice = () => {
             <div class={`${Service.service} ${Service.service_4}`}>
                 <div class="container">
                     <div class="row">
-                        <div className={`${Service.ui_ux_design} col-md-6`}>
+                        <div className={`${Service.ui_ux_design} col-md-6`}
+                           data-aos="fade-right" 
+                           data-aos-once="true"
+                           data-aos-delay="800"
+                           data-aos-duration="500"
+                         >
                             <h3>Software Development</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our Softwar Development Services</h4>
@@ -93,7 +108,12 @@ const Ourservice = () => {
                 <div class="container">
                     <div class="row">
                         <div className="col-md-6"></div>
-                        <div className={`${Service.ui_ux_design} col-md-6`}>
+                        <div className={`${Service.ui_ux_design} col-md-6`}
+                            data-aos="fade-left" 
+                            data-aos-once="true"
+                            data-aos-delay="800"
+                            data-aos-duration="500"
+                         >
                             <h3>Graphics Design</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our Graphics Design Services</h4>
@@ -121,7 +141,12 @@ const Ourservice = () => {
              <div class={`${Service.service} ${Service.service_5}`}>
                 <div class="container">
                     <div class="row">
-                        <div className={`${Service.ui_ux_design} col-md-6`}>
+                        <div className={`${Service.ui_ux_design} col-md-6`}
+                              data-aos="fade-right" 
+                              data-aos-once="true"
+                              data-aos-delay="800"
+                              data-aos-duration="500"
+                         >
                             <h3>SEO & SMM</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our SEO & SMM Services</h4>
@@ -150,7 +175,12 @@ const Ourservice = () => {
                 <div class="container">
                     <div class="row">
                         <div className="col-md-6"></div>
-                        <div className={`${Service.ui_ux_design} col-md-6`}>
+                        <div className={`${Service.ui_ux_design} col-md-6`} 
+                            data-aos="fade-left" 
+                            data-aos-once="true"
+                            data-aos-delay="800"
+                            data-aos-duration="500"
+                         >
                             <h3>Domain & Hosting</h3>
                             <p>UX drives UI. Our team of UX designers at Acodez have ample of years of experience in the core areas of user experience, which helps them collaborate the finer modules of usability and functionality in-line with business goals and end-user needs.</p>
                             <h4>Our Domain & Hosting Services</h4>

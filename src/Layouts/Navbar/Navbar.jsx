@@ -4,6 +4,7 @@ import Logo from '../../Media/logo.png'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMagnifyingGlass, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
@@ -29,7 +30,8 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll)
     },[])
 
-    
+    const router = useRouter();
+    const currentRoute = router.pathname;
    return (
       <>
          <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0, transition: 'position 1s ease-in'}: {}}>
@@ -41,10 +43,10 @@ const Navbar = () => {
                   </div>
                   <div className={`${navbar.menuWrapper} ${showMenu? navbar.showMenu: ''}`}>
                      <ul className={navbar.list}>
-                        <li><a href="#" className={navbar.active}>Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/" className={currentRoute === '/' ? navbar.active : navbar.nonActive}>Home</a></li>
+                        <li><a href="/about" className={currentRoute === '/about' ? navbar.active : navbar.nonActive}>About</a></li>
                         <li className={navbar.dropdown}>
-                           <a href="#">Services</a>
+                           <a href="/service" className={currentRoute === '/service' ? navbar.active : navbar.nonActive}>Services</a>
                            <ul className={navbar.dlSubmenu}>
                               <li className={navbar.firsDrop}>
                                  <a href="software-development.php">Software Development </a>
@@ -104,9 +106,9 @@ const Navbar = () => {
                               <li> <a href="#"> Domain &amp; Hosting </a> </li>
                            </ul>
                         </li>
-                        <li><a href="#">our work</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="/ourwork" className={currentRoute === '/ourwork' ? navbar.active : navbar.nonActive}>our work</a></li>
+                        <li><a href="/blog" className={currentRoute === '/blog' ? navbar.active : navbar.nonActive}>blog</a></li>
+                        <li><a href="/contact" className={currentRoute === '/contact' ? navbar.active : navbar.nonActive}>contact</a></li>
                         <li><div className={navbar.searchBtn}><FontAwesomeIcon icon={faMagnifyingGlass} /></div></li>
                      </ul>
                   </div>

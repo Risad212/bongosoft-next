@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import PageBanner from '@/Components/pagebanner/PageBanner';
 import Servicetext from '@/Layouts/servicetext/Servicetext';
 import Ourservice from '@/Layouts/ourservice/Ourservice';
+import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton';
 
 
 
@@ -29,6 +30,7 @@ export default function service() {
       <PageBanner txt="services"/>
       <Servicetext />
       <Ourservice />
+      <ScrollTopButton />
     </>
   )
 }
