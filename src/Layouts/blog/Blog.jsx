@@ -112,10 +112,10 @@ const Blog = () => {
                         </div>
                     </div>
                     <div class="row">
-                        <div class={`m-auto ${blog.blog_pagination}`}>
+                        <div className={`text-center`}>
                             <nav aria-label="Page navigation example">
                                 <ul class={`pagination ${blog.pagination}`}>
-                                    <li class="page-item"><a class="page-link active" href="#">Previous</a></li>
+                                    <li class="page-item"><a class={`page-link ${blog.active}`} href="#">Previous</a></li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>

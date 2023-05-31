@@ -116,7 +116,7 @@
 .hvr_bounce_to_left::before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -142,6 +142,7 @@
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    z-index: 5;
 }
 
 .icon {
@@ -150,6 +151,7 @@
     right: -10px;
     top: 0px;
     display: block;
+    z-index: 5;
     line-height: 30px;
     text-align: center;
     color: #ffffff;
@@ -175,11 +177,10 @@
     -webkit-transform: skewX(20deg);
 }
 
-.hvr_bounce_to_left:hover::before,
-.hvr_bounce_to_left:hover::before,
-.hvr_bounce_to_left:hover::before {
-    -webkit-transform: scaleX(1);
+
+.hvr_bounce_to_left:hover::before{
     transform: scaleX(1);
+    -webkit-transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
@@ -189,11 +190,28 @@
 }
 
 /*----- pagination button style ------*/
-.pagination li{
-    border: 1px solid #7d7979;
-    color: #000;
-    transition: all 0.3s ease;
+.pagination{
+    display: flex;
+    justify-content: center;
 }
 .pagination li a{
     color: #000;
+    transition: all 0.3s ease;
+    border: 1px solid #7d7979;
 }
+.active{
+    background: transparent !important;
+}
+.pagination li a:hover{
+    background: #000;
+    color: #fff;
+}
+.active:hover{
+    background: #000 !important;
+    color: #fff; 
+}
+
+
+
+
+
