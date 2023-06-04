@@ -1,0 +1,13 @@
+.counter span{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transform: scale(1.0);
+}

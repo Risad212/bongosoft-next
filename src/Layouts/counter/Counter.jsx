@@ -6,6 +6,7 @@ import Happy from '../../Media/happy.png'
 import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
+import AnimatedCounter from '@/Components/animatedCounter/AnimatedCounter';
 
 
 const Counter = () => {
@@ -18,71 +19,36 @@ const Counter = () => {
                             <div className="row">
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Happy Clients</h3>
-                                    <span>191</span>
+                                    <span>{<AnimatedCounter data={{number: '195', duration: '2', delay: 3000}}/>}</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}
-                                           data-aos="fade-down" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                         ></div>
-                                        <div className={counter.counter_img}
-                                           data-aos="fade-up" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                           data-aos-delay="200"
-                                         ><Image src={Happy} alt="img"/></div>
+                                        <div className={counter.counter_circle}></div>
+                                        <div className={counter.counter_img}><Image src={Happy} alt="img"/></div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Complete Projects</h3>
-                                    <span>350</span>
+                                    <span>{<AnimatedCounter data={{number: '350', duration: '2', delay: 3000}}/>}</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}
-                                            data-aos="fade-down" 
-                                            data-aos-once="true"
-                                            data-aos-duration="1000"
-                                         ></div>
-                                        <div className={counter.counter_img}
-                                           data-aos="fade-up" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                           data-aos-delay="400"
-                                         ><Image src={Complete} alt="img" /></div>
+                                        <div className={counter.counter_circle}></div>
+                                        <div className={counter.counter_img}><Image src={Complete} alt="img" /></div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Cup Of Coffee</h3>
-                                    <span>650</span>
+                                    <span>{<AnimatedCounter data={{number: '650', duration: '2', delay: 3000}}/>}</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}
-                                            data-aos="fade-down" 
-                                            data-aos-once="true"
-                                            data-aos-duration="1000"
-                                         ></div>
-                                        <div className={counter.counter_img}
-                                           data-aos="fade-up" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                           data-aos-delay="600"
-                                         ><Image src={Tea} />
-                                         </div>
+                                        <div className={counter.counter_circle}></div>
+                                        <div className={counter.counter_img}>
+                                          <Image src={Tea} />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={`col-md-3 col-sm-6 ${counter.counter_column}`}>
                                     <h3>Free Resource</h3>
-                                    <span>6</span>
+                                    <span>{<AnimatedCounter data={{number: '6', duration: '2', delay: 3000}}/>}</span>
                                     <div className={counter.counter_effects}>
-                                        <div className={counter.counter_circle}
-                                           data-aos="fade-down" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                         ></div>
-                                        <div className={counter.counter_img}
-                                           data-aos="fade-up" 
-                                           data-aos-once="true"
-                                           data-aos-duration="1000"
-                                           data-aos-delay="800"
-                                         ><Image src={Free} alt="img" /></div>
+                                        <div className={counter.counter_circle}></div>
+                                        <div className={counter.counter_img}><Image src={Free} alt="img" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -95,3 +61,7 @@ const Counter = () => {
 };
 
 export default Counter;
+
+
+
+

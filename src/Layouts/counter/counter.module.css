@@ -9,24 +9,12 @@
     padding-bottom: 70px;
     text-align: center;
   }
-  .counter_column span {
-    font-size: 50px;
-    color: #fff;
-    font-weight: 700;
-    display: block;
-    text-align: center;
-    transition: all 0.4s ease-in-out 0s;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    -o-transition: all 0.4s ease-in-out 0s;
-    -ms-transition: all 0.4s ease-in-out 0s;
-    transform: scale(1.0);
-  }
   .counter_column h3 {
     font-size: 24px;
     line-height: 24px;
     color: #188747;
     margin-bottom: 10px;
+    font-weight: 700;
   }
   .counter_effects {
     position: relative;
@@ -45,7 +33,7 @@
       /* background-color: #c9bba1; */
       background-color: #fff;
   }
-  .counter_circle:before {
+  .counter_circle::before {
       content: "";
       width: 2px;
       height: 50px;
@@ -88,7 +76,7 @@
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
-  .counter_effects:hover .counter_circle:before {
+  .counter_effects:hover .counter_circle::before {
     bottom: -60px;
     height: 60px;
     -moz-transition-duration: 0.4s;
@@ -153,14 +141,7 @@
   
   
   
-  /* .counter-effects:hover .counter-circle:before {
-    bottom: -60px;
-    height: 60px;
-    -moz-transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-  } */
+ 
   
   
 
