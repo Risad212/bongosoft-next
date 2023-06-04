@@ -1,24 +1,15 @@
-.counter_section{
+.counter_section {
     background-image: url(../../Media/bg-counter.jpg);
     background-size: cover;
     background-position: center;
     height: 450px;
-}
+  }
 .counter_column {
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
-    transition: all 0.4s ease-in-out 0s;
-}
-.counter_column h3 {
-    font-size: 24px;
-    line-height: 24px;
-    color: #188747;
-    margin-bottom: 10px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-}
-.counter_column span {
+  }
+  .counter_column span {
     font-size: 50px;
     color: #fff;
     font-weight: 700;
@@ -29,68 +20,95 @@
     -moz-transition: all 0.4s ease-in-out 0s;
     -o-transition: all 0.4s ease-in-out 0s;
     -ms-transition: all 0.4s ease-in-out 0s;
-    font-family: 'Nunito Sans', sans-serif;
     transform: scale(1.0);
+  }
+  .counter_column h3 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #188747;
+    margin-bottom: 10px;
   }
   .counter_effects {
     position: relative;
-    transform: all 5s ease-in;
     margin-top: 90px;
-}
-.counter_column:hover span{
-    transform: scale(1.2);
-}
-.counter_circle{
-    position: absolute;
-    top: -71px;
-    left: 50%;
-    margin-left: -10px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: block;
-    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    transform: all .5s ease-in;
-}
-.counter_circle::before {
-    content: "";
-    width: 2px;
-    height: 50px;
-    position: absolute;
-    left: 9px;
-    border: 1px dashed #dfe8f3;
-    bottom: -50px;
-    -moz-transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
-.counter_img{
-    width: 105px;
-    height: 105px;
-    line-height: 105px;
-    border-radius: 50%;
-    box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    border: 1px solid #fbfbfb;
-    background: transparent;
-    position: relative;
-    top: 0;
-    -moz-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-.counter_effects:hover .counter_img {
+  }
+  .counter_circle {
+      position: absolute;
+      top: -71px;
+      left: 50%;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: block;
+      box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+      /* background-color: #c9bba1; */
+      background-color: #fff;
+  }
+  .counter_circle:before {
+      content: "";
+      width: 2px;
+      height: 50px;
+      position: absolute;
+      left: 9px;
+      border: 1px dashed #dfe8f3;
+      bottom: -50px;
+      -moz-transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+  }
+  .counter_img {
+      width: 105px;
+      height: 105px;
+     border-radius: 50%;
+      box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      border: 1px solid #fbfbfb;
+      background: transparent;
+      position: relative;
+      top: 0;
+      -moz-transition-duration: 0.2s;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; line-height: 105px;
+      
+  }
+  .counter_effects:hover .counter_img {
     position: relative;
     top: 10px;
     -moz-transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
-}
+  }
+  .counter_effects:hover {
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .counter_effects:hover .counter_circle:before {
+    bottom: -60px;
+    height: 60px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .counter_effects:hover .counter_img {
+    position: relative;
+    top: 10px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  .counter_column:hover span {
+    transform: scale(1.2);
+  }
+
 
 /*-------- responsive -------*/
 @media only screen and (max-width: 767px){
@@ -126,3 +144,24 @@
     }
 }
 
+
+
+
+
+ 
+  
+  
+  
+  
+  /* .counter-effects:hover .counter-circle:before {
+    bottom: -60px;
+    height: 60px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  } */
+  
+  
+
+  

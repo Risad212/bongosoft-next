@@ -8,7 +8,6 @@ import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
 
 
-
 const Counter = () => {
     return (
         <>
