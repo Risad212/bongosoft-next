@@ -49,7 +49,7 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                        <Image src={softoware} alt="Software Development" />
+                                        <Image className={service.web_development_animation} src={softoware} alt="Software Development" />
                                     </div>
                                     <h3>Software Development</h3>
                                     <ul class={service.service_sub_title}>
@@ -74,7 +74,7 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                        <Image src={webDesign} alt="Web Design" />
+                                        <Image className={service.web_design_animation} src={webDesign} alt="Web Design" />
                                     </div>
                                     <h3>Web Design</h3>
                                     <ul class={service.service_sub_title}>
@@ -99,7 +99,7 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                        <Image src={webdev} alt="Web Development" />
+                                        <Image className={service.web_development_animation} src={webdev} alt="Web Development" />
                                     </div>
                                     <h3>Web Development</h3>
                                     <ul class={service.service_sub_title}>
@@ -124,7 +124,7 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                        <Image src={graphic} alt="Web Development" />
+                                        <Image className={service.graphic_design_animation} src={graphic} alt="Web Development" />
                                     </div>
                                     <h3>Graphic Design</h3>
                                     <ul class={service.service_sub_title}>
@@ -149,7 +149,7 @@ const Service = () => {
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
-                                        <Image src={seo} alt="Web Development" />
+                                        <Image className={service.web_development_animation} src={seo} alt="Web Development" />
                                     </div>
                                     <h3>Digital Marketing</h3>
                                     <ul class={service.service_sub_title}>
@@ -175,7 +175,7 @@ const Service = () => {
                                 <a href="#">
                                     <div class={service.service_content}>
                                         <div class="icon">
-                                           <Image class="web_domain" src={domain} alt="Domain &amp; Hosting" />
+                                           <Image className={service.web_domain} src={domain} alt="Domain &amp; Hosting" />
                                          </div>
                                         <h3>Domain &amp; Hosting</h3>
                                     </div>

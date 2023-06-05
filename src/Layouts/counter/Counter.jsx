@@ -7,8 +7,7 @@ import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
 import AnimatedCounter from '@/Components/animatedCounter/AnimatedCounter';
-
-const VisibilitySensor = require('react-visibility-sensor');
+import { CountUp } from 'use-count-up';
 
 const Counter = () => {
     return (
