@@ -193,7 +193,7 @@ const Service = () => {
                                 <a href="#">
                                     <div class={service.service_content}>
                                         <div class="icon">
-                                           <Image class="web_domain" src={support} alt="Domain &amp; Hosting" />
+                                           <Image className={service.bg_red} src={support} alt="Domain &amp; Hosting" />
                                          </div>
                                         <h3>Support</h3>
                                     </div>

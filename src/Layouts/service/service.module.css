@@ -312,6 +312,75 @@
   animation-timing-function: linear;
   transform-origin: top center;
 }
+.bg_red {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  animation-name: swing-new;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  transform-origin: top center;
+}
+@keyframes swing-new {
+  0% {
+      transform: rotate3d(0, 0, 1, 3deg);
+  }
+  1% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  2% {
+      transform: rotate3d(0, 0, 1, -3deg);
+  }
+  3% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  4% {
+      transform: rotate3d(0, 0, 1, 3deg);
+  }
+  5% {
+      transform: rotate3d(0, 0, 1, -3deg);
+  }
+  6% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  7% {
+      transform: rotate3d(0, 0, 1, 3deg);
+  }
+  8% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  9% {
+      transform: rotate3d(0, 0, 1, -3deg);
+  }
+  10% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  11% {
+      transform: rotate3d(0, 0, 1, 3deg);
+  }
+  12% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  13% {
+      transform: rotate3d(0, 0, 1, -3deg);
+  }
+  14% {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  15%,
+  90% {}
+  to {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
 @keyframes swing-new-domain {
   0% {
       transform: rotate3d(0, 0, 1, 20deg);

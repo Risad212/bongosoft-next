@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import skill from './ourskill.module.css';
 import { CircularProgressbar} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import AnimatedProgress from '@/Components/animatedProgressbar/AnimatedProgress';
 
 const Ourskills = () => {
     return (
@@ -35,7 +36,7 @@ const Ourskills = () => {
                                   data-aos-duration="500"
                                   data-aos-delay="900"
                                  >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${90}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="90"/></div>
                                     <p>Web Design</p>
                                 </div>
                                 <div className={skill.box_chart}
@@ -44,7 +45,7 @@ const Ourskills = () => {
                                     data-aos-duration="500"
                                     data-aos-delay="1100"
                                  >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${95}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="95"/></div>
                                     <p>Web Development</p>
                                 </div>
                                 <div className={skill.box_chart}
@@ -53,7 +54,7 @@ const Ourskills = () => {
                                     data-aos-duration="500"
                                     data-aos-delay="1300"
                                   >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${80}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="80"/></div>
                                     <p>Software Development</p>
                                 </div>
                                 <div className={skill.box_chart}
@@ -62,7 +63,7 @@ const Ourskills = () => {
                                     data-aos-duration="500"
                                     data-aos-delay="1500"
                                  >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${85}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="85"/></div>
                                     <p>Graphic Design</p>
                                 </div>
                                 <div className={skill.box_chart}
@@ -71,7 +72,7 @@ const Ourskills = () => {
                                    data-aos-duration="500"
                                    data-aos-delay="1700"
                                  >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${73}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="73"/></div>
                                     <p>App Development</p>
                                 </div>
                                 <div className={skill.box_chart}
@@ -80,7 +81,7 @@ const Ourskills = () => {
                                    data-aos-duration="500"
                                    data-aos-delay="1900"
                                  >
-                                    <div className={skill.chart}><CircularProgressbar value={60} text={`${93}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/></div>
+                                    <div className={skill.chart}><AnimatedProgress value="93"/></div>
                                     <p>SEO &amp; SMM</p>
                                 </div>
                             </div>
