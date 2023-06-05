@@ -8,13 +8,13 @@ const AnimatedProgress = ({value}) => {
       if(count != value){
         setCout(count + 1)
       }
-    }, 80);
+    }, 70);
     return () => clearInterval(interval);
     },[count])
 
     return (
         <div>
-            <CircularProgressbar value={count} text={`${value}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#1da255'}}}/>           
+            <CircularProgressbar value={count} text={`${value}%`} styles={{path: { stroke: `#1da255`}, text: {fill: '#000'}}}/>           
         </div>
     );
 };
