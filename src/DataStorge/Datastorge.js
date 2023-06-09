@@ -227,8 +227,18 @@ export const portfolioOurWorkPage = [
 
 
 /******* service data in service details page ****** */
+
+// =========> import softoware development images
+import img1 from '../Media/service details/pos-software.jpg';
+
+
 export const servicelist = [
-   
+    {
+        serviceName: 'softoware-development.js',
+        img: img1,
+        title: 'Point Of Sale',
+        disc: `Track your customers' history, your inventory, calculate daily sales, and print receipt. You get instant feedback to improve your service.`,
+    },
 ]
 
 /******* service data in service details page ****** */

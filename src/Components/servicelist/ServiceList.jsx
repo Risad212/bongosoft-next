@@ -2,9 +2,7 @@ import React from 'react';
 import list from './servicelist.module.css';
 import Image from 'next/image';
 
-import img from '../../Media/service details/pos-software.jpg';
-
-const ServiceList = () => {
+const ServiceList = ({ serviceObj }) => {
     return (
         <>
             <section className={list.service_details_secend}>
@@ -23,16 +21,25 @@ const ServiceList = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-4">
-                            <div className={`${list.service_small_section}`}>
-                                <Image className="img-fluid" src={img} alt="service" />
-                                    <div className={list.service_heading_top}>
-                                        <h4>Point Of Sale</h4>
-                                        <p>Track your customers' history, your inventory, calculate daily sales, and print receipt. You get instant feedback to improve your service.</p>
-                                        <a className={`btn ${list.btn_details}`} href="software-development-details.php">Details</a>
-                                    </div>
-                            </div>
-                        </div>
+                        {
+                           serviceObj &&
+                            serviceObj.map((elem) => {
+                                return (
+                                    <>
+                                        <div className="col-md-4">
+                                            <div className={`${list.service_small_section}`}>
+                                                <Image className="img-fluid" src={elem?.img} alt="service" />
+                                                <div className={list.service_heading_top}>
+                                                    <h4>{elem?.title}</h4>
+                                                    <p>{elem?.disc}</p>
+                                                    <a className={`btn ${list.btn_details}`} href="software-development-details.php">Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
