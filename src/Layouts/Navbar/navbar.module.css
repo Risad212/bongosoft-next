@@ -66,14 +66,18 @@
 .dropdown{
     position: relative;
 }
-.dropdown .dlSubmenu{
+.dlSubmenu{
     position: absolute;
     width: 250px;
-    background: #1da255;
     top: 62px;
     padding: 0;
+    -webkit-transition: all 750ms linear;
+    -moz-transition: all 750ms linear;
+    -o-transition: all 750ms linear;
+    -ms-transition: all 750ms linear;
     transition: all 750ms linear;
     z-index: 99;
+    filter: alpha(opacity=0);
 }
 .dropdown > .dlSubmenu::before{
     border-color: rgba(0, 0, 0, 0);
@@ -84,6 +88,7 @@
     position: absolute;
     top: -7px;
     border-bottom-color: #1da255;
+    transition: all 750ms linear
 }
 .dropdown .dlSubmenu li{
     padding: 16px 15px 15px;
@@ -107,7 +112,7 @@
 
 .dlSubmenu{
     visibility: hidden;
-}
+} 
 .dropdown:hover > .dlSubmenu{
     visibility: visible;
 }
@@ -134,6 +139,38 @@
 }
 
 
+/******** New Animated Menu *******/
+.dropdown li{
+    background: #1da255;
+    transform: rotateY(90deg);
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.dropdown:hover li{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.dlSubmenu li:nth-child(1) { -webkit-transition-delay: 350ms; -moz-transition-delay: 350ms; -ms-transition-delay: 350ms; -o-transition-delay: 350ms; transition-delay: 350ms; }
+.dlSubmenu li:nth-child(2) { -webkit-transition-delay: 300ms; -moz-transition-delay: 300ms; -ms-transition-delay: 300ms; -o-transition-delay: 300ms; transition-delay: 300ms; }
+.dlSubmenu li:nth-child(3) { -webkit-transition-delay: 250ms; -moz-transition-delay: 250ms; -ms-transition-delay: 250ms; -o-transition-delay: 250ms; transition-delay: 250ms; }
+.dlSubmenu li:nth-child(4) { -webkit-transition-delay: 200ms; -moz-transition-delay: 200ms; -ms-transition-delay: 200ms; -o-transition-delay: 200ms; transition-delay: 200ms; }
+.dlSubmenu li:nth-child(5) { -webkit-transition-delay: 150ms; -moz-transition-delay: 150ms; -ms-transition-delay: 150ms; -o-transition-delay: 150ms; transition-delay: 150ms; }
+.dlSubmenu li:nth-child(6) { -webkit-transition-delay: 100ms; -moz-transition-delay: 100ms; -ms-transition-delay: 100ms; -o-transition-delay: 100ms; transition-delay: 100ms; }
+.dlSubmenu li:nth-child(7) { -webkit-transition-delay: 50ms; -moz-transition-delay: 50ms; -ms-transition-delay: 50ms; -o-transition-delay: 50ms; transition-delay: 50ms; }
+.dlSubmenu li:nth-child(8) { -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -ms-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
+
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(1) { -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -ms-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(2) { -webkit-transition-delay: 50ms; -moz-transition-delay: 50ms; -ms-transition-delay: 50ms; -o-transition-delay: 50ms; transition-delay: 50ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(3) { -webkit-transition-delay: 100ms; -moz-transition-delay: 100ms; -ms-transition-delay: 100ms; -o-transition-delay: 100ms; transition-delay: 100ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(4) { -webkit-transition-delay: 150ms; -moz-transition-delay: 150ms; -ms-transition-delay: 150ms; -o-transition-delay: 150ms; transition-delay: 150ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(5) { -webkit-transition-delay: 200ms; -moz-transition-delay: 200ms; -ms-transition-delay: 200ms; -o-transition-delay: 200ms; transition-delay: 200ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(6) { -webkit-transition-delay: 250ms; -moz-transition-delay: 250ms; -ms-transition-delay: 250ms; -o-transition-delay: 250ms; transition-delay: 250ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(7) { -webkit-transition-delay: 300ms; -moz-transition-delay: 300ms; -ms-transition-delay: 300ms; -o-transition-delay: 300ms; transition-delay: 300ms; }
+.menuWrapper ul li:hover ul.dlSubmenu li:nth-child(8) { -webkit-transition-delay: 350ms; -moz-transition-delay: 350ms; -ms-transition-delay: 350ms; -o-transition-delay: 350ms; transition-delay: 350ms; }
+/******** New Animated Menu *******/
+
+
+/*------------- Mobile responsive ---------------*/
 @media only screen and (min-width: 1000px) and (max-width: 1170px){
     .menuWrapper .list li a{
         padding: 8px 12px 8px;

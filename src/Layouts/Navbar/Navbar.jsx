@@ -34,7 +34,7 @@ const Navbar = () => {
     const currentRoute = router.pathname;
    return (
       <>
-         <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0, transition: 'position 1s ease-in'}: {}}>
+         <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0, transition: 'position 5s ease-in-out'}: {transition: 'position 5s ease-in-out'}}>
             <div className="container">
                <nav>
                   {/*----- LOGO ------*/}
