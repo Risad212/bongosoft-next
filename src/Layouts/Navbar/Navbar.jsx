@@ -49,7 +49,7 @@ const Navbar = () => {
                            <a href="/service" className={currentRoute === '/service' ? navbar.active : navbar.nonActive}>Services</a>
                            <ul className={navbar.dlSubmenu}>
                               <li className={navbar.firsDrop}>
-                                 <a href="software-development.php">Software Development </a>
+                                 <a href="#">Software Development </a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                     <li> <a href="#"> Point Of Sale </a> </li>
                                     <li> <a href="#"> School Management </a> </li>
