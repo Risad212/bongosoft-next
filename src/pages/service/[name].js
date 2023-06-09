@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ServiceDetails from '../../Components/servicedetails/ServiceDetails';
+import ServiceList from "@/Components/servicelist/ServiceList";
 
 const ServiceLayout = () => {
     return (
@@ -12,6 +13,7 @@ const ServiceLayout = () => {
                 <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
             </Head>
             <ServiceDetails />
+            <ServiceList />
         </>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import layoute from './serviceDetails.module.css';
+import layoute from './servicedetails.module.css';
 import Image from 'next/image';
 import details from '../../Media/service details/software-development.jpg';
 
@@ -22,8 +22,8 @@ const ServiceDetails = () => {
                                 <p>We are using asp.net, PHP, Java, Node.js, latest java framework for developing our software. Your need will always get priority from our end. We provide you the best solution in the market. Bongosoft Ltd. has the experience, tools, and technologies to create such demanding software. You will find some software that we are developing.</p>
                             </div>
                             <div className={layoute.service_section_btn}>
-                                <a href="#" className="btn-11">Get a quote</a>
-                                <a className="btn-6" href="#">Contact Us Now<span></span></a>
+                                <a href="#" className={layoute.btn_11}>Get a quote</a>
+                                <a className={layoute.btn_6} href="#">Contact Us Now<span></span></a>
                             </div>
                         </div>
                     </div>

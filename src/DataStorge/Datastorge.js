@@ -19,6 +19,7 @@ import Alokitonews from '../Media/Alokito-news (1).jpg';
 import drneem from '../Media/dr-neem (1).jpg';
 import narayanganjtoday from '../Media/narayanganj-today.jpg';
 
+/******* portfolio data in home page ****** */
 export const portfolioHomePage = [
     {
         key: 'design and development',
@@ -78,8 +79,13 @@ export const portfolioHomePage = [
     },
 
 ]
+/******* portfolio data in home page ****** */
 
 
+//==========================================================
+
+
+/******* portfolio data in home page ****** */
 export const portfolioOurWorkPage = [
     {
         key: 'design and development',
@@ -215,3 +221,14 @@ export const portfolioOurWorkPage = [
         disc: 'Making News Portal For NarayanganjToday',
     },
 ]
+/******* portfolio data in our work page ****** */
+
+//==========================================================
+
+
+/******* service data in service details page ****** */
+export const servicelist = [
+   
+]
+
+/******* service data in service details page ****** */

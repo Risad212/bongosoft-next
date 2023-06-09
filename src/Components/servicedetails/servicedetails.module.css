@@ -1,0 +1,235 @@
+.service_details_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.service_details h3 {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 18px;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.service_details h3::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100px;
+    padding: 4px 0 5px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #1da255;
+    left: 40%;
+}
+
+.service_details h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.service_details h3::after {
+    bottom: 5px;
+    width: 50%;
+    height: 1px;
+    background-color: #1da255;
+}
+
+.service_details p {
+    font-size: 17px;
+    color: #222;
+}
+
+.service_section_btn {
+    text-align: center;
+}
+
+.btn_11 {
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1da255;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btn_6 {
+    position: relative;
+    color: #1da255;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1da255;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border: 1px solid currentColor;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn_11:hover {
+    color: #fff;
+}
+
+.btn_11:before,
+.btn_11:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #1da255;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.btn_11:before {
+    left: -20px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn_11:after {
+    right: -20px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+.btn_11:focus {
+    color: #1da255;
+    text-decoration: none;
+    border-color: #1da255;
+}
+
+.btn_11:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.btn_11:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.btn_6 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1da255;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn_6:hover {
+    color: #fff;
+}
+
+.btn_6:focus {
+    color: #1da255;
+    text-decoration: none;
+    border-color: #1da255;
+}
+
+.btn_6:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.btn_6:active {
+    background-color: #1da255;
+}
+
+.btn_6:hover {
+    color: #fff;
+}
+
+
+/*---------- animation btn 11 ---------------*/
+@-webkit-keyframes criss-cross-left {
+    0% {
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      left: 50%;
+      width: 375px;
+      height: 375px;
+    }
+  }
+  
+  @keyframes criss-cross-left {
+    0% {
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      left: 50%;
+      width: 375px;
+      height: 375px;
+    }
+  }
+  @-webkit-keyframes criss-cross-right {
+    0% {
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 375px;
+      height: 375px;
+    }
+  }
+  @keyframes criss-cross-right {
+    0% {
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 375px;
+      height: 375px;
+    }
+}
