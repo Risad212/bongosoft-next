@@ -230,14 +230,21 @@ export const portfolioOurWorkPage = [
 
 // =========> import softoware development images
 import img1 from '../Media/service details/pos-software.jpg';
+import img2 from '../Media/service details/web-design.jpg'
 
-
-export const servicelist = [
+export const serviceInfo = [
     {
         serviceName: 'softoware-development.js',
         img: img1,
-        title: 'Point Of Sale',
+        title: 'Software Development',
         disc: `Track your customers' history, your inventory, calculate daily sales, and print receipt. You get instant feedback to improve your service.`,
+    },
+    {
+        serviceName: 'web-design.js',
+        img: img2,
+        title: 'Point Of Sale',
+        disc1: `Your business needs software for supporting your operations. It requires for scaling and coordinating with all operation department. Bongosoft Ltd. has the experience, tools, and technologies to create such demanding software. You will find some software that we are developing.`,
+        disc2: `We are using asp.net, PHP, Java, Node.js, latest java framework for developing our software. Your need will always get priority from our end. We provide you the best solution in the market. Bongosoft Ltd. has the experience, tools, and technologies to create such demanding software. You will find some software that we are developing.`,
     },
 ]
 

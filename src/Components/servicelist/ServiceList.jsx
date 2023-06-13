@@ -5,7 +5,7 @@ import Image from 'next/image';
 const ServiceList = ({ serviceObj }) => {
     return (
         <>
-            <section className={list.service_details_secend}>
+            {/* <section className={list.service_details_secend}>
                 <div className="container">
                     <div className={`${list.contact_title} text-center`}>
                         <div className={`${list.heading_title} text-center ${list.service_details_title}`}>
@@ -42,7 +42,7 @@ const ServiceList = ({ serviceObj }) => {
                         }
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };
