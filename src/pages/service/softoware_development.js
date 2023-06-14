@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import softo from '../../Media/service-details/software-development.jpg';
 import ServiceDetails from '@/Components/servicedetails/ServiceDetails';
 import Head from 'next/head';
+import ServiceList from '@/Components/servicelist/ServiceList';
 
 const softoware_development = () => {
     const [getInfo, setGetInfo] = useState()
@@ -23,6 +24,7 @@ const softoware_development = () => {
                 <title>Bongosoft Ltd. | Services</title>
             </Head>
             <ServiceDetails info={getInfo}/>
+            <ServiceList />
         </>
     );
 };
