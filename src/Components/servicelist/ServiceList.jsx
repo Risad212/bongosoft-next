@@ -2,14 +2,14 @@ import React from 'react';
 import list from './servicelist.module.css';
 import Image from 'next/image';
 
-const ServiceList = ({ }) => {
+const ServiceList = ({ data,title }) => {
     return (
         <>
             <section className={list.service_details_secend}>
                 <div className="container">
                     <div className={`${list.contact_title} text-center`}>
                         <div className={`${list.heading_title} text-center ${list.service_details_title}`}>
-                            <h2> Our Software Development Services</h2>
+                            <h2>{`Our ${title} Services`}</h2>
                             <div className="box">
                                 <div className="box-sm red"></div>
                                 <div className="box-sm orange"></div>
@@ -21,16 +21,25 @@ const ServiceList = ({ }) => {
                         </div>
                     </div>
                     <div className="row">
-                        <div class="col-md-4">
-                            <div class="service-small-section">
-                                <Image class="img-fluid" src="" alt="service" />
-                                    <div class="service-heading-top">
-                                        <h4>Point Of Sale</h4>
-                                        <p>Track your customers' history, your inventory, calculate daily sales, and print receipt. You get instant feedback to improve your service.</p>
-                                        <a class="btn btn-details" href="software-development-details.php">Details</a>
-                                    </div>
-                            </div>
-                        </div>
+                        {
+                            data &&
+                            data.map((elem) => {
+                                return (
+                                    <>
+                                        <div class="col-md-4">
+                                            <div class={list.service_small_section}>
+                                                <Image class="img-fluid" src={elem?.img} alt="service" />
+                                                <div class={list.service_heading_top}>
+                                                    <h4>{elem?.title}</h4>
+                                                    <p>{elem?.disc}</p>
+                                                    <a class={`btn ${list.btn_details}`} href="software-development-details.php">Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
