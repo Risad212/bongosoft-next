@@ -4,12 +4,12 @@ import ServiceDetails from '@/Components/servicedetails/ServiceDetails';
 import Head from 'next/head';
 import ServiceList from '@/Components/servicelist/ServiceList';
 /*------ service list images --------------*/
-import webdev1 from '../../Media/service-details/web-design/psd-to-html.jpg';
-import webdev2 from '../../Media/service-details/web-design/ux-ui-design.jpg';
-import webdev3 from '../../Media/service-details/web-design/template-design.jpg';
-import webdev4 from '../../Media/service-details/web-design/psd-to-wordpress.jpg';
-import webdev5 from '../../Media/service-details/web-design/front-end-design.jpg';
-import webdev6 from '../../Media/service-details/web-design/email-template-design.jpg';
+import webdev1 from '../../Media/service-details/web-dev/news-portal.jpg';
+import webdev2 from '../../Media/service-details/web-dev/custom-cms.jpg';
+import webdev3 from '../../Media/service-details/web-dev/educational.jpg';
+import webdev4 from '../../Media/service-details/web-dev/e-commerce.jpg';
+import webdev5 from '../../Media/service-details/web-dev/ngo-website.jpg';
+import webdev6 from '../../Media/service-details/web-dev/wordpress.jpg';
 
 
 const web_development = () => {
@@ -23,34 +23,35 @@ const web_development = () => {
     }
     const serviceList = [
         {
-            title: 'PSD To HTML',
-            disc: `We are prominent for our creativity, quality, and attractive design. Our professional team provide you perfect valid coding and also on time delivery.`,
-            img: web1,
+            title: 'News Portal Development',
+            disc: `Enhance your news portal Performance and look of your News Portal. Go beyond from the traditional boundary and get SEO optimize portal for mobile and web.`,
+            img: webdev1,
         },
         {
-            title: 'UI/UX Design',
-            disc: `Key to the more sale & higher user adoption rate is an excellent UI/UX and makes more ROI. We can help with excellent UI/UX and bring more business.`,
-            img: web2,
+            title: 'Custom CMS Development',
+            disc: `Custom CMS means the fully functional website with full security. It will give benefit you the entire ownership cutting edge custom CMS technology.
+            `,
+            img: webdev2,
         },
         {
-            title: 'Web Template Design',
-            disc: `Reflect your thinking with our design. We provide template design service for the USA, Canada, UK, and Asian countries. Our Template is responsive, seo friendly and easy to use.`,
-            img: web3,
+            title: 'Educational Ins. Website',
+            disc: `We design different websites for School, College, Madrasah, University or other educational sites. We build it with the latest technology, easy maintenance.`,
+            img: webdev3,
         },
         {
-            title: 'PSD/HTML To Word Press',
-            disc: `We convert your PSD/HTML template into Word Press. With experience and our skills, we can convert it into a fully functional WordPress theme at any level.`,
-            img: web4,
+            title: 'E-Commerce Development',
+            disc: `ECommerce development has indeed become a necessity instead of a means to drive higher traffic. We can develop your eCommerce with Magento, Shopify, Open Cart, Wordpress and Custom.`,
+            img: webdev4,
         },
         {
-            title: 'Front End Design',
-            disc: `Our front-end development toolkit is powered up with the latest technologies, and we are always open to adopting new trends, which can bring better results for your product.`,
-            img: web5,
+            title: 'NGO Website Development',
+            disc: `We built a very high-quality Website for NGO. Our NGO Website Design provides Admin Panel, Member Login, Articles, Newsletter, Events & Publication Management and Ask Question features.`,
+            img: webdev5,
         },
         {
-            title: 'Email Template Design',
-            disc: `We build e-mail templates for your customer. Our templates are engaging, attractive and responsive. You will maximize engagement rate with our top class e-mail template design`,
-            img: web6,
+            title: 'WordPress Development',
+            disc: `Bongosoft delivers robust, scalable and high-performance WordPress development services to help you harness the power of technology, consulting and maximize your online business investment.`,
+            img: webdev6,
         },
     ]
     useEffect(() => {
