@@ -67,10 +67,10 @@ const Portfolio = (props) => {
                                 return (
                                     <>
                                         <li
-                                          data-aos="fade-down" 
+                                          data-aos={elem?.animation?.name}
                                           data-aos-once="true"
-                                          data-aos-delay="800"
-                                          data-aos-duration="1000"
+                                          data-aos-delay={elem?.animation?.delay}
+                                          data-aos-duration={elem?.animation?.duration}
                                          >
                                             <AnimatePresence>
                                                 <motion.div
@@ -109,7 +109,7 @@ const Portfolio = (props) => {
                        data-aos="fade-left" 
                        data-aos-once="true"
                        data-aos-delay="800"
-                       data-aos-duration="1000"
+                       data-aos-duration="400"
                      >
                         <a class={`btn ${portfolio.btn_date_picker}`} href="#">{btntxt}</a>
                     </div>

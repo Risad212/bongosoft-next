@@ -4,12 +4,12 @@ import ServiceDetails from '@/Components/servicedetails/ServiceDetails';
 import Head from 'next/head';
 import ServiceList from '@/Components/servicelist/ServiceList';
 /*------ service list images --------------*/
-import webdev1 from '../../Media/service-details/web-dev/news-portal.jpg';
-import webdev2 from '../../Media/service-details/web-dev/custom-cms.jpg';
-import webdev3 from '../../Media/service-details/web-dev/educational.jpg';
-import webdev4 from '../../Media/service-details/web-dev/e-commerce.jpg';
-import webdev5 from '../../Media/service-details/web-dev/ngo-website.jpg';
-import webdev6 from '../../Media/service-details/web-dev/wordpress.jpg';
+import img1 from '../../Media/service-details/web-dev/news-portal.jpg';
+import img2 from '../../Media/service-details/web-dev/custom-cms.jpg';
+import img3 from '../../Media/service-details/web-dev/educational.jpg';
+import img4 from '../../Media/service-details/web-dev/e-commerce.jpg';
+import img5 from '../../Media/service-details/web-dev/ngo-website.jpg';
+import img6 from '../../Media/service-details/web-dev/wordpress.jpg';
 
 
 const web_development = () => {
@@ -25,7 +25,7 @@ const web_development = () => {
         {
             title: 'News Portal Development',
             disc: `Enhance your news portal Performance and look of your News Portal. Go beyond from the traditional boundary and get SEO optimize portal for mobile and web.`,
-            img: webdev1,
+            img: img1,
             animation: {
                 name: 'fade-right',
                 delay: '1000',
@@ -36,7 +36,7 @@ const web_development = () => {
             title: 'Custom CMS Development',
             disc: `Custom CMS means the fully functional website with full security. It will give benefit you the entire ownership cutting edge custom CMS technology.
             `,
-            img: webdev2,
+            img: img2,
             animation: {
                 name: 'fade-up',
                 delay: '500',
@@ -46,7 +46,7 @@ const web_development = () => {
         {
             title: 'Educational Ins. Website',
             disc: `We design different websites for School, College, Madrasah, University or other educational sites. We build it with the latest technology, easy maintenance.`,
-            img: webdev3,
+            img: img3,
             animation: {
                 name: 'fade-left',
                 delay: '1200',
@@ -56,7 +56,7 @@ const web_development = () => {
         {
             title: 'E-Commerce Development',
             disc: `ECommerce development has indeed become a necessity instead of a means to drive higher traffic. We can develop your eCommerce with Magento, Shopify, Open Cart, Wordpress and Custom.`,
-            img: webdev4,
+            img: img4,
             animation: {
                 name: 'fade-right',
                 delay: '1000',
@@ -66,7 +66,7 @@ const web_development = () => {
         {
             title: 'NGO Website Development',
             disc: `We built a very high-quality Website for NGO. Our NGO Website Design provides Admin Panel, Member Login, Articles, Newsletter, Events & Publication Management and Ask Question features.`,
-            img: webdev5,
+            img: img5,
             animation: {
                 name: 'fade-up',
                 delay: '500',
@@ -76,7 +76,7 @@ const web_development = () => {
         {
             title: 'WordPress Development',
             disc: `Bongosoft delivers robust, scalable and high-performance WordPress development services to help you harness the power of technology, consulting and maximize your online business investment.`,
-            img: webdev6,
+            img: img6,
             animation: {
                 name: 'fade-left',
                 delay: '1200',

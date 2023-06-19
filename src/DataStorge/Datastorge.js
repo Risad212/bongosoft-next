@@ -27,6 +27,11 @@ export const portfolioHomePage = [
         altTag: 'Dailyjagaran',
         title: 'Design & Development',
         disc: 'Making News Portal For Dailyjagaran',
+        animation: {
+          name: 'fade-down',
+          delay: '300',
+          duration: '500',
+        }
     },
     {
         key: 'graphic design',
@@ -34,6 +39,11 @@ export const portfolioHomePage = [
         altTag: 'Logo for IBserver',
         title: 'Graphic Design',
         disc: 'Logo for IBserver',
+        animation: {
+            name: 'fade-left',
+            delay: '600',
+            duration: '500',
+          }
     },
     {
         key: 'seo',
@@ -41,6 +51,11 @@ export const portfolioHomePage = [
         altTag: 'SEO & SMM',
         title: 'SEO & SMM',
         disc: 'Digital Marketing For CoupDoc',
+        animation: {
+            name: 'fade-down',
+            delay: '300',
+            duration: '500',
+          }
     },
     {
         key: 'softoware development',
@@ -48,6 +63,11 @@ export const portfolioHomePage = [
         altTag: 'Pharmacy Management System',
         title: 'Software Development',
         disc: 'Pharmacy Management System',
+        animation: {
+            name: 'fade-right',
+            delay: '800',
+            duration: '500',
+          }
     },
     {
         key: 'seo',
@@ -55,6 +75,11 @@ export const portfolioHomePage = [
         altTag: 'Facebook Marketing For GoGmat',
         title: 'SEO & SMM',
         disc: 'Facebook Marketing For GoGmat',
+        animation: {
+            name: 'fade-down',
+            delay: '500',
+            duration: '500',
+          }
     },
     {
         key: 'softoware development',
@@ -62,6 +87,11 @@ export const portfolioHomePage = [
         altTag: 'Point Of Sales Software',
         title: 'Software Development',
         disc: 'Point Of Sales Software',
+        animation: {
+            name: 'fade-up',
+            delay: '800',
+            duration: '500',
+        }
     },
     {
         key: 'design and development',
@@ -69,6 +99,11 @@ export const portfolioHomePage = [
         altTag: '"Gonews24',
         title: 'Design & Development',
         disc: 'Making News Portal For Gonews24',
+        animation: {
+            name: 'fade-down',
+            delay: '500',
+            duration: '500',
+        }
     },
     {
         key: 'design and development',
@@ -76,6 +111,11 @@ export const portfolioHomePage = [
         altTag: '',
         title: 'Design & Development',
         disc: 'Making Website for MegaStar Bangladesh Ltd.',
+        animation: {
+            name: 'fade-up',
+            delay: '800',
+            duration: '500',
+        }
     },
 
 ]
