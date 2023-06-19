@@ -27,37 +27,68 @@ const softoware_development = () => {
             title: 'Point Of Sale',
             disc: `Track your customers' history, your inventory, calculate daily sales, and print receipt. You get instant feedback to improve your service.`,
             img: soft1,
+            animation: {
+               name: 'fade-right',
+               delay: '1000',
+               duration: '400'
+            }
         },
         {
             title: 'School Management',
             disc: `School Management software is an essential part for any educational institute. School authorities can manage attendance, functions ...`,
             img: soft2,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'Pharmacy Management',
             disc: `Our pharmacy management System offers many features that make our processes easier, such as running dual or multiple inventories.`,
             img: soft3,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
         {
             title: 'Super Shop Management',
             disc: `Super shop management software can manage your work easily with inventory management, daily sales, profit, and other.`,
             img: soft4,
+            animation: {
+                name: 'fade-right',
+                delay: '1000',
+                duration: '400'
+             }
         },
         {
             title: 'Restaurant Management',
             disc: `You can efficiently manage your restaurant with this specialized software. You can manage booking, events, sales, inventory within a click.`,
             img: soft5,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'Custom Software',
             disc: `We offer custom software development and consulting services to help you pull off your next project with less stress and less cost.`,
             img: soft6,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
     ]
     useEffect(() => {
         setGetInfo(serviceInfo);
         setServiceData(serviceList)
     },[])
+
     return (
         <>
             <Head>

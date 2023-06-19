@@ -26,32 +26,62 @@ const web_development = () => {
             title: 'News Portal Development',
             disc: `Enhance your news portal Performance and look of your News Portal. Go beyond from the traditional boundary and get SEO optimize portal for mobile and web.`,
             img: webdev1,
+            animation: {
+                name: 'fade-right',
+                delay: '1000',
+                duration: '400'
+             }
         },
         {
             title: 'Custom CMS Development',
             disc: `Custom CMS means the fully functional website with full security. It will give benefit you the entire ownership cutting edge custom CMS technology.
             `,
             img: webdev2,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'Educational Ins. Website',
             disc: `We design different websites for School, College, Madrasah, University or other educational sites. We build it with the latest technology, easy maintenance.`,
             img: webdev3,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
         {
             title: 'E-Commerce Development',
             disc: `ECommerce development has indeed become a necessity instead of a means to drive higher traffic. We can develop your eCommerce with Magento, Shopify, Open Cart, Wordpress and Custom.`,
             img: webdev4,
+            animation: {
+                name: 'fade-right',
+                delay: '1000',
+                duration: '400'
+             }
         },
         {
             title: 'NGO Website Development',
             disc: `We built a very high-quality Website for NGO. Our NGO Website Design provides Admin Panel, Member Login, Articles, Newsletter, Events & Publication Management and Ask Question features.`,
             img: webdev5,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'WordPress Development',
             disc: `Bongosoft delivers robust, scalable and high-performance WordPress development services to help you harness the power of technology, consulting and maximize your online business investment.`,
             img: webdev6,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
     ]
     useEffect(() => {

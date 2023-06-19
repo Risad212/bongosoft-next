@@ -25,31 +25,61 @@ const web_design = () => {
             title: 'PSD To HTML',
             disc: `We are prominent for our creativity, quality, and attractive design. Our professional team provide you perfect valid coding and also on time delivery.`,
             img: web1,
+            animation: {
+                name: 'fade-right',
+                delay: '1000',
+                duration: '400'
+             }
         },
         {
             title: 'UI/UX Design',
             disc: `Key to the more sale & higher user adoption rate is an excellent UI/UX and makes more ROI. We can help with excellent UI/UX and bring more business.`,
             img: web2,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'Web Template Design',
             disc: `Reflect your thinking with our design. We provide template design service for the USA, Canada, UK, and Asian countries. Our Template is responsive, seo friendly and easy to use.`,
             img: web3,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
         {
             title: 'PSD/HTML To Word Press',
             disc: `We convert your PSD/HTML template into Word Press. With experience and our skills, we can convert it into a fully functional WordPress theme at any level.`,
             img: web4,
+            animation: {
+                name: 'fade-right',
+                delay: '1000',
+                duration: '400'
+             }
         },
         {
             title: 'Front End Design',
             disc: `Our front-end development toolkit is powered up with the latest technologies, and we are always open to adopting new trends, which can bring better results for your product.`,
             img: web5,
+            animation: {
+                name: 'fade-up',
+                delay: '500',
+                duration: '400'
+             }
         },
         {
             title: 'Email Template Design',
             disc: `We build e-mail templates for your customer. Our templates are engaging, attractive and responsive. You will maximize engagement rate with our top class e-mail template design`,
             img: web6,
+            animation: {
+                name: 'fade-left',
+                delay: '1200',
+                duration: '400'
+             }
         },
     ]
     useEffect(() => {
