@@ -32,6 +32,7 @@ const Navbar = () => {
 
     const router = useRouter();
     const currentRoute = router.pathname;
+
    return (
       <>
          <div className={navbar.navWrapper} style={scrolled? {position: 'fixed', top: 0, transition: 'position 5s ease-in-out'}: {transition: 'position 5s ease-in-out'}}>
@@ -49,7 +50,7 @@ const Navbar = () => {
                            <a href="/service" className={currentRoute === '/service' ? navbar.active : navbar.nonActive}>Services</a>
                            <ul className={navbar.dlSubmenu}>
                               <li className={navbar.firsDrop}>
-                                 <a href="#">Software Development </a>
+                                 <a href="/service/softoware_development">Software Development </a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                     <li> <a href="#"> Point Of Sale </a> </li>
                                     <li> <a href="#"> School Management </a> </li>
@@ -60,7 +61,7 @@ const Navbar = () => {
                                  </ul>
                               </li>
                               <li className={navbar.secondDrop}>
-                                 <a href="web-design.php">Web Design</a>
+                                 <a href="/service/web_design">Web Design</a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                     <li> <a href="#" title=""> PSD to HTML </a> </li>
                                     <li> <a href="#" title=""> UX/UI Design </a> </li>
@@ -71,7 +72,7 @@ const Navbar = () => {
                                  </ul>
                               </li>
                               <li className={navbar.thirtDrop}>
-                                 <a href="web-development.php">Web Development</a>
+                                 <a href="/service/web_development">Web Development</a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                     <li> <a href="#"> News Portal development </a> </li>
                                     <li> <a href="#"> Custom CMS development </a> </li>
@@ -82,7 +83,7 @@ const Navbar = () => {
                                  </ul>
                               </li>
                               <li className={navbar.fourDrop}>
-                                 <a href="graphics-design.php">Graphics Design </a>
+                                 <a href="/service/graphics_design">Graphics Design </a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                     <li> <a href="#"> Logo Design </a> </li>
                                     <li> <a href="#"> Flyer &amp; Brochure Design </a> </li>
@@ -93,7 +94,7 @@ const Navbar = () => {
                                  </ul>
                               </li>
                               <li className={navbar.fifthDrop}>
-                                 <a href="seo-smm.php">Digital Marketing </a>
+                                 <a href="/service/seo_smm">Digital Marketing </a>
                                  <ul id={navbar.secondary} className={navbar.dlSubmenu}>
                                       <li><a href="#"> Social Media Ad. Campaign </a></li>
                                       <li><a href="#"> Onsite SEO Service </a></li>

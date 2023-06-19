@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import graphics from '../../Media/service-details/graphic-design.jpg';
+import seo from '../../Media/service-details/seo.jpg';
 import ServiceDetails from '@/Components/servicedetails/ServiceDetails';
 import Head from 'next/head';
 import ServiceList from '@/Components/servicelist/ServiceList';
@@ -16,10 +16,10 @@ const graphics_design = () => {
     const [getInfo, setGetInfo] = useState()
     const [serviceData, setServiceData] = useState()
     const serviceInfo = {
-        title: 'Graphics Design',
-        img: graphics,
-        disc1: `We love working with entrepreneurs, start-ups and big company with our professional graphics skill. We create custom logo designs, brand identity, Flyer & Brochure, PSD Templates, print media design and also user-friendly display ads.`,
-        disc2: `It’s a competitive world out there, and making the first impression is vital to communicating your objectives and relationships with prospective clients. Our entire mission is to make your business look great.`
+        title: 'Digital Marketing',
+        img: seo,
+        disc1: `Your business is growing but not fast enough. You struggle to find a way to capture every last lead and sale available online. As a result, you feel frustrated and stuck.`,
+        disc2: `Our skilled team of digital marketer delivers top class work for our clients. We believe no opportunity should be left on the table. Our vision has been to serve as a powerful extension of your own marketing department.`
     }
     const serviceList = [
         {
