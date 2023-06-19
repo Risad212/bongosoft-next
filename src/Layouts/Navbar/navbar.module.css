@@ -138,7 +138,6 @@
     display: none;
 }
 
-
 /******** New Animated Menu *******/
 .dropdown li{
     background: #1da255;
@@ -192,14 +191,11 @@
         padding: 0;
     }
 }
-
 @media only screen and (min-width:960px) and (max-width:1240px){
     .container{
         max-width: 900px !important;
     }
 }
-
-
 /* =========== Mobile Responsive Navbar ====================*/
 @media only screen and (max-width: 767px){
     .menuIcon{

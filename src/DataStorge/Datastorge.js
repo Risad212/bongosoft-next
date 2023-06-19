@@ -133,6 +133,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Dailyjagaran',
         title: 'Design & Development',
         disc: 'Making News Portal For Dailyjagaran',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'graphic design',
@@ -140,6 +145,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Logo for IBserver',
         title: 'Graphic Design',
         disc: 'Logo for IBserver',
+        animation: {
+            name: 'fade-left',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'seo',
@@ -147,6 +157,11 @@ export const portfolioOurWorkPage = [
         altTag: 'SEO & SMM',
         title: 'SEO & SMM',
         disc: 'Digital Marketing For CoupDoc',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'softoware development',
@@ -154,6 +169,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Pharmacy Management System',
         title: 'Software Development',
         disc: 'Pharmacy Management System',
+        animation: {
+            name: 'fade-right',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'seo',
@@ -161,6 +181,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Facebook Marketing For GoGmat',
         title: 'SEO & SMM',
         disc: 'Facebook Marketing For GoGmat',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'softoware development',
@@ -168,6 +193,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Point Of Sales Software',
         title: 'Software Development',
         disc: 'Point Of Sales Software',
+        animation: {
+            name: 'fade-up',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -175,6 +205,11 @@ export const portfolioOurWorkPage = [
         altTag: '"Gonews24',
         title: 'Design & Development',
         disc: 'Making News Portal For Gonews24',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -182,6 +217,11 @@ export const portfolioOurWorkPage = [
         altTag: '',
         title: 'Design & Development',
         disc: 'Making Website for MegaStar Bangladesh Ltd.',
+        animation: {
+            name: 'fade-up',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -189,6 +229,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making News Portal For Womenscorner',
         title: 'Design & Development',
         disc: 'Making News Portal For Womenscorner',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -196,6 +241,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making website for Hilton Tours &amp; Travels (BD) Ltd',
         title: 'Design & Development',
         disc: 'Making website for Hilton Tours &amp; Travels (BD) Ltd',
+        animation: {
+            name: 'fade-left',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -203,6 +253,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making E-commerce Website For Onlineofferdigest',
         title: 'Design & Development',
         disc: 'Making E-commerce Website For Onlineofferdigest',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -210,6 +265,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making Website For BonnyFashionTex',
         title: 'Design & Development',
         disc: 'Making Website For BonnyFashionTex',
+        animation: {
+            name: 'fade-right',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -217,6 +277,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making Website For Powerhouse Engineering Ltd',
         title: 'Design & Development',
         disc: 'Making Website For Powerhouse Engineering Ltd',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -224,6 +289,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making Website For AAA Control',
         title: 'Design & Development',
         disc: 'Making Website For AAA Control',
+        animation: {
+            name: 'fade-down',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -231,6 +301,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Agaminews',
         title: 'Design & Development',
         disc: 'Making News Portal For Agaminews',
+        animation: {
+            name: 'fade-down',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -238,6 +313,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making Website for Carrier Corporatioin USA (Agent in Bangladesh)',
         title: 'Design & Development',
         disc: 'Making Website for Carrier Corporatioin USA (Agent in Bangladesh)',
+        animation: {
+            name: 'fade-up',
+            delay: '800',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -245,6 +325,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making News portal for Alokitonews',
         title: 'Design & Development',
         disc: 'Making News portal for Alokitonews',
+        animation: {
+            name: 'fade-up',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -252,6 +337,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making E-commerce Website For Dr. Neem',
         title: 'Design & Development',
         disc: 'Making E-commerce Website For Dr. Neem',
+        animation: {
+            name: 'fade-up',
+            delay: '400',
+            duration: '500'
+         }
     },
     {
         key: 'design and development',
@@ -259,6 +349,11 @@ export const portfolioOurWorkPage = [
         altTag: 'Making News Portal For NarayanganjToday',
         title: 'Design & Development',
         disc: 'Making News Portal For NarayanganjToday',
+        animation: {
+            name: 'fade-up',
+            delay: '400',
+            duration: '500'
+         }
     },
 ]
 /******* portfolio data in our work page ****** */

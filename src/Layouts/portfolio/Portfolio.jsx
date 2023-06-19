@@ -64,6 +64,7 @@ const Portfolio = (props) => {
                     <ul className={portfolio.grid_filter}>
                         {
                             filter.map((elem) => {
+                                console.log(elem?.animation);
                                 return (
                                     <>
                                         <li
