@@ -96,6 +96,9 @@
     border-bottom: 1px solid rgba(206, 206, 206, 0.5);
     width: 100%;
 }
+.dropdown .dlSubmenu li:hover{
+    background: #1c7a44;
+}
 .dropdown .dlSubmenu li a{
     color: #fff;
     font-size: 13px;
@@ -106,7 +109,7 @@
     color: #fff;
 }
 #secondary{
-    left: 235px;
+    left: 245px;
     top: 0;
 }
 
@@ -131,7 +134,6 @@
 .fifthDrop:hover .dlSubmenu{
     visibility: visible;
 }
-
 .menuIcon{
     width: 40px;
     height: 40px;
@@ -149,6 +151,43 @@
     transform: rotateY(0deg);
     opacity: 1;
 }
+/*---------- Hover sub dropdown Menu ------------*/
+.menuWrapper .firsDrop  ul li,
+.menuWrapper .secondDrop  ul li,
+.menuWrapper .thirtDrop  ul li,
+.menuWrapper .fourDrop  ul li,
+.menuWrapper .fifthDrop  ul li
+{
+    background: #1da255;
+    transform: rotateY(90deg);
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.menuWrapper .firsDrop:hover  ul li,
+.menuWrapper .secondDrop:hover  ul li,
+.menuWrapper .thirtDrop:hover  ul li,
+.menuWrapper .fourDrop:hover  ul li,
+.menuWrapper .fifthDrop:hover  ul li
+{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+/*-------- new css code -------*/
+.menuWrapper ul ul li:after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -3px;
+    top: 0;
+    width: 3px;
+    box-shadow: 6px 0 15px -15px inset;
+    -webkit-box-shadow: 6px 0 15px -15px inset;
+    -moz-box-shadow: 6px 0 15px -15px inset;
+    -ms-box-shadow: 6px 0 15px -15px inset;
+    -o-box-shadow: 6px 0 15px -15px inset;
+}
+/*-------- animation dropdown --------------*/
 .dlSubmenu li:nth-child(1) { -webkit-transition-delay: 350ms; -moz-transition-delay: 350ms; -ms-transition-delay: 350ms; -o-transition-delay: 350ms; transition-delay: 350ms; }
 .dlSubmenu li:nth-child(2) { -webkit-transition-delay: 300ms; -moz-transition-delay: 300ms; -ms-transition-delay: 300ms; -o-transition-delay: 300ms; transition-delay: 300ms; }
 .dlSubmenu li:nth-child(3) { -webkit-transition-delay: 250ms; -moz-transition-delay: 250ms; -ms-transition-delay: 250ms; -o-transition-delay: 250ms; transition-delay: 250ms; }

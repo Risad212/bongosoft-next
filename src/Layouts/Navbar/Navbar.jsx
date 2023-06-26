@@ -16,7 +16,6 @@ const Navbar = () => {
     setNavIcon(!navIcon)
     setShowMenu(!showMenu)
    }
-   
     const handleScroll = () => {
         const offset = window.scrollY;
         if (offset > 5) {

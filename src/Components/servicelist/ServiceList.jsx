@@ -4,6 +4,7 @@ import Image from 'next/image';
 /*-------- Aos Library ------------*/
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRouter } from 'next/router';
 
 
 const ServiceList = ({ data, title }) => {
@@ -11,6 +12,11 @@ const ServiceList = ({ data, title }) => {
         AOS.init();
         AOS.refresh();
       }, []);
+
+
+    const router = useRouter()
+
+    console.log(router);
     return (
         <>
             <section className={list.service_details_secend}>
@@ -55,7 +61,7 @@ const ServiceList = ({ data, title }) => {
                                                 <div class={list.service_heading_top}>
                                                     <h4>{elem?.title}</h4>
                                                     <p>{elem?.disc}</p>
-                                                    <a class={`btn ${list.btn_details}`} href="software-development-details.php">Details</a>
+                                                    <a class={`btn ${list.btn_details}`} href="software_development_details">Details</a>
                                                 </div>
                                             </div>
                                         </div>
