@@ -1,13 +1,15 @@
 import React from 'react';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
+import { useRouter } from 'next/router';
 
 const Layout = ({children}) => {
+    const router = useRouter()
     return (
         <div>
-          <Header />
+          {router?.route !== '/404'? <Header />: ''}
            {children}
-          <Footer /> 
+           {router?.route !== '/404'? <Footer />: ''}
         </div>
     );
 };

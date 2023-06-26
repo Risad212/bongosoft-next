@@ -88,7 +88,7 @@
     position: absolute;
     top: -7px;
     border-bottom-color: #1da255;
-    transition: all 750ms linear
+    transition: border 750ms linear;
 }
 .dropdown .dlSubmenu li{
     padding: 16px 15px 15px;
