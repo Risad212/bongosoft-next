@@ -36,7 +36,7 @@ export default function Home() {
       <About />
       <Counter />
       <Service />
-      <Portfolio data={portfolioHomePage} title="portfolio" btntxt="view all"/>
+      <Portfolio data={portfolioHomePage} title="Portfolio" btntxt="view all"/>
       <Testimonial />
       <ScrollTopButton />
     </>

@@ -6,7 +6,7 @@
     margin-top: 10px;
 }
 
-.about_content_2 h3 {
+.about_content_2 h2 {
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
@@ -320,5 +320,13 @@
 
     to {
         transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+
+/*--------- responsive -----------*/
+@media only screen and (max-width: 767px){
+    .about_content_2 h2 {
+        font-size: 35px;
     }
 }

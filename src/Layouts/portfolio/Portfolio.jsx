@@ -16,6 +16,7 @@ const Portfolio = (props) => {
             setFilter(getData)
         }
     }
+    
     return (
         <div className={portfolio.portfolio}>
             <div className="container">

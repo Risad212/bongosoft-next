@@ -45,7 +45,7 @@ const Chooseus = () => {
                           data-aos-duration="800"
                           data-aos-delay="800"
                       >
-                            <h2>Why you <span class={chooseus.tc_1}>choose</span> us? <br /><span class={chooseus.tc_2}>because</span> we provide best <span class={chooseus.tc_1}>quality...</span></h2>
+                            <h2 className='title'>Why you <span class={chooseus.tc_1}>choose</span> us? <br /><span class={chooseus.tc_2}>because</span> we provide best <span class={chooseus.tc_1}>quality...</span></h2>
                             <p>We believe that creating customer-centric experiences. We’re innovators, creators, and designers who pride ourselves on also being trailblazers.</p>
                             <div class="row row-25">
                                 <div class="about-feature col-md-6  col-sm-6 col-12 mb-35">

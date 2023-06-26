@@ -20,32 +20,32 @@ const Service = () => {
                 <div className="container">
                     <div className={`${service.heading_title} text-center`}>
                         <h2
-                           data-aos="fade-down" 
-                           data-aos-once="true"
-                           data-aos-delay="500"
-                           data-aos-duration="1000"
-                         > Our Services </h2>
-                        <div className={service.box}
-                           data-aos="fade-left" 
-                           data-aos-once="true"
-                           data-aos-delay="800"
-                           data-aos-duration="1000"
-                          >
-                            <div class={`${service.box_sm} ${service.red}`}></div>
-                            <div class={`${service.box_sm} ${service.orange}`}></div>
-                            <div class={`${service.box_sm} ${service.yellow}`}></div>
-                            <div class={`${service.box_sm} ${service.green}`}></div>
-                            <div class={`${service.box_sm} ${service.blue}`}></div>
-                            <div class={`${service.box_sm} ${service.purple}`}></div>
+                            data-aos="fade-down"
+                            data-aos-once="true"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                        > Our Services </h2>
+                        <div className="box"
+                            data-aos="fade-left"
+                            data-aos-once="true"
+                            data-aos-delay="800"
+                            data-aos-duration="1000"
+                        >
+                            <div className="box-sm red"></div>
+                            <div className="box-sm orange"></div>
+                            <div className="box-sm yellow "></div>
+                            <div className="box-sm green "></div>
+                            <div className="box-sm blue "></div>
+                            <div className="box-sm purple"></div>
                         </div>
                     </div>
                     <div className={service.service_grid}>
                         <div class={`${service.service_item} ${service.software}`}
-                             data-aos="fade-right" 
-                             data-aos-once="true"
-                             data-aos-delay="1400"
-                             data-aos-duration="500"
-                          >
+                            data-aos="fade-right"
+                            data-aos-once="true"
+                            data-aos-delay="1400"
+                            data-aos-duration="500"
+                        >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
@@ -66,11 +66,11 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.web_design}`}
-                           data-aos="fade-zoom-in" 
-                           data-aos-once="true"
-                           data-aos-delay="800"
-                           data-aos-duration="1000"
-                          >
+                            data-aos="fade-zoom-in"
+                            data-aos-once="true"
+                            data-aos-delay="800"
+                            data-aos-duration="1000"
+                        >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
@@ -91,11 +91,11 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.web_development}`}
-                            data-aos="fade-down" 
+                            data-aos="fade-down"
                             data-aos-once="true"
                             data-aos-delay="1200"
                             data-aos-duration="500"
-                          >
+                        >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
@@ -116,11 +116,11 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.graphic}`}
-                            data-aos="fade-left" 
+                            data-aos="fade-left"
                             data-aos-once="true"
                             data-aos-delay="1600"
                             data-aos-duration="500"
-                         >
+                        >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
@@ -141,11 +141,11 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.seo}`}
-                           data-aos="fade-right" 
-                           data-aos-once="true"
-                           data-aos-delay="1500"
-                           data-aos-duration="500"
-                         >
+                            data-aos="fade-right"
+                            data-aos-once="true"
+                            data-aos-delay="1500"
+                            data-aos-duration="500"
+                        >
                             <div class={service.service_details}>
                                 <div class={service.service_content}>
                                     <div>
@@ -166,17 +166,17 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.domain}`}
-                             data-aos="fade-up" 
-                             data-aos-once="true"
-                             data-aos-delay="1200"
-                             data-aos-duration="500"
-                          >
+                            data-aos="fade-up"
+                            data-aos-once="true"
+                            data-aos-delay="1200"
+                            data-aos-duration="500"
+                        >
                             <div class={service.service_details}>
                                 <a href="#">
                                     <div class={service.service_content}>
                                         <div class="icon">
-                                           <Image className={service.web_domain} src={domain} alt="Domain &amp; Hosting" />
-                                         </div>
+                                            <Image className={service.web_domain} src={domain} alt="Domain &amp; Hosting" />
+                                        </div>
                                         <h3>Domain &amp; Hosting</h3>
                                     </div>
                                 </a>
@@ -184,17 +184,17 @@ const Service = () => {
                         </div>
                         {/*----- service item --------*/}
                         <div class={`${service.service_item} ${service.support}`}
-                            data-aos="fade-left" 
+                            data-aos="fade-left"
                             data-aos-once="true"
                             data-aos-delay="1700"
                             data-aos-duration="500"
-                          >
+                        >
                             <div class={service.service_details}>
                                 <a href="#">
                                     <div class={service.service_content}>
                                         <div class="icon">
-                                           <Image className={service.bg_red} src={support} alt="Domain &amp; Hosting" />
-                                         </div>
+                                            <Image className={service.bg_red} src={support} alt="Domain &amp; Hosting" />
+                                        </div>
                                         <h3>Support</h3>
                                     </div>
                                 </a>

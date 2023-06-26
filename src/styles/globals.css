@@ -1,77 +1,98 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Nunito+Sans:400,700|Ubuntu:400,700');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none !important;
+
+a {
+  text-decoration: none !important;
 }
-ul{
-    list-style: none;
-    padding: 0 !important;
-    margin: 0 !important;
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
 }
 
 
 /*------- swiper style -----*/
-.swiper-button-prev:after{
-    color: #f6f3f3;
+.swiper-button-prev:after {
+  color: #f6f3f3;
 }
-.swiper-button-next:after{
-    color: #f4ebeb;
+
+.swiper-button-next:after {
+  color: #f4ebeb;
 }
+
 .swiper-button-next:hover:after,
-.swiper-button-prev:hover:after{
-    color: #1da255;
+.swiper-button-prev:hover:after {
+  color: #1da255;
 }
-.swiper-pagination-bullet{
-    background: transparent !important;
-    border: 2px solid #777;
-    padding: 4px;
+
+.swiper-pagination-bullet {
+  background: transparent !important;
+  border: 2px solid #777;
+  padding: 4px;
 }
-.swiper-pagination-bullet-active{
-    background: #1da255 !important;
+
+.swiper-pagination-bullet-active {
+  background: #1da255 !important;
 }
 
 /*---------- title style ----------*/
-.box{
-    display: flex;
-    width: 15%;
-    height: 8px;
-    margin: 0 auto;
+.box {
+  display: flex;
+  width: 15%;
+  height: 8px;
+  margin: 0 auto;
 }
-.box-sm{
-    height: 8px;
-    margin: 0;
-    flex-grow: 1;
-    transition: all 0.8s ease-in-out;
-    cursor: pointer;      
+
+.box-sm {
+  height: 8px;
+  margin: 0;
+  flex-grow: 1;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
 }
+
 .red {
-    background-color: #ff5852;
-  }
-  .orange {
-    background-color: #ff9000;
-  }
-  .yellow {
-    background-color: #ffd300;
-  }
-  .green {
-    background-color: #3dcd49;
-  }
-  .blue {
-    background-color: #0089d7;
-  }
-  .purple {
-    background-color: #9e44c4;
-  }
-  .box-sm:hover {
-    flex-grow: 12;
+  background-color: #ff5852;
+}
+
+.orange {
+  background-color: #ff9000;
+}
+
+.yellow {
+  background-color: #ffd300;
+}
+
+.green {
+  background-color: #3dcd49;
+}
+
+.blue {
+  background-color: #0089d7;
+}
+
+.purple {
+  background-color: #9e44c4;
+}
+
+.box-sm:hover {
+  flex-grow: 12;
 }
 
 /*----- slick slider -----------*/
@@ -84,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   transition: 0.3s;
 }
+
 .slick-prev {
   left: -34px;
   opacity: 0;
@@ -95,50 +117,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---- responsive -----*/
-@media only screen and (max-width: 480px){
-   .slick-next{
-      right: 5px;
-   }
-   .slick-prev{
+@media only screen and (max-width: 480px) {
+  .slick-next {
+    right: 5px;
+  }
+
+  .slick-prev {
     left: 5px;
     z-index: 999;
- }
+  }
 }
-.slick-next::before{
-  font-size: 22px;
-  position: absolute;
-  line-height: .75em;
-  top: 40%;
-  left: 22%;
-}
-.slick-prev::before{
-  font-size: 22px;
-  position: absolute;
-  line-height: .75em;
-  top: 40%;
-  left: 22%;
-}
-#clients .row:hover .slick-next{
-  opacity: 1;
-}
-#clients .row:hover .slick-prev{
-  opacity: 1;
-} 
 
-.slick-next:hover{
- border-radius: 50px;
- background: green;
+.slick-next::before {
+  font-size: 22px;
+  position: absolute;
+  line-height: .75em;
+  top: 40%;
+  left: 22%;
 }
-.slick-prev:hover{
+
+.slick-prev::before {
+  font-size: 22px;
+  position: absolute;
+  line-height: .75em;
+  top: 40%;
+  left: 22%;
+}
+
+#clients .row:hover .slick-next {
+  opacity: 1;
+}
+
+#clients .row:hover .slick-prev {
+  opacity: 1;
+}
+
+.slick-next:hover {
   border-radius: 50px;
   background: green;
- }
+}
 
- .slick-prev:hover{
+.slick-prev:hover {
+  border-radius: 50px;
   background: green;
- }
+}
 
- /*----- progress bar text style --------------*/
- .CircularProgressbar .CircularProgressbar-text{
-   font-size: 25px !important;
- }
+.slick-prev:hover {
+  background: green;
+}
+
+/*----- progress bar text style --------------*/
+.CircularProgressbar .CircularProgressbar-text {
+  font-size: 25px !important;
+}
+
+

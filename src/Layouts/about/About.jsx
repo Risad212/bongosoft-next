@@ -16,7 +16,7 @@ const About = () => {
                                 data-aos-delay="300"
                                 data-aos-duration="800"
                               >
-                                <h3>Why Choose us?</h3>
+                                <h2>Why Choose us?</h2>
                                 <div class={`${about.about_details}`}>
                                     <p>We are creative, innovators, and designers who are vastly experienced in Website Design &amp; Development, SEO, Graphics Design, Content Marketing, and Social Media Marketing. If you are looking for any service that can satisfy you, then you are in the right place. These are some reason, why you love to work with us. </p>
                                 </div>

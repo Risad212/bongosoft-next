@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ourwork from './ourwork.module.css';
 import res from '../../Media/res.png'
 import dev from '../../Media/dev.png'
@@ -19,18 +19,18 @@ const OurWork = () => {
                           >
                             <h2> How We Work ? </h2>
                          </div>
-                        <div className={ourwork.box}
-                            data-aos="fade-left" 
-                            data-aos-once="true"
-                            data-aos-delay="1200"
-                            data-aos-duration="1000"
-                          >
-                            <div className={`${ourwork.boxSm} ${ourwork.red}`}></div>
-                            <div className={`${ourwork.boxSm} ${ourwork.orange}`}></div>
-                            <div className={`${ourwork.boxSm} ${ourwork.yellow}`}></div>
-                            <div className={`${ourwork.boxSm} ${ourwork.green}`}></div>
-                            <div className={`${ourwork.boxSm} ${ourwork.blue}`}></div>
-                            <div className={`${ourwork.boxSm} ${ourwork.purple}`}></div>
+                         <div className="box"
+                           data-aos="fade-left" 
+                           data-aos-once="true"
+                           data-aos-delay="800"
+                           data-aos-duration="1000"
+                         >
+                            <div className="box-sm red"></div>
+                            <div className="box-sm orange"></div>
+                            <div className="box-sm yellow "></div>
+                            <div className="box-sm green "></div>
+                            <div className="box-sm blue "></div>
+                            <div className="box-sm purple"></div>
                         </div>
                     </div>
                     <div className={`row ${ourwork.sub_about}`}>

@@ -253,7 +253,26 @@
       padding-top: 30px;
       padding-bottom: 30px;
   }
+  .heading_title{
+     padding-bottom: 30px;
+  }
   .heading_title h2{
     font-size: 35px;
  }
+}
+
+.grid_filter{
+  list-style: none;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.grid_filter li{
+  display: inline-block;
+	margin: 0 0 5px 0;
+	vertical-align: top;
+	height: 250px;
+	width: 280px;
+	position: inherit;
 }

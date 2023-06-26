@@ -7,7 +7,7 @@ const Ourservice = () => {
             <div class={`${Service.service} ${Service.service_1}`}>
                 <div class="container">
                     <div class="row">
-                        <div class={`${Service.ui_ux_design} col-md-6`}
+                        <div class={`${Service.title} col-md-6`}
                            data-aos="fade-right" 
                            data-aos-once="true"
                            data-aos-delay="800"
