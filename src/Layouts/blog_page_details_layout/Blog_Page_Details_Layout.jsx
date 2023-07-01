@@ -1,10 +1,10 @@
 import React from 'react';
-import layout from './layout.module.css';
 import Blog_Sidebar from '@/Components/BlogSidebar/Blog_Sidebar';
 import Blog_Page_Details_Content from '@/Components/Blog_Page_Details_Content/Blog_Page_Details_Content';
 
 
 const Blog_Page_Details_Layout = () => {
+   
    return (
       <>
          <section style={{padding: '80px 0'}}>
