@@ -52,3 +52,31 @@
     line-height: 1;
     margin-bottom: 15px;
 }
+/*------- Blog Details 6 ----------*/
+.single_post_content_six p{
+    font-size: 15px;     
+}
+.single_post_content_six h4{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.single_post_content_six p a:hover{
+    color: #014c8c;
+}
+/*------- Blog Details 7 ----------*/
+.single_post_content_saven p{
+    font-size: 15px;     
+}
+.single_post_content_saven h4{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.single_post_content_saven p a:hover{
+    color: #014c8c;
+}

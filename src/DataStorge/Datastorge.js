@@ -371,6 +371,9 @@ import blog2 from '../Media/blog-details/blog-big-2.jpg';
 import blog3 from '../Media/blog-details/blog-big-3.jpg';
 import blog4 from '../Media/blog-details/blog-big-4.jpg';
 import blog5 from '../Media/blog-details/blog-big-5.jpg';
+import blog6 from '../Media/blog-details/blog-big-6.jpg';
+import blog7 from '../Media/blog-details/blog-big-7.jpg';
+
 
 /******* Blog details page heading info ****** */
 export const detailsHeadinfo = [
@@ -410,6 +413,22 @@ export const detailsHeadinfo = [
         key: 'blog_details_5',
         img: blog5,
         title: 'The 5 Most Important SEO Tips You Need to Know-Neil Patel',
+        date: 'march 26, 2019',
+        category: 'DEVELOPMENT',
+        author: 'admin',
+      },
+      {
+        key: 'blog_details_6',
+        img: blog6,
+        title: 'Best File Sharing Websites To Share Large File In Online',
+        date: 'march 30, 2019',
+        category: 'DEVELOPMENT',
+        author: 'admin',
+      },
+      {
+        key: 'blog_details',
+        img: blog7,
+        title: 'Best Windows 10 Themes/Skins 2019',
         date: 'march 26, 2019',
         category: 'DEVELOPMENT',
         author: 'admin',
