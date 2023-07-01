@@ -7,9 +7,13 @@ import Complete from '../../Media/complate.png'
 import Tea from '../../Media/tea.png'
 import Free from '../../Media/free.png'
 import AnimatedCounter from '@/Components/animatedCounter/AnimatedCounter';
-import { CountUp } from 'use-count-up';
+import { useInView } from 'react-intersection-observer';
 
 const Counter = () => {
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 0,
+      });
     return (
         <>
             <section id="counter" className={counter.counter_section}>
