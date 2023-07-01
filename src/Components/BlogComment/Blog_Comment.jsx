@@ -1,10 +1,31 @@
 import React from 'react';
 import layout from './comment.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDribbble, faFacebookF,faGooglePlusG, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Blog_Comment = () => {
     return (
         <>
             <div className={layout.comment_form_wrapper}>
+            <footer className={layout.single_post_footer}>
+                    <div className={layout.post_shearing}>
+                        <ul>
+                            <li>Share:</li>
+                            <li><a href="#"><FontAwesomeIcon icon={faFacebookF}/></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faTwitter}/></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faGooglePlusG}/></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faDribbble}/></a></li>
+                        </ul>
+                    </div>
+                    <div className={layout.post_tags}>
+                        <ul>
+                            <li>Tags:</li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Programming</a></li>
+                        </ul>
+                    </div>
+                </footer>
                 <div className="row">
                     <div className="col-md-12">
                         <div className={layout.comment_form}>

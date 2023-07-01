@@ -1,6 +1,50 @@
+/*---- social media style -------*/
+.single_post_footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.post_shearing {
+    display: inline-block;
+    float: left;
+}
+.single_post_footer .post_shearing > ul {
+    margin: 0;
+    padding: 0;
+}
+.single_post_footer .post_shearing ul li, .single_post_footer .post_tags ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0;
+}
+.single_post_footer .post_shearing ul li a {
+    color: #999;
+    transition: .3s;
+}
+.single_post_footer .post_shearing ul li a:hover{
+    color: #222;
+}
+.post_tags {
+    display: inline-block;
+    float: right;
+}
+.single_post_footer .post_tags ul li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.post_tags a {
+    color: #999;
+    text-decoration: none;
+}
+.post_tags a:hover{
+    color: #1da255;
+}
+/*------ form style -------*/
 .comment_form form {
     background: #ffffff none repeat scroll 0 0;
     overflow: hidden;
+    padding-top: 30px;
 }
 .sub_section_title {
     border-bottom: 1px solid #e5e5e5;
