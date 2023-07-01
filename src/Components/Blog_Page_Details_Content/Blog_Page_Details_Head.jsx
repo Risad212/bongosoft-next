@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import layout from './blogdetails.module.css';
 /*---- import image --------*/
 import { detailsHeadinfo } from '../../DataStorge/Datastorge';
@@ -18,10 +19,11 @@ const Blog_Page_Details_Head = () => {
                 {
                     getHeadInfo
                       && getHeadInfo.map((elem) => {
+                        console.log(elem.img.src);
                         return (
                             <>
                                 <div className={layout.single_post_images}>
-                                    <img className="img-fluid" src={elem?.img} alt="Blog Details" />
+                                    <Image className="img-fluid" src={elem?.img} alt="Blog Details" />
                                 </div>
                                 <div className={layout.single_post_content}>
                                     <div className={layout.single_post_header}>

@@ -365,25 +365,55 @@ export const portfolioOurWorkPage = [
 
 //==========================================================
 
+/*----- import all details images --------*/
+import chrome from '../Media/blog-details/chrome.jpg';
+import blog2 from '../Media/blog-details/blog-big-2.jpg';
+import blog3 from '../Media/blog-details/blog-big-3.jpg';
+import blog4 from '../Media/blog-details/blog-big-4.jpg';
+import blog5 from '../Media/blog-details/blog-big-5.jpg';
 
 /******* Blog details page heading info ****** */
 export const detailsHeadinfo = [
     {
       key: 'chrome_top_ten_extensions_details',
-      img: 'http://bongosoftbd.com/images/custom/blog/chrome-top-ten-extensions-details-image.jpg',
+      img: chrome,
       title: 'Top 10 Productivity Extensions for Chrome Web Browser',
       date: 'OCTOBER 28, 2019',
       category: 'DEVELOPMENT',
       author: 'admin',
     },
     {
-        key: 'seo-tips',
-        img: 'http://bongosoftbd.com/images/custom/blog/chrome-top-ten-extensions-details-image.jpg',
-        title: 'Top 10 Productivity Extensions for Chrome Web Browser',
-        date: 'OCTOBER 28, 2019',
+        key: 'blog_details_2',
+        img: blog2,
+        title: 'Top 5 Best Free Adware Removal Tools For Windows...',
+        date: 'MARCH 26, 2019',
         category: 'DEVELOPMENT',
         author: 'admin',
-      }
+      },
+      {
+        key: 'blog_details_3',
+        img: blog3,
+        title: '10 Best Free Microsoft Office Alternatives 2019',
+        date: 'MARCH 30, 2019',
+        category: 'DEVELOPMENT',
+        author: 'admin',
+      },
+      {
+        key: 'blog_details_4',
+        img: blog4,
+        title: 'Next Generation Smartphone - HUAWEI MATE X',
+        date: 'march 26, 2019',
+        category: 'DEVELOPMENT',
+        author: 'admin',
+      },
+      {
+        key: 'blog_details_5',
+        img: blog5,
+        title: 'The 5 Most Important SEO Tips You Need to Know-Neil Patel',
+        date: 'march 26, 2019',
+        category: 'DEVELOPMENT',
+        author: 'admin',
+      },
 ]
 /******* Blog details page heading info ****** */
 

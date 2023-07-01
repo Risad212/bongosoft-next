@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none !important;
+  transition: 0.4s;
 }
 
 ul {

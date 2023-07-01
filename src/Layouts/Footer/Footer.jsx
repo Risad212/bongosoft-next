@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Paralax from '../Paralax/Paralax';
 import MainFooter from '../MainFooter/MainFooter';
 import FooterBottom from '../FooterBottom/FooterBottom';
@@ -8,12 +8,13 @@ import { useRouter } from 'next/router';
 
 const Footer = () => {
     const router = useRouter();
-    console.log(router.route);
+    let toggle = router.route.startsWith('/blog');
+    
     return (
         <>
             <div className={footer.main}>
-                {router?.route !== '/blog'? <Paralax />: ''}
-                {router?.route !== '/blog'? <MainFooter />: ''}
+                {toggle !== true? <Paralax />: ''}
+                {toggle !== true? <MainFooter />: ''}
                 <FooterList />
             </div>
             <FooterBottom />

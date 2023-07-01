@@ -13,6 +13,9 @@
     padding: 0 15px;
     width: 100%;
 }
+.widget_title{
+    font-weight: 700;
+}
 .search_widget button {
     background: #1da255;
     cursor: pointer;
