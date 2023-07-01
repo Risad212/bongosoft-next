@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import layout from './blogdetails.module.css';
-import Blog_Comment from '../BlogComment/Blog_Comment';
 /*---- import image --------*/
 import { detailsHeadinfo } from '../../DataStorge/Datastorge';
 import { useRouter } from 'next/router';
 
-const Blog_Page_Details_Content = () => {
+const Blog_Page_Details_Head = () => {
     const router = useRouter();
     const path = router.asPath;
     const slice = path.slice(6)
@@ -13,7 +12,6 @@ const Blog_Page_Details_Content = () => {
     const getHeadInfo = detailsHeadinfo.filter((elem) => {
         return elem.key === slice;
     })
-
     return (
         <>
             <article className={`${layout.single_blog_post}`}>
@@ -40,10 +38,8 @@ const Blog_Page_Details_Content = () => {
                     })
                 }
             </article>
-            {/*--------- blog comment component ---------*/}
-            <Blog_Comment />
         </>
     )
 };
 
-export default Blog_Page_Details_Content;
+export default Blog_Page_Details_Head;

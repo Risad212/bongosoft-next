@@ -369,7 +369,7 @@ export const portfolioOurWorkPage = [
 /******* Blog details page heading info ****** */
 export const detailsHeadinfo = [
     {
-      key: 'chrome-top-ten-extensions-details',
+      key: 'chrome_top_ten_extensions_details',
       img: 'http://bongosoftbd.com/images/custom/blog/chrome-top-ten-extensions-details-image.jpg',
       title: 'Top 10 Productivity Extensions for Chrome Web Browser',
       date: 'OCTOBER 28, 2019',
