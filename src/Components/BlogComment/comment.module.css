@@ -1,0 +1,53 @@
+.comment_form form {
+    background: #ffffff none repeat scroll 0 0;
+    overflow: hidden;
+}
+.sub_section_title {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+.clear_fix textarea {
+    border: 1px solid #e5e5e5;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 15px;
+    width: 100%;
+}
+.input_field_wrapper {
+    margin: 0 -10px;
+}
+.input_field {
+    float: left;
+    padding: 0 10px;
+    width: 33.3333%;
+}
+.comment_form input {
+    border: 1px solid #e5e5e5;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.button_black {
+    background: #222 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    letter-spacing: 2px;
+    line-height: 46px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+.button_black:hover {
+    background: #1da255;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import layout from './layout.module.css';
 import Blog_Sidebar from '@/Components/BlogSidebar/Blog_Sidebar';
+import Blog_Page_Details_Content from '@/Components/Blog_Page_Details_Content/Blog_Page_Details_Content';
 
 
 const Blog_Page_Details_Layout = () => {
@@ -10,7 +11,7 @@ const Blog_Page_Details_Layout = () => {
             <div className="container">
                <div className="row">
                   <div className="col-lg-9">
-                     <h2>Blog content</h2>
+                    <Blog_Page_Details_Content />
                   </div>
                   <div className="col-lg-3 col-md-4 col-sm-12">
                      <Blog_Sidebar />
