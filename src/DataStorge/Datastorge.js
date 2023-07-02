@@ -365,7 +365,7 @@ export const portfolioOurWorkPage = [
 
 //==========================================================
 
-/*----- import all details images --------*/
+/*----- import all blog details images --------*/
 import chrome from '../Media/blog-details/chrome.jpg';
 import blog2 from '../Media/blog-details/blog-big-2.jpg';
 import blog3 from '../Media/blog-details/blog-big-3.jpg';
@@ -437,3 +437,100 @@ export const detailsHeadinfo = [
 /******* Blog details page heading info ****** */
 
 //==========================================================
+
+
+
+
+//==========================================================
+
+/*----- import all blog details images --------*/
+import blog_sm_7 from '../Media/blog-small/blog-small-7.jpg';
+import blog_sm_2 from '../Media/blog-small/blog-small-2.jpg';
+import blog_sm_3 from '../Media/blog-small/blog-small-3.jpg';
+import blog_sm_4 from '../Media/blog-small/blog-small-4.jpg';
+import blog_sm_5 from '../Media/blog-small/blog-small-5.jpg';
+import blog_sm_6 from '../Media/blog-small/blog-small-6.jpg';
+import blog_sm_1 from '../Media/blog-small/blog-small-1.jpg';
+
+
+/******* Blog page Details ****** */
+export const blogDetails = [
+    {
+      img: blog_sm_7,
+      title: 'Top 10 Productivity Extensions for Chrome Web Browser',
+      date: 'October 28, 2019',
+      disc: 'There are limitless ways to ...',
+      animation: {
+        aos: 'fade-right',
+        duration: '500',
+        delay: '800'
+      }
+    },
+    {
+        img: blog_sm_2,
+        title: 'Top 5 Best Free Adware Removal Tools For Windows',
+        date: 'May 14, 2019',
+        disc: `It's can remove, Spyware, Rootkits, PUPs, Virus, Malware, and ...`,
+        animation: {
+          aos: 'fade-left',
+          duration: '500',
+          delay: '1100'
+        }
+    },
+    {
+        img: blog_sm_3,
+        title: 'BEST FREE MICROSOFT OFFICE ALTERNATIVES',
+        date: 'May 14, 2019',
+        disc: `10 Best Free Microsoft Office Alternatives`,
+        animation: {
+          aos: 'fade-right',
+          duration: '500',
+          delay: '800'
+        }
+    },
+    {
+        img: blog_sm_4,
+        title: 'NEXT GENERATION SMARTPHONE',
+        date: 'March 30, 2019',
+        disc: `Behold the wonder of the Huawei Mate X`,
+        animation: {
+          aos: 'fade-left',
+          duration: '500',
+          delay: '1100'
+        }
+    },
+    {
+        img: blog_sm_5,
+        title: 'THE 5 MOST IMPORTANT SEO TIPS YOU NEED TO KNOW-NEIL PATEL',
+        date: 'March 25, 2019',
+        disc: `Important SEO Tips`,
+        animation: {
+          aos: 'fade-right',
+          duration: '500',
+          delay: '800'
+        }
+    },
+    {
+        img: blog_sm_6,
+        title: 'BEST FILE SHARING WEBSITES TO SHARE LARGE FILE IN ONLINE',
+        date: 'June 14, 2019',
+        disc: `Here we have stated 10 best sites that you will`,
+        animation: {
+          aos: 'fade-left',
+          duration: '500',
+          delay: '1100'
+        }
+    },
+    {
+        img: blog_sm_1,
+        title: 'BEST WINDOWS 10 THEMES/SKINS 2019',
+        date: 'March 25, 2019',
+        disc: `Here are top 20 best HD Windows 10 themes and Skins 2019 that will enhance your Windows 10 look`,
+        animation: {
+          aos: 'fade-right',
+          duration: '500',
+          delay: '800'
+        }
+    },
+]
+/******* Blog page Details ****** */
