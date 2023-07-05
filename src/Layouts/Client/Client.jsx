@@ -46,34 +46,34 @@ const Client = () => {
                 </div>
                 <div className="row">
                     <Slider {...settings}>
-                        <div class={`testimonial ${client.testimonial_style}`}>
-                            <div class={client.single_testimonial}>
-                                <div class={client.testimonial_author}>
-                                    <div class={client.image}>
+                        <div className={`testimonial ${client.testimonial_style}`}>
+                            <div className={client.single_testimonial}>
+                                <div className={client.testimonial_author}>
+                                    <div className={client.image}>
                                         <Image src={client1} alt="Simanta Prodhan" />
                                     </div>
-                                    <div class={`${client.outhor_info} ${client.simanta_review}`}>
+                                    <div className={`${client.outhor_info} ${client.simanta_review}`}>
                                         <h4>Simanta Prodhan</h4>
                                         <p>Editor and Publisher NarayanganjToday </p>
                                     </div>
                                 </div>
-                                <div class={client.testimonial_dec}>
+                                <div className={client.testimonial_dec}>
                                     <p>I am satisfied with their sincerity and service as a client. I hope, they will become popular in the country, their service and sincerity. Good Luck</p>
                                 </div>
                             </div>
                         </div>
-                        <div class={`testimonial ${client.testimonial_style}`}>
-                            <div class={client.single_testimonial}>
-                                <div class={client.testimonial_author}>
-                                    <div class={client.image}>
+                        <div className={`testimonial ${client.testimonial_style}`}>
+                            <div className={client.single_testimonial}>
+                                <div className={client.testimonial_author}>
+                                    <div className={client.image}>
                                         <Image src={client2} alt="Zakuline Fernandez" />
                                     </div>
-                                    <div class={`${client.outhor_info}`}>
+                                    <div className={`${client.outhor_info}`}>
                                         <h4>Zakuline Fernandez</h4>
                                         <p>CEO</p>
                                     </div>
                                 </div>
-                                <div class={client.testimonial_dec}>
+                                <div className={client.testimonial_dec}>
                                     <p>Sawny is one of the most popular real estate company all around USA. You can find your dream property or the build erty with us. We always provide importance</p>
                                 </div>
                             </div>

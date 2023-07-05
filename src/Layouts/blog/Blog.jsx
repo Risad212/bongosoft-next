@@ -4,42 +4,50 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import {blogDetails} from '../../DataStorge/Datastorge'
+import { blogDetails } from '../../DataStorge/Datastorge'
 
 
 
 const Blog = () => {
-    console.log(blogDetails);
     return (
         <>
             <div className={blog.all_post}>
                 <div className="container">
                     <div class="row">
-                        {/* <div class="col-md-6"
-                            data-aos="fade-right" 
-                            data-aos-once="true"
-                            data-aos-duration="500"
-                            data-aos-delay="800"
-                         >
-                            <article class={blog.single_post_item}>
-                                <figure class={blog.image}><Image class="img-fluid" src={blogsmall1} alt="Post Image" /></figure>
-                                <div class={blog.content_box}>
-                                    <div class={blog.text_content}>
-                                        <h2><a href="#"></a></h2>
-                                        <div class={blog.info}>By <em><a href="#">Admin</a></em> at March 25, 2019 </div>
-                                        <p class={blog.text}></p>
-                                        <div class="link-btn"><Link href="blog/blog_details_6" class={`${blog.primary_btn} ${blog.hvr_bounce_to_left}`}><span class={blog.btn_text}> MORE </span><span class={blog.icon}><FontAwesomeIcon icon={faArrowRightLong} /></span></Link></div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> */}
+                        {
+                            blogDetails &&
+                            blogDetails.map((elem,index) => {
+                                return (
+                                    <>
+                                        <div class="col-md-6"
+                                            data-aos={elem?.animation?.aos}
+                                            data-aos-once="true"
+                                            data-aos-duration={elem?.animation?.duration}
+                                            data-aos-delay={elem?.animation?.delay}
+                                        key={index}>
+                                            <article class={blog.single_post_item}>
+                                                <figure class={blog.image}><Image class="img-fluid" src={elem?.img} alt="Post Image" /></figure>
+                                                <div class={blog.content_box}>
+                                                    <div class={blog.text_content}>
+                                                        <h2><a href="#">{elem?.title}</a></h2>
+                                                        <div class={blog.info}>By <em><a href="#">Admin</a></em>{`at ${elem?.date}`}</div>
+                                                        <p class={blog.text}>{elem?.disc}</p>
+                                                        <div class="link-btn"><Link href="blog/blog_details_6" class={`${blog.primary_btn} ${blog.hvr_bounce_to_left}`}><span class={blog.btn_text}> MORE </span><span class={blog.icon}><FontAwesomeIcon icon={faArrowRightLong} /></span></Link></div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </>
+                                )
+                            })
+                        }
                     </div>
-                    <div class="row" 
-                       data-aos="fade-up" 
-                       data-aos-once="true"
-                       data-aos-duration="800"
-                       data-aos-delay="500"
-                     >
+                    <div class="row"
+                        data-aos="fade-up"
+                        data-aos-once="true"
+                        data-aos-duration="800"
+                        data-aos-delay="500"
+                    >
                         <div className={`text-center`}>
                             <nav aria-label="Page navigation example">
                                 <ul class={`pagination ${blog.pagination}`}>

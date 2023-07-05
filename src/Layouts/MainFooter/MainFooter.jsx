@@ -1,7 +1,7 @@
 import React from 'react';
 import mainfooter from './mainfooter.module.css';
-import SmallBlog6 from '../../Media/blog-small-6.jpg'
-import SmallBlog4 from '../../Media/blog-small-4.jpg'
+import SmallBlog6 from '../../Media/blog-small/blog-small-6.jpg';
+import SmallBlog4 from '../../Media/blog-small/blog-small-4.jpg';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faEnvelopesBulk, faLocation, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
