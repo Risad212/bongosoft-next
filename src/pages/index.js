@@ -14,9 +14,9 @@ import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton'
 /*----- import data -------*/
 import {portfolioHomePage} from '../DataStorge/Datastorge';
 
-// export const config = {
-//   unstable_runtimeJS: false
-// };
+export const config = {
+  unstable_runtimeJS: false
+};
 
 export default function Home() {
   useEffect(() => {
