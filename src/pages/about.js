@@ -10,7 +10,9 @@ import Testimonial from '@/Layouts/Testimonial/Testimonial';
 import Client from '@/Layouts/Client/Client';
 import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton';
 
-
+export const config = {
+  unstable_runtimeJS: false
+};
 
 export default function Home() {
   useEffect(() => {

@@ -9,6 +9,10 @@ import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton';
 import { portfolioOurWorkPage } from '@/DataStorge/Datastorge';
 import Contact from '@/Layouts/contact/Contact';
 
+export const config = {
+  unstable_runtimeJS: false
+};
+
 export default function service() {
   useEffect(() => {
     AOS.init();

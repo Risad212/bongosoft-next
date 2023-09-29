@@ -8,6 +8,10 @@ import Portfolio from '@/Layouts/portfolio/Portfolio';
 import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton';
 import { portfolioOurWorkPage } from '@/DataStorge/Datastorge';
 
+export const config = {
+  unstable_runtimeJS: false
+};
+
 export default function service() {
   useEffect(() => {
     AOS.init();
