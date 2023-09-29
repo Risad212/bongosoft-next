@@ -9,9 +9,6 @@ import Ourservice from '@/Layouts/ourservice/Ourservice';
 import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton';
 
 
-
-
-
 export default function service() {
   useEffect(() => {
     AOS.init();
