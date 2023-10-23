@@ -13,7 +13,7 @@ import Portfolio from '@/Layouts/portfolio/Portfolio'
 import ScrollTopButton from '@/Layouts/scrollTopButton/ScrollTopButton'
 /*----- import data -------*/
 import {portfolioHomePage} from '../DataStorge/Datastorge';
-export const dynamic = 'auto'
+export const dynamic = 'force-static'
 
 export default function Home() {
   useEffect(() => {
